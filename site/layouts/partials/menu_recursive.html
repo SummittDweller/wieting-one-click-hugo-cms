@@ -1,0 +1,34 @@
+<!-- layouts/partials/menu_recursive.html from https://bwaycer.github.io/hugo_tutorial.hugo/extras/menus/#rendering-nested-menus -->
+{{ `<!-- hugo: layouts/partials/menu_recursive.html -->` | safeHTML }}
+
+{{ $page := .page }}
+{{ $site := .site }}
+<ul>
+{{ range .menu }}
+  {{ $is := $page.IsMenuCurrent "main" . }}
+  {{ $has := $page.HasMenuCurrent "main" . }}
+  {{ if .HasChildren }} 
+    <li>
+      <a href="{{ .URL }}">
+        {{ .Name }}
+        {{ if $is }}[Is]{{ end }}
+        {{ if $has }}[Has]{{ end }}
+        {{ if .HasChildren }}[Children]{{ end }}
+      </a>
+        <!-- If the menu item has children, include this partial template again (recursively) -->
+        {{ partial "menu_recursive.html" (dict "menu" .Children "page" $page "site" $site) }}
+    </li>
+  {{ else }}
+    <li>
+      <a href="{{ .URL }}">
+        {{ .Name }}
+        {{ if $is }}[Is]{{ end }}
+        {{ if $has }}[Has]{{ end }}
+        {{ if .HasChildren }}[Children]{{ end }}
+      </a>
+    </li>
+  {{ end }}
+{{ end }}
+</ul>
+
+{{ `<!-- /hugo: layouts/partials/menu_recursive.html -->` | safeHTML }}

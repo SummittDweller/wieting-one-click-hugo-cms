@@ -1,0 +1,7 @@
+<!-- layouts/partials/menu_include.html from https://bwaycer.github.io/hugo_tutorial.hugo/extras/menus/#rendering-nested-menus -->
+
+{{ `<!-- hugo: layouts/partials/menu_include.html -->` | safeHTML }}
+
+{{ partial "menu_recursive.html" (dict "menu" .Site.Menus.main "page" . "site" .Site) }}
+
+{{ `<!-- /hugo: layouts/partials/menu_include.html -->` | safeHTML }}

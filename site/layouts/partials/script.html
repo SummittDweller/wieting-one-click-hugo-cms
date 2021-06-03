@@ -1,0 +1,30 @@
+{{ `<!-- hugo: layouts/partials/script.html -->` | safeHTML }}
+<script src="{{ "js/feather.min.js" | absURL }}"></script>
+<script>
+  feather.replace()
+</script>
+
+{{ if eq .Site.Params.includeBootstrapJs true }}
+<script src="{{ "js/jquery-3.3.1.slim.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
+{{ end }}
+
+<!-- for fullCalendar -->
+<script src='{{ .Site.BaseURL }}js/moment.min.js'></script>
+<script src='{{ .Site.BaseURL }}js/jquery.min.js'></script>
+<script src='{{ .Site.BaseURL }}js/jquery-ui.custom.min.js'></script>
+<script src='{{ .Site.BaseURL }}js/fullcalendar.min.js'></script>
+
+<script>
+    $(document).ready(function () {
+
+        console.log("Ready...");
+
+        $('#calendar').fullCalendar({
+            events: '{{ .Site.BaseURL }}event/index.json'
+        })
+
+    });
+</script>
+
+{{ `<!-- /hugo: layouts/partials/script.html -->` | safeHTML }}

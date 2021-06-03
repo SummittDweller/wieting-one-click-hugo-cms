@@ -1,0 +1,20 @@
+{{/* page-submenu.html */}}
+{{/* produces an ordered on-page menu of subordinate pages */}}
+{{/* see https://wieting.tamatoledo.com/history/ for an example in use */}}
+
+{{ $s := .Get 0 }}
+
+{{/*
+  <pre>
+    Context: {{ .Get 0 }}
+    As a variable: {{ $s }}
+  </pre>
+*/}}
+  
+<div class="page-submenu">
+  <ul>
+  {{ range where .Site.RegularPages.Reverse "Section" "eq" $s }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+  </ul>
+</div>

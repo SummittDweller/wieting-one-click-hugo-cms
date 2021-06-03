@@ -1,0 +1,24 @@
+{{ `<!-- hugo: layouts/partials/head.html -->` | safeHTML }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ hugo.Generator }}
+  <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
+  {{ $customStyle := resources.Get .Site.Params.customCss }}
+  <link rel="stylesheet" href="{{ $customStyle.RelPermalink | absURL }}">
+  <link rel='stylesheet' href='{{ .Site.BaseURL }}css/fullcalendar.min.css' />
+
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}
+    {{ $title = .Site.Title }}
+  {{ end }}
+  {{ partial "seo_schema" . }}
+  <title>{{ $title }}</title>
+  {{ partial "style.html" . }}
+  {{ partial "netlify-identity-head.html" . }}
+  <!-- script src="js/checkTweetDate.js" type="text/javascript"></script> -->
+
+</head>
+
+{{ `<!-- /hugo: layouts/partials/head.html -->` | safeHTML }}

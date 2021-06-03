@@ -1,0 +1,13 @@
+{{/* Derived from bootstrap-card.html */}}
+{{/* see https://themes.gohugo.io/vanilla-bootstrap-hugo-theme/#bootstrap-card for use info */}}
+{{/* Better yet, rewrite this shortcode to behave as documented in https://getbootstrap.com/docs/4.0/components/card/ */}}
+
+<div class="menu-card" id="{{ .Get "id" }}">
+  {{ if (.Get "image") }}
+  <img src="/images/{{ .Get "image" }}" class="card-img-top" alt="Missing Image!" />
+  {{ end }}
+  <div class="card-body">
+    <h2 class="card-title">{{ .Get "title" }}</h2>
+    <p class="card-text">{{ .Inner | markdownify }}</p>
+  </div>  
+</div>

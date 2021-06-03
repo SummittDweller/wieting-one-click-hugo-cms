@@ -1,0 +1,120 @@
+baseURL: "/"
+languageCode: en-us
+title: The Wieting Theatre
+theme: vanilla-bootstrap-hugo-theme
+socialshare: true
+# disableKinds: [ "section", "RSS" ]
+disableKinds: [ "RSS" ]
+
+googleAnalytics: UA-194668720-1
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+menu:
+  main:
+  - identifier: home
+    name: Home
+    pre: home
+    url: /
+    weight: 1
+  # - identifier: about
+  #   name: About
+  #   pre: smile
+  #   url: /about/
+  #   weight: 20
+  # - identifier: history
+  #   name: History
+  #   parent: about
+  #   pre: smile
+  #   url: /history/
+  #   weight: 21
+  # - identifier: admissions-concessions
+  #   name: Admissions & Concessions
+  #   pre: clipboard
+  #   url: /admissionconcessions/
+  #   weight: 10
+  # - name: Tags
+  #   pre: tag
+  #   url: /tags
+  #   weight: 13
+  # - name: RSS
+  #   pre: rss
+  #   url: /index.xml
+  #   weight: 25
+
+params:
+  includeBootstrapJs: true
+  showActiveNav: true
+  containerMaxWidth: 1800px
+  dateFormat: Jan 2, 2006
+  homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
+  footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
+  hideFooter: false
+  katex: true
+  customCss: "css/custom.css"
+  dropboxURL: ""
+
+  social:
+    share:
+      donate:
+        switch: true
+        url: "/donate"
+      facebook:
+        switch: true
+        url: "https://www.facebook.com/WietingTheatre/"
+      linkedin:
+        switch: false
+      twitter:
+        switch: true
+        url: "https://twitter.com/WietingTheatre"
+      whatsapp:
+        switch: false
+      email:
+        switch: true
+        url: "mailto:ToledoWieting@gmail.com"
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
+
+# Fullcalendar elements
+buildFuture: true
+publishDir: "public"
+
+outputs:
+  section: 
+    - HTML
+    - JSON

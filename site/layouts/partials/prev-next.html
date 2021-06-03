@@ -1,0 +1,13 @@
+<div class="prev-next">
+  <div class="prev-item">
+    {{ if .Prev }}
+      <a class="link-reverse" href="{{ .Prev.Permalink }}?ref=footer">« {{ .Prev.Title | truncate 50 "..." }}</a>
+    {{ end }}
+  </div>
+
+  <div class="next-item">
+    {{ if .Next }}
+      <a class="link-reverse" href="{{ .Next.Permalink }}?ref=footer">{{ .Next.Title | truncate 50 "..."}} »</a>
+    {{ end }}
+  </div>
+</div>  

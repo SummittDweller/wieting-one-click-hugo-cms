@@ -1,0 +1,430 @@
+backend:
+  name: git-gateway
+  branch: main
+  
+## To make local_backend mode work you must run 'npx netlify-cms-proxy-server &' 
+##   from the project root.
+local_backend: true
+
+# backend:  
+#   name: github
+#   repo: SummittDweller/wieting-theatre-netlify
+#   branch: main
+
+media_folder: site/static/img    
+public_folder: /img
+
+collections:
+  
+## Shows
+  
+  - name: show
+    label: Shows
+    folder: site/content/show    # site/content/show
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+      
+    fields:
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+
+      - label: Synopsis
+        name: body
+        widget: markdown 
+        required: false
+
+      - label: Production Notes
+        name: description
+        widget: string
+        hint: "Populates the 'description' field."
+        required: false
+
+      - label: Publish Date
+        name: publishDate
+        widget: date
+        reqiured: true
+        hint: "Pick the earliest date that this show should appear on the website."
+        format: "YYYY-MM-DD"
+
+      - label: Expiration Date
+        name: expiryDate
+        widget: date
+        reqiured: true
+        hint: "Pick the day AFTER this show's final performance!"
+        format: "YYYY-MM-DD"
+
+      - label: Date Range
+        name: dateRange
+        widget: string
+        required: false
+        hint: "Enter a brief date range as a string. Example: 'Jan 30 - Feb 2'."
+
+      - label: Short Title
+        name: shortTitle
+        required: true
+        widget: string
+        pattern: ['.{1,20}', "20 characters max."]
+
+      - label: One Sheet
+        name: oneSheet
+        widget: image
+        ui: true
+        default: _default_no-image-available.png
+        media_library:
+          config:
+            multiple: false
+
+      - label: Show Type
+        name: showType
+        widget: select
+        options: [ "Closed", "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event", "Private" ]
+        required: false
+
+      - label: Running Time 
+        name: runningTime
+        widget: number
+        hint: "Enter running time in minutes. Must be an integer."
+        default: 120
+
+      - label: "MPAA Rating"   
+        name: mpaaRating
+        widget: select
+        options: [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+        default: "Not Rated"
+
+      - label: Official URL
+        name: officialURL
+        widget: string
+        required: false
+
+      - label: IMDB URL 
+        name: imdbURL 
+        widget: string
+        required: false
+      
+      - label: Performances
+        name: performanceList
+        widget: object
+        
+        fields:
+      
+          - label: Performance 
+            name: performance 
+            widget: list
+
+            fields:
+              - { label: When, name: date, widget: datetime, picker_utc: false }
+              - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: false }
+              - { label: Peformance Note, name: note, required: false }
+
+      - label: "Studio Info"
+        name: studioInfo 
+        widget: object
+        collapsed: true
+        summary: "{{fields.studio}} - ${{fields.studioFee}} - {{fields.studioPercentage}}%"
+
+        fields:
+      
+          - label: Studio 
+            name: studio 
+            widget: string
+            default: "Not Specified"
+            required: false
+
+          - label: Studio Fee
+            name: studioFee
+            widget: number
+            default: 0
+            hint: "Enter fee in US dollars." 
+            required: false
+
+          - label: Studio Percentage
+            name : studioPercentage
+            widget: number
+            default: 0 
+            required: false
+                    
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
+
+## Performances
+
+  - name: performance
+    label: Performances
+    folder: site/content/performance    # site/content/performance
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{hour}}'
+    editor:
+      preview: true
+    
+    sort: "date:desc"
+    sortable_fields: [ 'date', 'showFormat' ]
+    
+    view_groups:
+      - label: 'Manager'
+        field: volunteers.manager
+      - label: 'Year-Month'
+        field: date
+        pattern: \d{4}-\d{2}
+      - label: 'Format'
+        field: showFormat
+
+    fields:
+
+      - label: Date and Time
+        name: date
+        widget: datetime
+        picker_utc: false 
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+
+      - label: Format
+        name: showFormat
+        widget: select
+        options: [ "2D", "3D", "Not Applicable" ]
+        required: false 
+
+      - label: "Volunteer Team"
+        name: volunteers
+        widget: object
+
+        fields:
+          
+          - label: Manager
+            name: manager
+            widget: string
+            required: true
+            default: TBD
+        
+          - label: Monitor
+            name: monitor
+            widget: string
+            required: true
+            default: TBD
+        
+          - label: M-Partner
+            name: m-partner
+            widget: string
+            required: true
+            default: TBD
+        
+          - label: Concessions
+            name: concessions
+            widget: string
+            required: true
+            default: TBD
+        
+          - label: C-Partner
+            name: c-partner
+            widget: string
+            required: true
+            default: TBD
+        
+          - label: Tickets
+            name: tickets
+            widget: string
+            required: true
+            default: TBD
+        
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
+
+## Main Pages
+
+  - name: pages
+    label: Main Pages
+    folder: site/content    
+    create: true
+    hint: For editing pages that appear in the site's top-level menu.
+
+    fields:
+      
+      - label: Title
+        name: title
+        widget: string
+        
+      - label: Body
+        name: body
+        widget: markdown
+        
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+        
+      - label: Author
+        name: author
+        widget: string
+        
+      - label: Date
+        name: date
+        widget: date 
+        
+      - label: SocialShare?
+        name: socialshare
+        widget: hidden
+        default: false            
+        
+      - label: Weight
+        name: weight
+        widget: number            
+        
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                default: " "
+                required: false
+                widget: hidden
+                hint: Leave this blank for TOP LEVEL menu pages.
+              - label: Weight
+                name: weight
+                widget: number
+                
+## About Pages
+
+  - name: about-pages
+    label: About Pages
+    folder: site/content/about  
+    create: true
+    hint: For editing pages that appear under the 'About' page in the menu.
+
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+      - label: Author
+        name: author
+        widget: string
+      - label: Date
+        name: date
+        widget: date 
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                required: true
+                widget: hidden
+                default: about
+                hint: Should be 'about' at this level.
+              - label: Weight
+                name: weight
+                widget: number
+
+## History Pages
+
+  - name: history-pages
+    label: History Pages
+    folder: site/content/history
+    create: true
+    hint: For editing pages that appear under the 'History' page in the menu.
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+      - label: Author
+        name: author
+        widget: string
+      - label: Date
+        name: date
+        widget: date 
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                required: true
+                widget: hidden
+                default: history
+                hint: Should be 'history' at this level.
+              - label: Weight
+                name: weight
+                widget: number
+
+
+    # files:
+    # 
+    #   - file: "site/content/contact/_index.md"
+    #     label: "Contact Page"
+    #     name: "contact"
+    #     fields:
+    #       - {label: Title, name: title, widget: string}
+    #       - {label: Logo, name: logo, widget: image}
+    #       - {label: Body, name: body, widget: markdown}
+    #       - label: Contact Entries
+    #         name: contact_entries
+    #         widget: list
+    #         fields:
+    #           - label: Heading
+    #             name: heading
+    #             widget: string
+    #           - label: Text
+    #             name: text
+    #             widget: text
+    # 
+    #   - file: "site/content/history/_index.md"
+    #     label: "History"
+    #     name: "history"
+    #     fields:
+    #       - {label: Title, name: title, widget: string}
+    #       - {label: Logo, name: logo, widget: image}
+    #       - {label: Body, name: body, widget: markdown}
+    #       - label: Contact Entries
+    #         name: contact_entries
+    #         widget: list
+    #         fields:
+    #           - label: Heading
+    #             name: heading
+    #             widget: string
+    #           - label: Text
+    #             name: text
+    #             widget: text

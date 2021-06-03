@@ -1,0 +1,46 @@
+{{ define "main" }}
+  {{ `<!-- hugo: main defined in layouts/index.html -->` | safeHTML }}
+
+  <div class="centered">
+    <div id="home-jumbotron" class="jumbotron text-center">
+      <h1>{{ .Site.Title }}</h1>
+      {{ if $.Page.Title }}
+        {{ partial "socialshare.html" $.Page }}
+      {{ end }}
+      <div class="scroll-left">
+        {{ .Site.Params.homeText | markdownify }}
+      </div>
+    </div>
+
+    {{ partial "recognition.html" }}
+
+    <div role="main" class="main-container container js-quickedit-main-content">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+          <div class="region region-header">
+            <section class="views-element-container block block-views block-views-blockupcoming-shows-block-2 clearfix" id="block-wieting-theme-views-block-upcoming-shows-block-2-2">
+
+              <div class="form-group">
+                <div class="view view-upcoming-shows view-id-upcoming_shows">
+
+                  <div class="view-header">
+                    <img src="images/TheWieting-Banner1000.png" style="width:100%">
+                  </div>
+                  
+                  <div class="view-content">
+                    <!-- Display our marquee, a grid of upcoming shows -->
+                    <div class="one-sheet-views-grid">
+                      {{ range where .Site.RegularPages.ByExpiryDate "Type" "show" }}
+                      	{{ partial "marquee-show.html" . }}
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+                {{ partial "marquee-foundation.html" }}
+              </section>
+          </div>
+        </div>
+    </div>
+
+    {{ `<!-- /hugo: main defined in layouts/index.html -->` | safeHTML }}
+{{ end }}

@@ -1,0 +1,60 @@
+<!-- Social Share Button HTML -->
+{{- if .Params "socialshare" }}
+  {{ $title := .Title }}
+  {{ $url := printf "%s" .Permalink }}
+  {{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+
+  <section class="social-share">
+    <ul class="share-icons">
+      <!-- Twitter -->
+      {{ if .Site.Params.social.share.twitter.switch }}
+      <li>
+        <a href="{{ .Site.Params.social.share.twitter.url }}" target="_blank" class="share-btn twitter">
+          {{ partial "svg/twitter1.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Twitter</p>
+          </a>
+      </li>
+      {{ end }}
+
+      <!-- Facebook -->
+      {{ if .Site.Params.social.share.facebook.switch}}
+      <li>
+        <a href="{{ .Site.Params.social.share.facebook.url }}" target="_blank" class="share-btn facebook">
+          {{ partial "svg/facebook1.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Facebook</p>
+          </a>
+      </li>
+      {{ end }}
+
+      <!-- LinkedIn -->
+      {{ if .Site.Params.social.share.linkedin.switch }}
+      <li>
+        <a href="{{ .Site.Params.social.share.linkedin.url }}" target="_blank" class="share-btn linkedin">
+          {{ partial "svg/linkedin.svg" (dict "class" "widget-social__link-icon") }}
+            <p>LinkedIn</p>
+          </a>
+      </li>
+      {{ end }}
+
+      <!-- WhatsApp -->
+      {{ if .Site.Params.social.share.whatsapp.switch }}
+      <li>
+        <a href="{{ .Site.Params.social.share.whatsapp.url }}" target="_blank" class="share-btn whatsapp">
+          {{ partial "svg/whatsapp.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Email</p>
+        </a>
+      </li>
+      {{ end }}
+
+      <!-- Email -->
+      {{ if .Site.Params.social.share.email.switch }}
+      <li>
+        <a href="{{ .Site.Params.social.share.email.url }}" target="_blank" class="share-btn email">
+          {{ partial "svg/mail.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Email</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+  {{ end }}
+{{- end }}

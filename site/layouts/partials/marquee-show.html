@@ -1,0 +1,37 @@
+  {{ `<!-- hugo: layouts/partials/marquee-show.html -->` | safeHTML }}
+  
+  <div class="views-row one-sheet-element">
+  <div class="views-field views-field-field-performance-times">
+    <div class="field-content">
+      <span class="views-field">
+        {{ .Params.dateRange }}
+      </span>
+    </div>
+  </div>
+
+  <div class="views-field views-field-field-show-rating">
+    <div class="field-content">
+      <span class="views-field">
+        {{ .Params.mpaaRating }}
+      </span>
+    </div>
+  </div>
+
+  <div class="views-field views-field-field-one-sheet">
+    <div class="field-content">
+      <span class="views-field">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.oneSheet }}" alt="" typeof="foaf:Image" class="img-responsive oneSheet"></a>
+      </span>
+    </div>
+  </div>
+
+  <div class="views-field views-field-title">
+    <span class="field-content">
+      <span class="views-field">
+        {{ .Params.shortTitle }}
+      </span>
+    </span>
+  </div>
+</div>
+
+{{ `<!-- /hugo: layouts/partials/marquee-show.html -->` | safeHTML }}

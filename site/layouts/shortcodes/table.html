@@ -1,0 +1,13 @@
+<style>
+  table thead tr th,
+  table tbody tr td {
+    line-height: 1.4em;
+  }
+</style>  
+
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $old := "<table>" }}
+{{ $new := printf "<table class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable | safeHTML }}

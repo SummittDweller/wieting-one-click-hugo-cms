@@ -1,0 +1,9 @@
+{{ `<!-- hugo: layouts/partials/footer.html -->` | safeHTML }}
+
+{{ if ne .Site.Params.hideFooter true }}
+<footer id="footer" class="mt-auto text-center text-muted">
+  {{ partial "netlify-identity-footer.html" . }}
+</footer>
+
+{{ end }}
+{{ `<!-- /hugo: layouts/partials/footer.html -->` | safeHTML }}

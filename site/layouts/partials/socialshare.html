@@ -1,0 +1,68 @@
+{{ `<!-- hugo: layouts/partials/socialshare.html -->` | safeHTML }}
+
+<!-- Social Share Button HTML -->
+<section class="social-share">
+  <ul class="share-icons">
+    <!-- Donations-->
+    {{ if .Site.Params.social.share.donate.switch }}
+      <li>
+        <span title="Donate!"><a href="{{ .Site.Params.social.share.donate.url }}" target="_blank" class="share-btn donate">
+          {{ partial "svg/gift.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Donate!</p>
+          </a></span>
+      </li>
+    {{ end }}
+
+    <!-- Twitter -->
+    {{ if .Site.Params.social.share.twitter.switch }}
+      <li>
+        <span title="Twitter"><a href="{{ .Site.Params.social.share.twitter.url }}" target="_blank" class="share-btn twitter">
+          {{ partial "svg/twitter1.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Twitter</p>
+          </a></span>
+      </li>
+    {{ end }}
+
+    <!-- Facebook -->
+    {{ if .Site.Params.social.share.facebook.switch}}
+      <li>
+        <span title="Facebook"><a href="{{ .Site.Params.social.share.facebook.url }}" target="_blank" class="share-btn facebook">
+          {{ partial "svg/facebook1.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Facebook</p>
+          </a></span>
+      </li>
+    {{ end }}
+
+    <!-- LinkedIn -->
+    {{ if .Site.Params.social.share.linkedin.switch }}
+    <li>
+      <a href="{{ .Site.Params.social.share.linkedin.url }}" target="_blank" class="share-btn linkedin">
+        {{ partial "svg/linkedin.svg" (dict "class" "widget-social__link-icon") }}
+          <p>LinkedIn</p>
+        </a>
+    </li>
+    {{ end }}
+
+    <!-- WhatsApp -->
+    {{ if .Site.Params.social.share.whatsapp.switch }}
+    <li>
+      <a href="{{ .Site.Params.social.share.whatsapp.url }}" target="_blank" class="share-btn whatsapp">
+        {{ partial "svg/whatsapp.svg" (dict "class" "widget-social__link-icon") }}
+        <p>Email</p>
+      </a>
+    </li>
+    {{ end }}
+
+    <!-- Email -->
+    {{ if .Site.Params.social.share.email.switch }}
+      <li>
+        <span title="Email"><a href="{{ .Site.Params.social.share.email.url }}" target="_blank" class="share-btn email">
+          {{ partial "svg/mail.svg" (dict "class" "widget-social__link-icon") }}
+          <p>Email</p>
+        </a></span>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ `<!-- /hugo: layouts/partials/socialshare.html -->` | safeHTML }}

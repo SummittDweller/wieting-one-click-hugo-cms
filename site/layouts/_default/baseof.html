@@ -1,0 +1,25 @@
+{{ `<!-- hugo: layouts/_default/baseof.html -->` | safeHTML }}
+
+<!doctype html>
+{{ $lang := .Site.Language.Lang | default "en" }}
+<html lang="{{ $lang }}" class="h-100">
+  {{ partial "head.html" . }}
+  <body class="d-flex flex-column h-100">
+    {{ partial "menu.html" . }}
+    <!-- {{ partial "nav.html" . }} -->
+    <div class="container">
+      {{ `<!-- hugo: main block in layouts/partials/baseof.html -->` | safeHTML }}
+      <main id="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ `<!-- hugo: main block in layouts/partials/baseof.html -->` | safeHTML }}
+    </div>
+    {{ partial "prev-next-section.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "script.html" . }}
+    {{ partial "katex.html" . }}
+    {{ partial "google-analytics-async.html" . }}
+  </body>
+</html>
+
+{{ `<!-- /hugo: layouts/_default/baseof.html -->` | safeHTML }}

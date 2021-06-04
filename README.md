@@ -67,6 +67,107 @@ The author of the post says "_Imagine that someone made awesome contributions to
 
 The author goes on to says that... "_This will execute a pull, using the “subtree” merge strategy. It is necessary so we tell git to inspect the patches and identify it should be applying in a subtree of our current project (parent)..._" and that "_This will generate a merge commit..._"  Later, the author also suggests using the `--squash` flag as part of the `git subtree pull...` command so my preferred syntax should probably be: `git subtree pull --prefix=site --squash wieting-theatre-DO main`. 
 
+So, I'm going to add an upcoming _event_ to the _main_ branch of my subtree project, [SummittDweller/wieting-theatre-DO](https://github.com/SummittDweller/wieting-theatre-DO), then I'll _pull_ that additon into this larger project at [SummittDweller/wieting-one-click-hugo-cms](https://github.com/SummittDweller/wieting-one-click-hugo-cms).  Wish me luck.
+
+### It Worked! Beautimous!
+
+I didn't `--squash` in this case, but the process worked beautifully.  The entire _local_ command sequence, which included a pre-emptive `add/commit/push` of changes to this `README.md` file, was:
+
+```
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main›
+╰─$ cd ../wieting-theatre-DO
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main›
+╰─$ git pull
+Already up to date.
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main›
+╰─$ atom .
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main›
+╰─$ git add .
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main*›
+╰─$ git commit -m "Added 6/21/2021 rental event"
+[main 5e49195] Added 6/21/2021 rental event
+ 1 file changed, 7 insertions(+)
+ create mode 100644 content/event/2021-06-21_rental.md
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main›
+╰─$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 522 bytes | 522.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/SummittDweller/wieting-theatre-DO.git
+   f1ce101..5e49195  main -> main
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-theatre-DO ‹main›
+╰─$ cd ..
+╭─mark@Marks-Mac-Mini ~/GitHub
+╰─$ cd wieting-one-click-hugo-cms
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main*›
+╰─$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main*›
+╰─$ git add .
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main*›
+╰─$ git commit -m "Updating README.md"
+[main 9f5ee23] Updating README.md
+ 1 file changed, 71 insertions(+)
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main›
+╰─$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.40 KiB | 3.40 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SummittDweller/wieting-one-click-hugo-cms.git
+   cd29fb5..9f5ee23  main -> main
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main›
+╰─$ git subtree pull --prefix=site wieting-theatre-DO main
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/SummittDweller/wieting-theatre-DO
+ * branch            main       -> FETCH_HEAD
+   f1ce101..5e49195  main       -> wieting-theatre-DO/main
+Merge made by the 'recursive' strategy.
+ site/content/event/2021-06-21_rental.md | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 site/content/event/2021-06-21_rental.md
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main›
+╰─$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+╭─mark@Marks-Mac-Mini ~/GitHub/wieting-one-click-hugo-cms ‹main›
+╰─$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.16 KiB | 1.16 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/SummittDweller/wieting-one-click-hugo-cms.git
+   9f5ee23..8dac218  main -> main
+```
+
+ 
+
 
  
 

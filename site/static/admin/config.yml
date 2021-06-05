@@ -240,6 +240,41 @@ collections:
         name: draft
         widget: boolean
         default: false
+        
+## Events
+
+  - name: event
+    label: Events
+    folder: site/content/event    # site/content/event
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}_{{title}}'
+    editor:
+      preview: true
+    
+    sort: "date:desc"
+    sortable_fields: [ 'date' ]
+    
+    view_groups:
+      - label: 'Year-Month'
+        field: date
+        pattern: \d{4}-\d{2}
+
+    fields:
+
+      - label: Date and Time
+        name: date
+        widget: datetime
+        picker_utc: false 
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
 
 ## Main Pages
 

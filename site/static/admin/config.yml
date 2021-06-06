@@ -265,6 +265,7 @@ collections:
         name: date
         widget: datetime
         picker_utc: false 
+        format: "DATETIME_LOCAL"
 
       - label: Title
         name: title

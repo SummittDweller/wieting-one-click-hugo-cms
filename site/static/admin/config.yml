@@ -8,7 +8,7 @@ local_backend: true
 
 # backend:  
 #   name: github
-#   repo: SummittDweller/wieting-theatre-netlify
+#   repo: SummittDweller/wieting-one-click-hugo-cms
 #   branch: main
 
 media_folder: site/static/img    
@@ -188,6 +188,11 @@ collections:
         widget: string
         required: true
 
+      - label: Body
+        name: body
+        widget: markdown 
+        required: false
+
       - label: Format
         name: showFormat
         widget: select
@@ -263,19 +268,53 @@ collections:
 
       - label: Date and Time
         name: date
-        widget: datetime
+        widget: datetime 
         picker_utc: false 
-        format: "DATETIME_LOCAL"
 
       - label: Title
         name: title
         widget: string
         required: true
         
+      - label: Body
+        name: body
+        widget: markdown 
+        required: false
+
       - label: Draft 
         name: draft
         widget: boolean
         default: false
+        required: false
+
+      - label: All Day 
+        name: allDay
+        widget: boolean
+        default: false
+        required: false
+
+      - label: Last Recurrance
+        name: lastRecur
+        widget: date
+        format: "YYYY-MM-DD"
+        default: "" 
+        hint: "If this is a recurring event, specify the date of the final recurrence." 
+        required: false
+      
+      - label: Recurrance Days of the Week
+        name: daysOfWeek
+        default: ""
+        widget: list
+        summary: '{{ fields.daysOfWeek }}'
+        field: { label: Day Number, name: daynum, widget: number}  
+        hint: "If this is a recurring event, specify the days of the week to repeat. 0=Sunday, 1=Monday, ...6=Saturday." 
+        required: false
+        
+      - label: Event Duration (Minutes)  
+        name: durationMinutes
+        default: ""
+        widget: number
+        hint: "Enter the event duraion in minutes."
 
 ## Main Pages
 

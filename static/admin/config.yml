@@ -240,6 +240,68 @@ collections:
         name: draft
         widget: boolean
         default: false
+        
+## Events
+
+  - name: event
+    label: Events
+    folder: site/content/event    # site/content/event
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}_{{title}}'
+    editor:
+      preview: true
+    
+    sort: "date:desc"
+    sortable_fields: [ 'date' ]
+    
+    view_groups:
+      - label: 'Year-Month'
+        field: date
+        pattern: \d{4}-\d{2}
+
+    fields:
+
+      - label: Date and Time
+        name: date
+        widget: datetime
+        picker_utc: false 
+        format: "DATETIME_LOCAL"
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
+
+      - label: All Day 
+        name: allDay
+        widget: boolean
+        default: false
+
+      - label: Last Recurrance
+        name: lastRecur
+        widget: date
+        format: "YYYY-MM-DD"
+        default: "" 
+        hint: "If this is a recurring event, specify the date of the final recurrence." 
+      
+      - label: Recurrance Days of the Week
+        name: daysOfWeek
+        default: ""
+        widget: list,
+        summary: '{{ fields.daysOfWeek }}'
+        field: { label: Day Number, name: daynum, widget: number}  
+        hint: "If this is a recurring event, specify the dayes of the week to repeat. 0=Sunday, 1=Monday, ...6=Saturday." 
+        
+      - label: Event Duration (Minutes)  
+        name: durationMinutes
+        default: ""
+        widget: number
+        hint: "Enter the event duraion in minutes."
 
 ## Main Pages
 

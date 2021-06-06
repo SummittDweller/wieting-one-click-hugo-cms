@@ -19,6 +19,7 @@ menu:
 Some of the resources listed here will require login credentials.
 
   - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
+  - [Wieting's Google Calendar](https://calendar.google.com/calendar/u/4?cid=dG9sZWRvd2lldGluZ0BnbWFpbC5jb20)
   - [Wieting Theatre Google Sheet - 2021](https://docs.google.com/spreadsheets/d/1zT7c8g8cyWi2FrkIN7AEXAuriLh_LQOocpuEa6MqYjk/edit#gid=2146429625)
   - [Wieting Theatre Data - Dumped April 2021 - Google Sheets](https://docs.google.com/spreadsheets/d/1DHU4wAsfKDPJL6hZYG_mz6Kk-yTkvLyoVnC7fL9Dbwo/edit#gid=968279106)
   - [Wieting Theatre Box Office Reports - Google Sheets](https://docs.google.com/spreadsheets/d/1aHpNvM7ygN1_cqSb7PRFWEZFk-0t1V_ONXW-O-1ci4o/edit#gid=0)

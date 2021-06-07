@@ -67,6 +67,8 @@ The author of the post says "_Imagine that someone made awesome contributions to
 
 The author goes on to says that... "_This will execute a pull, using the “subtree” merge strategy. It is necessary so we tell git to inspect the patches and identify it should be applying in a subtree of our current project (parent)..._" and that "_This will generate a merge commit..._"  Later, the author also suggests using the `--squash` flag as part of the `git subtree pull...` command so my preferred syntax should probably be: `git subtree pull --prefix=site --squash wieting-theatre-DO main`. 
 
+### Specifics of My Workflow
+
 So, I'm going to add an upcoming _event_ to the _main_ branch of my subtree project, [SummittDweller/wieting-theatre-DO](https://github.com/SummittDweller/wieting-theatre-DO), then I'll _pull_ that additon into this larger project at [SummittDweller/wieting-one-click-hugo-cms](https://github.com/SummittDweller/wieting-one-click-hugo-cms).  Wish me luck.
 
 ### It Worked! Beautimous!

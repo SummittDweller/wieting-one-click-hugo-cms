@@ -168,8 +168,20 @@ To https://github.com/SummittDweller/wieting-one-click-hugo-cms.git
    9f5ee23..8dac218  main -> main
 ```
 
- 
+<!--
 
+## Pushing Parent Changes Back to the Subtree
+
+After substantial reading/research it's apparent to me that the consensus approach to parent/subtree workflows is to work largely in the subtree repository, commit and push changes to that repo, then visit the parent project and, in my case, `git subtree pull -prefix=site wieting-theatre-DO main` to pull the updated subtree to the parent.  However, it's acceptable to work in the parent's subtree, essentially a "copy" of the subtree repo, commit and push all of the changes back to the parent, then seperately commit and push the subtree changes back to its remote.  I found this [StackOverflow post](https://stackoverflow.com/questions/42026669/how-to-push-to-git-subtree) and [answer](https://stackoverflow.com/a/42027940) that helps explain how this should work. 
+ 
+Based on that answer my workflow and commands should be:
+
+  - Working in my _parent_ local, `~/GitHub/wieting-one-click-hugo-cms ‹main›`, I made changes, staged them with `git add .`, committed them to the _parent_ remote with `git commit -m "commit message"`, and pushed them to the remote with `git push origin main`.
+  - Now I need to do the same for the changes made specifically in the _parent_ local portion of `site/` where my subtree project is.  To do that...
+
+Oops...that ain't workin!  
+-->
+     
 
  
 

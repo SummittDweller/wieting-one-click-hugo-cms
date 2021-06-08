@@ -4,13 +4,16 @@ import os
 import time
 import glob
 import shutil
-from datetime import datetime, timezone
+from datetime import datetime as dt, time as tm, timezone
 
+# set debug True to print intermediate results
+debug = True;
+
+# set the default timezone
 os.environ['TZ'] = 'America/Chicago';
 time.tzset( );
 
-skipped = 0;
-
+# convert a UTC datetime to a local (offset aware) datetime.
 def utc_to_local(utc_dt):
   return utc_dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
 
@@ -18,20 +21,64 @@ def utc_to_local(utc_dt):
 def file_not_found(filename, search_path):
   target = search_path + '**/' + filename;
   result = glob.glob(target, recursive=True);
-  # print('Filename is: %s.  Result is %s' % (filename, result));  
+  if debug:
+    print('Filename is: %s.  Result is %s' % (filename, result));  
   if len(result) > 0:
      return 0;
   return 1
 
-# get_final_date - Returns an event's final date or lastRecur
-def get_final_date(filepath):
+# get_event_time_string - Returns an event's time-of-day as a local time string, like "19:00:00-05:00" for 7pm. 
+def get_event_time_string(local_dt):
+  [d, t] = local_dt.split("T", 2);
+  return t;
+  
+# parse_event - Returns an event's full "event" data structure
+def parse_event(filepath):
+  if debug:
+    print('Event filepath is: %s' % filepath);
   event_file = open(filepath, 'r');
   event = frontmatter.load(filepath);
-  final = event['date'];
-  print('date is: %s' % final);
-  last = event['lastRecur'];
-  print('lastRecur is: %s' % last);
+  return event;
+
+# get_final_date - Returns an event's date or last recurrence as a local (offset aware) datetime.
+def get_final_date(event):
+  recurring = False;
+  keys = event.keys( );
   
+  if 'date' in keys:    
+    event_date = event_last = utc_to_local(event['date']);  
+    date_string = event_date.isoformat( );
+    if debug:
+      print('  event_date is: %s' % event_date);
+      print('    as a string: %s' % date_string);
+  else:
+    if debug:
+      print('ERROR: Every event must have a valid date!');
+    return False;
+    
+  if 'lastRecur' in keys:
+    recurring = True;
+    last_string = event['lastRecur'].strftime("%Y-%m-%dT") + get_event_time_string(date_string);
+    if debug:
+      print('  last_string is: %s' % last_string);
+    event_last = dt.strptime(last_string, "%Y-%m-%dT%H:%M:%S%z");
+    if debug:
+      print('  lastRecur as a datetime is: %s' % event_last);
+    if event_date > event_last:
+      event_last = event_date;
+    if debug:
+      print('  last recurrence is: %s' % event_last);
+
+  return event_last;    
+      
+# is_recurring - Returns an True or False to reflect an event's recurrence settings.
+def is_recurring(event):
+  keys = event.keys( );
+  if 'lastRecur' in keys:
+    return True;
+  else:
+    return False;
+
   # for track in gpx.tracks:
   #   for segment in track.segments:
   #     for point in segment.points:
@@ -40,8 +87,6 @@ def get_final_date(filepath):
   # # print('  Final local time is: {0}'.format(final_local));
   # final = final_local.strftime('%Y-%m-%d_%I.%M%p');
   # return final.replace('_0','_').replace('AM','am').replace('PM','pm');
-  
-  return;
 
 
 # # get_final_time - Returns a .gpx route's final <time> tag in Apple workout export format
@@ -71,7 +116,8 @@ def get_final_date(filepath):
 for f_name in os.listdir('./site/content/event/'):
   if f_name.endswith('.md'):
     md_path = './site/content/event/' + f_name;
-    get_final_date(md_path);
+    event = parse_event(md_path)
+    final = get_final_date(event);
 
 #     new_gpx = rename_gpx(gpx_path);
 #     new_path = './static/gpx/' + new_gpx;

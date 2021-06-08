@@ -1,36 +1,34 @@
 ---
-title: Jaws
-date: 2021-06-06T19:00:00-05:00
+title: Chicken Run
 publishDate: 2021-05-04
-expiryDate: 2021-06-07
-dateRange: June 6
-shortTitle: Jaws
-oneSheet: /img/jaws.png
+expiryDate: 2021-06-28
+dateRange: June 27
+shortTitle: Chicken Run
+oneSheet: /img/chicken-run-poster.jpg
 showType: Cinema
-runningTime: 124
-mpaaRating: PG
-officialURL: https://www.facebook.com/JawsMovie/
-imdbURL: https://www.imdb.com/title/tt0073195/
+runningTime: 84
+mpaaRating: G
+officialURL: ""
+imdbURL: https://www.imdb.com/title/tt0120630/
 performanceList:
   performance:
-    - date: 2021-06-06T19:00:00-05:00
+    - date: 2021-06-28T00:00:00.000Z
       format: 2D
 studioInfo:
   studio: Universal
-  studioFee: 0
+  studioFee: 100
   studioPercentage: 35
 draft: false
+date: 2021-06-06T19:00:00-05:00
 ---
-When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.
+When a visitor apparently flies into a chicken farm, the chickens see him as an opportunity to escape their evil owners.
 
-#### Director:
+Directed by [Peter Lord](https://www.imdb.com/name/nm0520485/?ref_=tt_ov_dr) and [Nick Park](https://www.imdb.com/name/nm0661910/?ref_=tt_ov_dr)
 
-[Steven Spielberg](https://www.imdb.com/name/nm0000229/?ref_=tt_ov_dr)
+[](https://www.imdb.com/title/tt0120630/fullcredits/writer?ref_=tt_ov_wr_sm)
 
-#### Writers:
+* [Stars](https://www.imdb.com/title/tt0120630/fullcredits/cast?ref_=tt_ov_st_sm)
 
-[Peter Benchley](https://www.imdb.com/name/nm0001940/?ref_=tt_ov_wr) (screenplay), [Carl Gottlieb](https://www.imdb.com/name/nm0331956/?ref_=tt_ov_wr) (screenplay)
-
-#### Stars:
-
-[Roy Scheider](https://www.imdb.com/name/nm0001702/?ref_=tt_ov_st_sm), [Robert Shaw](https://www.imdb.com/name/nm0001727/?ref_=tt_ov_st_sm), [Richard Dreyfuss](https://www.imdb.com/name/nm0000377/?ref_=tt_ov_st_sm)
+  * [Mel Gibson](https://www.imdb.com/name/nm0000154/?ref_=tt_ov_st)(voice)
+  * [Julia Sawalha](https://www.imdb.com/name/nm0768018/?ref_=tt_ov_st)(voice)
+  * [Phil Daniels](https://www.imdb.com/name/nm0200057/?ref_=tt_ov_st)(voice)

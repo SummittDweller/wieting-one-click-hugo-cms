@@ -118,7 +118,7 @@ for filename in files:
     if event_in_the_past(event):
       destination = past + filename;
       shutil.move(filepath, destination);
-      print("  event was in the past so", filename, "was moved to the 'event/past' directory" % filename);
+      print("  event was in the past so", filename, "was moved to the 'event/past' directory");
       break;   # skip this event
 
     # capture the "event_name" portion of the filename, after the '_', for re-use

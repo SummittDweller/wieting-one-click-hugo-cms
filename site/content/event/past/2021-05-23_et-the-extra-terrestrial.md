@@ -2,7 +2,7 @@
 title: E.T. the Extra-Terrestrial
 date: 2021-05-23T19:00:00-05:00
 publishDate: 2021-04-28
-expiryDate: 2021-06-24
+# expiryDate: 2021-06-24
 dateRange: May 23
 shortTitle: E.T. the Extra-Terrestrial
 oneSheet: /img/et.png

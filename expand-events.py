@@ -2,82 +2,247 @@
 import frontmatter 
 import os
 import time
+import pytz
 import glob
 import shutil
-from datetime import datetime as dt, time as tm, timezone
+from datetime import datetime as dt, time as tm, date, timezone, timedelta
+from recurrent.event_parser import RecurringEvent
+from dateutil import rrule
+from colorama import init, Fore, Style
 
-# set debug True to print intermediate results
+# initialize colorama
+init( );  
+
+# set debug True to print intermediate results, verbose for ALL the info
 debug = True;
+verbose = False;
 
 # set the default timezone
 os.environ['TZ'] = 'America/Chicago';
 time.tzset( );
+tz = pytz.timezone('America/Chicago');
 
-# convert a UTC datetime to a local (offset aware) datetime.
-def utc_to_local(utc_dt):
-  return utc_dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
+## ------------------------------------------ ##
+## ---------- Functions --------------------- ##
+## ------------------------------------------ ##
 
-# file_not_found - Determine if a corresponding site/content/event/**/?.md exists
-def file_not_found(filename, search_path):
-  target = search_path + '**/' + filename;
-  result = glob.glob(target, recursive=True);
-  if debug:
-    print('Filename is: %s.  Result is %s' % (filename, result));  
-  if len(result) > 0:
-     return 0;
-  return 1
+# parse a dates string using https://github.com/kvh/recurrent and return RRULES structure
+#   returns False if dates is not present or not valid
+#   returns a valid rrule string if there is recurrence
+#   returns a discrete datetime.date if there is no recurrence
+def parse_dates_string(event):
+  keys = event.keys( );
+  if 'dates' in keys:
+    r = RecurringEvent(now_date=date.today( ));    
+    rp = r.parse(event['dates']);
+    if debug: print("  dates string '%s' successfully parsed" % event['dates']);
+    if debug: print("  recurrence params are:", r.get_params( ));
+    if not r.is_recurring:
+      if debug: print("  attention: this is NOT a recurring date but a discrete datetime of:", rp);      
+    return rp;
+  else:
+    print(Fore.RED + "  ERROR: No 'dates' string found in this event!" + Style.RESET_ALL);
+    return False;
 
-# get_event_time_string - Returns an event's time-of-day as a local time string, like "19:00:00-05:00" for 7pm. 
-def get_event_time_string(local_dt):
-  [d, t] = local_dt.split("T", 2);
-  return t;
+# add_one_day_until - Adds a day (24 hours) to any recurring date UNTIL value to make it inclusive
+def add_one_day_until(recur_string):
+  if debug: print("  incoming recur_string is:", recur_string);      
+  if isinstance(recur_string, str):
+    [junk, until] = recur_string.split("UNTIL=");
+    if debug: print("  until is:", until);      
+    if until:
+      day_after = dt.strptime(until, "%Y%m%d").date( ) + timedelta(days=1);
+      recur_string = recur_string.replace(until, day_after.strftime("%Y%m%d"));
+  if debug: print("  outgoing recur_string is:", recur_string);      
+  return recur_string;
+
+# event_in_the_past - Checks if date or expiryDate has passed and returns True or False
+def event_in_the_past(event):
+  if isinstance(event, dt):
+    if not (date.today( ) < event.date( )):
+      if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
+      return True;
   
+  else:
+    keys = event.keys( );
+    if 'date' in keys:
+      if not (date.today( ) < event['date'].date( )):
+        if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
+        return True;
+    if 'expiryDate' in keys:
+      if not (date.today( ) < event['expiryDate']):
+        if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
+        return True;
+  
+  return False;
+
 # parse_event - Returns an event's full "event" data structure
 def parse_event(filepath):
-  if debug:
-    print('Event filepath is: %s' % filepath);
   event_file = open(filepath, 'r');
   event = frontmatter.load(filepath);
   return event;
 
-# get_final_date - Returns an event's date or last recurrence as a local (offset aware) datetime.
-def get_final_date(event):
-  recurring = False;
-  keys = event.keys( );
-  
-  if 'date' in keys:    
-    event_date = event_last = utc_to_local(event['date']);  
-    date_string = event_date.isoformat( );
-    if debug:
-      print('  event_date is: %s' % event_date);
-      print('    as a string: %s' % date_string);
-  else:
-    if debug:
-      print('ERROR: Every event must have a valid date!');
-    return False;
-    
-  if 'lastRecur' in keys:
-    recurring = True;
-    last_string = event['lastRecur'].strftime("%Y-%m-%dT") + get_event_time_string(date_string);
-    if debug:
-      print('  last_string is: %s' % last_string);
-    event_last = dt.strptime(last_string, "%Y-%m-%dT%H:%M:%S%z");
-    if debug:
-      print('  lastRecur as a datetime is: %s' % event_last);
-    if event_date > event_last:
-      event_last = event_date;
-    if debug:
-      print('  last recurrence is: %s' % event_last);
+## ------------------------------------------ ##
+## ----------------- Main ------------------- ##
+## ------------------------------------------ ##
 
-  return event_last;    
+data = './site/data/events/';
+past = './site/content/event/past/';
+active = './site/content/event/active/';
+
+# create backup files...change all of the 'event/active/' .md files to .bak 
+files = os.listdir(active);
+
+for filename in files:  
+  if filename.endswith('.md'):    
+    filepath = active + filename;
+    if debug: print(Fore.GREEN + 'Active event found in:', filepath + Style.RESET_ALL);
+    
+    # this is a .md file in 'event/active', keep it temporarily as a backup
+    destination = active + os.path.splitext(filename)[0] + '.bak';  
+    shutil.move(filepath, destination);
+    print('  active event', filepath, 'was moved to backup file', destination);
+
+# now process the site/data/event .md files
+files = os.listdir(data);
+
+for filename in files:  
+  if filename.endswith('.md'):    
+    filepath = data + filename;
+    if debug: print(Fore.GREEN + 'Event data path is:', filepath + Style.RESET_ALL);
+    
+    # this is a .md file in 'event/', process it
+    event = parse_event(filepath);
+
+    # any site/content/event/*.md files that have passed, move them to the 'past' subdir and skip
+    if event_in_the_past(event):
+      destination = past + filename;
+      shutil.move(filepath, destination);
+      print("  event was in the past so", filename, "was moved to the 'event/past' directory" % filename);
+      break;   # skip this event
+
+    # capture the "event_name" portion of the filename, after the '_', for re-use
+    [named_date, event_name] = filename.split('_');
+    if debug: print("  named_date and event_name are:", named_date, "and", event_name);
+
+    # parse the event['dates'] string and expand it
+    r = parse_dates_string(event);
+    if r:
+      if debug: print("  parse_dates_string returned an 'r' value of type", type(r));
+    else:
+      if debug: print("  parse_dates_string returned False so this event will be ignored");
+      break;
+
+    # single event (non-recurring)... add one .md file to the 'event/active' directory
+    if isinstance(r, dt):
+      if debug: print("  this is a discrete datetime event");
+      # add a local date: value to the front matter and to the filename
+      event['date'] = tz.localize(r);
+      active_filename = active + r.strftime("%Y-%m-%d_") + event_name; 
+      if debug and verbose: print(frontmatter.dumps(event));
+      with open(active_filename, "w") as f:
+        f.write(frontmatter.dumps(event));
+
+    # recurring event... iterate through 'r' adding multiple .md to the 'event/active' directory
+    if isinstance(r, str):
+      r = add_one_day_until(r);
+      if debug: print("  this recurring event string is:", r);
+      rr = rrule.rrulestr(r);
+      for index, recur in enumerate(rr): 
+        if debug: print("  expanded event datetime is: ", recur);
+        if index == 100:
+          if debug: print("WHOA! This recurring event has generated more than 100 discrete dates.  Are you sure about this?");
+          break;
+
+        # if this generated date is in the past, put the file there too, else it is active
+        if event_in_the_past(recur):
+          dir = past;
+        else:
+          dir = active;
+        event['date'] = tz.localize(recur);
+        active_filename = dir + recur.strftime("%Y-%m-%d.%H%M_") + event_name; 
+        if debug and verbose: print(frontmatter.dumps(event));
+        with open(active_filename, "w") as f:
+          f.write(frontmatter.dumps(event));
+
+      # ok, if we got this far with no errors, it's time to delete all the active/*.bak files
+      fileList = glob.glob(active + '*.bak');
+      for filePath in fileList:
+        try:
+          os.remove(filePath)
+        except:
+          print("Error while deleting file : ", filePath);
+
+
+
+      # for recur in rr.after(dt.now( )):
+      #   event['date'] = recur;
+      #   active_filename = active + recur.strftime("%Y-%m-%d_") + event_name; 
+      #   if debug: print(frontmatter.dumps(event));
+        # with open(active_filename, "w") as f:
+        #   f.write(frontmatter.dumps(event));
+
+    # >>> rr.after(datetime.datetime(2010, 1, 2))
+    # datetime.datetime(2010, 1, 5, 0, 0)
+    # >>> rr.after(datetime.datetime(2010, 1, 25))
+    # datetime.datetime(2010, 1, 26, 0, 0)
+
+# # convert a UTC datetime to a local (offset aware) datetime.
+# def utc_to_local(utc_dt):
+#   return utc_dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
+
+# # file_not_found - Determine if a corresponding site/content/event/**/?.md exists
+# def file_not_found(filename, search_path):
+#   target = search_path + '**/' + filename;
+#   result = glob.glob(target, recursive=True);
+#   if debug: print('Filename is: %s.  Result is %s' % (filename, result));  
+#   if len(result) > 0:
+#     return 0;
+#   return 1
+# 
+# # get_event_time_string - Returns an event's time-of-day as a local time string, like "19:00:00-05:00" for 7pm. 
+# def get_event_time_string(local_dt):
+#   [d, t] = local_dt.split("T", 2);
+#   return t;
+
+# # get_final_date - Returns an event's date or last recurrence as a local (offset aware) datetime.
+# def get_final_date(event):
+#   recurring = False;
+#   keys = event.keys( );
+# 
+#   if 'date' in keys:    
+#     event_date = event_last = utc_to_local(event['date']);  
+#     date_string = event_date.isoformat( );
+#     if debug:
+#       print('  event_date is: %s' % event_date);
+#       print('    as a string: %s' % date_string);
+#   else:
+#     if debug:
+#       print('ERROR: Every event must have a valid date!');
+#     return False;
+# 
+#   if 'lastRecur' in keys:
+#     recurring = True;
+#     last_string = event['lastRecur'].strftime("%Y-%m-%dT") + get_event_time_string(date_string);
+#     if debug:
+#       print('  last_string is: %s' % last_string);
+#     event_last = dt.strptime(last_string, "%Y-%m-%dT%H:%M:%S%z");
+#     if debug:
+#       print('  lastRecur as a datetime is: %s' % event_last);
+#     if event_date > event_last:
+#       event_last = event_date;
+#     if debug:
+#       print('  last recurrence is: %s' % event_last);
+# 
+#   return event_last;    
       
-# is_recurring - Returns an True or False to reflect an event's recurrence settings.
-def is_recurring(event):
-  keys = event.keys( );
-  if 'lastRecur' in keys:
-    return True;
-  else:
-    return False;
+# # is_recurring - Returns an True or False to reflect an event's recurrence settings.
+# def is_recurring(event):
+#   keys = event.keys( );
+#   if 'lastRecur' in keys:
+#     return True;
+#   else:
+#     return False;
 
   # for track in gpx.tracks:
   #   for segment in track.segments:
@@ -110,14 +275,9 @@ def is_recurring(event):
 #   # print('  New filename: {0}'.format(new_filename));
 #   return new_filename;
 
-## Main ##
 
-# First pass, move any site/content/event/**/*.md files that have passed--both date AND lastRecur are in the past--to the site/content/event/past directory.
-for f_name in os.listdir('./site/content/event/'):
-  if f_name.endswith('.md'):
-    md_path = './site/content/event/' + f_name;
-    event = parse_event(md_path)
-    final = get_final_date(event);
+
+    # final = get_final_date(event);
 
 #     new_gpx = rename_gpx(gpx_path);
 #     new_path = './static/gpx/' + new_gpx;

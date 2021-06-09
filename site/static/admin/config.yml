@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
   
-## To make local_backend mode work you must run 'npx netlify-cms-proxy-server &' 
-##   from the project root.
+## To make local_backend mode work you must run 'npx netlify-cms-proxy-server' 
+##   from the project root, preferably in a 2nd terminal window.
 local_backend: true
 
 # backend:  
@@ -22,16 +22,35 @@ collections:
     label: Shows
     folder: site/content/show    # site/content/show
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}_{{title}}'
     editor:
       preview: true
-      
+    
+    sort: "date:desc"
+    sortable_fields: [ 'date' ]
+    
+    view_groups:
+      - label: 'Year-Month'
+        field: date
+        pattern: \d{4}-\d{2}
+  
     fields:
 
       - label: Title
         name: title
         widget: string
         required: true
+        
+      - label: First Date and Time
+        name: date
+        widget: datetime 
+        picker_utc: false 
+
+      - label: Dates String
+        name: dates
+        widget: string 
+        required: true
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/dates' for guidance.
 
       - label: Synopsis
         name: body
@@ -51,14 +70,14 @@ collections:
         hint: "Pick the earliest date that this show should appear on the website."
         format: "YYYY-MM-DD"
 
-      - label: Expiration Date
-        name: expiryDate
-        widget: date
-        reqiured: true
-        hint: "Pick the day AFTER this show's final performance!"
-        format: "YYYY-MM-DD"
+      # - label: Expiration Date
+      #   name: expiryDate
+      #   widget: date
+      #   reqiured: true
+      #   hint: "Pick the day AFTER this show's final performance!"
+      #   format: "YYYY-MM-DD"
 
-      - label: Date Range
+      - label: Display Date Range
         name: dateRange
         widget: string
         required: false
@@ -250,7 +269,7 @@ collections:
 
   - name: event
     label: Events
-    folder: site/content/event    # site/content/event
+    folder: site/data/events    
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{title}}'
     editor:
@@ -266,55 +285,38 @@ collections:
 
     fields:
 
-      - label: Date and Time
-        name: date
-        widget: datetime 
-        picker_utc: false 
-
       - label: Title
         name: title
         widget: string
         required: true
         
+      - label: First Date and Time
+        name: date
+        widget: datetime 
+        picker_utc: false 
+
+      - label: Dates String
+        name: dates
+        widget: string 
+        required: true
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/dates' for guidance.
+
       - label: Body
         name: body
         widget: markdown 
         required: false
+
+      - label: Event Duration (Minutes)  
+        name: durationMinutes
+        default: ""
+        widget: number
+        hint: "Enter the event duraion in minutes."
 
       - label: Draft 
         name: draft
         widget: boolean
         default: false
         required: false
-
-      - label: All Day 
-        name: allDay
-        widget: boolean
-        default: false
-        required: false
-
-      - label: Last Recurrance
-        name: lastRecur
-        widget: date
-        format: "YYYY-MM-DD"
-        default: "" 
-        hint: "If this is a recurring event, specify the date of the final recurrence." 
-        required: false
-      
-      - label: Recurrance Days of the Week
-        name: daysOfWeek
-        default: ""
-        widget: list
-        summary: '{{ fields.daysOfWeek }}'
-        field: { label: Day Number, name: daynum, widget: number}  
-        hint: "If this is a recurring event, specify the days of the week to repeat. 0=Sunday, 1=Monday, ...6=Saturday." 
-        required: false
-        
-      - label: Event Duration (Minutes)  
-        name: durationMinutes
-        default: ""
-        widget: number
-        hint: "Enter the event duraion in minutes."
 
 ## Main Pages
 

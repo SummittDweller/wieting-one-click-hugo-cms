@@ -1,5 +1,6 @@
 ---
-expiryDate: 2021-04-10
+title: Closed Until Further Notice
+date: 2021-01-01T00:00:01-05:00
 dateRange: Until Further Notice
 runningTime: 120
 mpaaRating: Not Rated
@@ -13,7 +14,6 @@ studioInfo:
   ? studioPercentage
 draft: true
 showFormat: N/A
-title: Closed Until Further Notice
 description: The 'description' holds the production notes.
 publishDate: 2020/03/15
 shortTitle: Closed...Sorry

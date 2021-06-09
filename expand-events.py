@@ -26,9 +26,9 @@ tz = pytz.timezone('America/Chicago');
 ## ---------- Functions --------------------- ##
 ## ------------------------------------------ ##
 
-# parse a dates string using https://github.com/kvh/recurrent and return RRULES structure
-#   returns False if dates is not present or not valid
-#   returns a valid rrule string if there is recurrence
+# parse a 'dates' string using https://github.com/kvh/recurrent and return RRULES structure
+#   returns False if 'dates' is not present or not valid
+#   returns a valid RRULE string if there is recurrence
 #   returns a discrete datetime.date if there is no recurrence
 def parse_dates_string(event):
   keys = event.keys( );
@@ -114,12 +114,14 @@ for filename in files:
     # this is a .md file in 'event/', process it
     event = parse_event(filepath);
 
-    # any site/content/event/*.md files that have passed, move them to the 'past' subdir and skip
-    if event_in_the_past(event):
-      destination = past + filename;
-      shutil.move(filepath, destination);
-      print("  event was in the past so", filename, "was moved to the 'event/past' directory");
-      break;   # skip this event
+    ## Removing this behavior 9-Jun-2021. Only discrete, generated events should be in /past/. 
+    ## Files should be manually removed from data/event/ as they expire.
+    ## any site/data/event/*.md files that have passed, move them to the 'past' subdir and skip
+    # if event_in_the_past(event):
+    #   destination = past + filename;
+    #   shutil.move(filepath, destination);
+    #   print("  event was in the past so", filename, "was moved to the 'event/past' directory");
+    #   break;   # skip this event
 
     # capture the "event_name" portion of the filename, after the '_', for re-use
     [named_date, event_name] = filename.split('_');

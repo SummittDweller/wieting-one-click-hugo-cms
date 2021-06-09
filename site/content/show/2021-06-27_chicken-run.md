@@ -1,13 +1,16 @@
 ---
-title: Chicken Run
-publishDate: 2021-05-04
+mpaaRating: G
+draft: false
 expiryDate: 2021-06-28
+title: Chicken Run
+date: 2021-06-28T00:00:20.040Z
+dates: 7:00 pm on June 27 2021
+publishDate: 2021-05-04
 dateRange: June 27
 shortTitle: Chicken Run
 oneSheet: /img/chicken-run-poster.jpg
 showType: Cinema
 runningTime: 84
-mpaaRating: G
 officialURL: ""
 imdbURL: https://www.imdb.com/title/tt0120630/
 performanceList:
@@ -18,8 +21,6 @@ studioInfo:
   studio: Universal
   studioFee: 100
   studioPercentage: 35
-draft: false
-dates: 7:00 pm on June 27 2021
 ---
 When a visitor apparently flies into a chicken farm, the chickens see him as an opportunity to escape their evil owners.
 

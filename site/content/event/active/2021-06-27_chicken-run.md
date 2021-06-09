@@ -1,26 +1,28 @@
 ---
-title: Chicken Run
-publishDate: 2021-05-04
-expiryDate: 2021-06-28
+date: 2021-06-27 19:00:00-05:00
 dateRange: June 27
-shortTitle: Chicken Run
-oneSheet: /img/chicken-run-poster.jpg
-showType: Cinema
-runningTime: 84
-mpaaRating: G
-officialURL: ""
+dates: 7:00 pm on June 27 2021
+draft: false
+expiryDate: 2021-06-28
 imdbURL: https://www.imdb.com/title/tt0120630/
+mpaaRating: G
+officialURL: ''
+oneSheet: /img/chicken-run-poster.jpg
 performanceList:
   performance:
-    - date: 2021-06-28T00:00:00.000Z
-      format: 2D
+  - date: 2021-06-28 00:00:00+00:00
+    format: 2D
+publishDate: 2021-05-04
+runningTime: 84
+shortTitle: Chicken Run
+showType: Cinema
 studioInfo:
   studio: Universal
   studioFee: 100
   studioPercentage: 35
-draft: false
-dates: 7:00 pm on June 27 2021
+title: Chicken Run
 ---
+
 When a visitor apparently flies into a chicken farm, the chickens see him as an opportunity to escape their evil owners.
 
 Directed by [Peter Lord](https://www.imdb.com/name/nm0520485/?ref_=tt_ov_dr) and [Nick Park](https://www.imdb.com/name/nm0661910/?ref_=tt_ov_dr)

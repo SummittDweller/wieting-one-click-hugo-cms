@@ -1,5 +1,4 @@
 ---
-date: 2021-06-06T19:00:00-05:00
 title: Jaws
 dates: 7:00 pm on June 6 2021
 publishDate: 2021-05-04

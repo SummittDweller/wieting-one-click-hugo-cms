@@ -26,20 +26,33 @@ tz = pytz.timezone('America/Chicago');
 ## ---------- Functions --------------------- ##
 ## ------------------------------------------ ##
 
-# parse a 'dates' string using https://github.com/kvh/recurrent and return RRULES structure
+# parse a 'dates' string using https://github.com/kvh/recurrent and return False
+#   or a list of equivalent datatime values
 #   returns False if 'dates' is not present or not valid
-#   returns a valid RRULE string if there is recurrence
-#   returns a discrete datetime.date if there is no recurrence
 def parse_dates_string(event):
+  d = [ ];
   keys = event.keys( );
+
   if 'dates' in keys:
     r = RecurringEvent(now_date=date.today( ));    
     rp = r.parse(event['dates']);
     if debug: print("  dates string '%s' successfully parsed" % event['dates']);
     if debug: print("  recurrence params are:", r.get_params( ));
     if not r.is_recurring:
-      if debug: print("  attention: this is NOT a recurring date but a discrete datetime of:", rp);      
-    return rp;
+      if debug: print("  attention: NOT a recurring date but a discrete datetime of:", rp);      
+      d.append(rp);
+    else:
+      r = add_one_day_until(rp);
+      if debug: print("  this recurring event string is:", r);
+      rr = rrule.rrulestr(r);
+      for index, recur in enumerate(rr): 
+        if debug: print("  individual datetime is: ", recur);
+        if index == 100:
+          if debug: print("WHOA! This recurring dates has generated more than 100 discrete dates.  Are you sure about this?");
+          break;
+        d.append(recur);
+    if debug: print("  parse_dates_string returns datetime list:", d);
+    return d;
   else:
     print(Fore.RED + "  ERROR: No 'dates' string found in this event!" + Style.RESET_ALL);
     return False;
@@ -76,16 +89,17 @@ def event_in_the_past(event):
   
   return False;
 
-# parse_event - Returns an event's full "event" data structure
-def parse_event(filepath):
-  event_file = open(filepath, 'r');
-  event = frontmatter.load(filepath);
-  return event;
+# parse_frontmatter - Returns a .md file's full frontmatter content
+def parse_frontmatter(filepath):
+  md_file = open(filepath, 'r');
+  front = frontmatter.load(filepath);
+  return front;
 
 ## ------------------------------------------ ##
 ## ----------------- Main ------------------- ##
 ## ------------------------------------------ ##
 
+shows = './site/content/show/';
 data = './site/data/events/';
 past = './site/content/event/past/';
 active = './site/content/event/active/';
@@ -93,6 +107,7 @@ active = './site/content/event/active/';
 # create backup files...change all of the 'event/active/' .md files to .bak 
 files = os.listdir(active);
 
+# loop through the files in 'content/active'...
 for filename in files:  
   if filename.endswith('.md'):    
     filepath = active + filename;
@@ -103,77 +118,176 @@ for filename in files:
     shutil.move(filepath, destination);
     print('  active event', filepath, 'was moved to backup file', destination);
 
-# now process the site/data/event .md files
-files = os.listdir(data);
+### process the site/content/show .md files ###
+files = os.listdir(shows);
 
 for filename in files:  
   if filename.endswith('.md'):    
-    filepath = data + filename;
-    if debug: print(Fore.GREEN + 'Event data path is:', filepath + Style.RESET_ALL);
+    filepath = shows + filename;
+    if debug: print(Fore.GREEN + 'Show path is:', filepath + Style.RESET_ALL);
     
-    # this is a .md file in 'event/', process it
-    event = parse_event(filepath);
-
-    ## Removing this behavior 9-Jun-2021. Only discrete, generated events should be in /past/. 
-    ## Files should be manually removed from data/event/ as they expire.
-    ## any site/data/event/*.md files that have passed, move them to the 'past' subdir and skip
-    # if event_in_the_past(event):
-    #   destination = past + filename;
-    #   shutil.move(filepath, destination);
-    #   print("  event was in the past so", filename, "was moved to the 'event/past' directory");
-    #   break;   # skip this event
+    # this is a .md file in 'show/', process it
+    event = parse_frontmatter(filepath);
 
     # capture the "event_name" portion of the filename, after the '_', for re-use
     [named_date, event_name] = filename.split('_');
     if debug: print("  named_date and event_name are:", named_date, "and", event_name);
 
-    # parse the event['dates'] string and expand it
+    # parse the 'dates' string and expand it
     r = parse_dates_string(event);
-    if r:
-      if debug: print("  parse_dates_string returned an 'r' value of type", type(r));
-    else:
-      if debug: print("  parse_dates_string returned False so this event will be ignored");
-      break;
+    performances = [ ];
 
-    # single event (non-recurring)... add one .md file to the 'event/active' directory
-    if isinstance(r, dt):
-      if debug: print("  this is a discrete datetime event");
-      # add a local date: value to the front matter and to the filename
-      event['date'] = tz.localize(r);
-      active_filename = active + r.strftime("%Y-%m-%d_") + event_name; 
-      if debug and verbose: print(frontmatter.dumps(event));
-      with open(active_filename, "w") as f:
+    if r:
+      # iterate through 'r' adding individual .md files to 'event/active' directory
+      for d in r: 
+        if debug: print("  discrete/expanded datetime is: ", d);
+        # if this generated date is in the past, put the file there too, else it is active
+        if not event_in_the_past(d):
+          event['date'] = tz.localize(d);
+          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
+          if debug and verbose: print(frontmatter.dumps(event));
+          with open(active_filename, "w") as f:
+            f.write(frontmatter.dumps(event));
+          # add one performance to the frontmatter performanceList 
+          performances.append({'date': tz.localize(d), 'format': '2D'});
+
+      # at the end of the for loop...calculate an expiryDate the day after 'd'
+      day_after = d.date( ) + timedelta(days=1);
+      expiryDate = day_after;  # .strftime("%Y%m%d");
+      if debug: print("  expiryDate is: ", expiryDate);
+
+      # write the calculated expiryDate and performances back into the .md file 
+      event['expiryDate'] = expiryDate;
+      event['performanceList'] = {'performance': performances};
+      with open(filepath, "w") as f:
         f.write(frontmatter.dumps(event));
 
-    # recurring event... iterate through 'r' adding multiple .md to the 'event/active' directory
-    if isinstance(r, str):
-      r = add_one_day_until(r);
-      if debug: print("  this recurring event string is:", r);
-      rr = rrule.rrulestr(r);
-      for index, recur in enumerate(rr): 
-        if debug: print("  expanded event datetime is: ", recur);
-        if index == 100:
-          if debug: print("WHOA! This recurring event has generated more than 100 discrete dates.  Are you sure about this?");
-          break;
 
+# performanceList:
+#   performance:
+#     - date: 2021-07-03T00:00:40.164Z
+#     - date: 2021-07-04T00:00:01.328Z
+#     - date: 2021-07-05T00:00:20.838Z
+
+
+    else:
+      if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
+
+### process the data/events .md files ###
+files = os.listdir(data);
+
+for filename in files:  
+  if filename.endswith('.md'):    
+    filepath = data + filename;
+    if debug: print(Fore.GREEN + 'Event path is:', filepath + Style.RESET_ALL);
+    
+    # this is a .md file in 'data/events', process it
+    event = parse_frontmatter(filepath);
+
+    # capture the "event_name" portion of the filename, after the '_', for re-use
+    [named_date, event_name] = filename.split('_');
+    if debug: print("  named_date and event_name are:", named_date, "and", event_name);
+
+    # parse the 'dates' string and expand it
+    r = parse_dates_string(event);
+
+    if r:
+      # iterate through 'r' adding individual .md files to 'event/active' directory
+      for d in r: 
+        if debug: print("  discrete/expanded datetime is: ", d);
         # if this generated date is in the past, put the file there too, else it is active
-        if event_in_the_past(recur):
-          dir = past;
-        else:
-          dir = active;
-        event['date'] = tz.localize(recur);
-        active_filename = dir + recur.strftime("%Y-%m-%d.%H%M_") + event_name; 
-        if debug and verbose: print(frontmatter.dumps(event));
-        with open(active_filename, "w") as f:
-          f.write(frontmatter.dumps(event));
+        if not event_in_the_past(d):
+          event['date'] = tz.localize(d);
+          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
+          if debug and verbose: print(frontmatter.dumps(event));
+          with open(active_filename, "w") as f:
+            f.write(frontmatter.dumps(event));
+    
+    else:
+      if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
 
-      # ok, if we got this far with no errors, it's time to delete all the active/*.bak files
-      fileList = glob.glob(active + '*.bak');
-      for filePath in fileList:
-        try:
-          os.remove(filePath)
-        except:
-          print("Error while deleting file : ", filePath);
+
+# ok, if we got this far with no errors, it's time to delete all the active/*.bak files
+fileList = glob.glob(active + '*.bak');
+for filePath in fileList:
+  try:
+    os.remove(filePath)
+  except:
+    print(Fore.RED + "Error while deleting file: %s" + Style.RESET_ALL % filePath);
+
+
+
+# # now process the site/data/event .md files
+# files = os.listdir(data);
+# 
+# for filename in files:  
+#   if filename.endswith('.md'):    
+#     filepath = data + filename;
+#     if debug: print(Fore.GREEN + 'Event data path is:', filepath + Style.RESET_ALL);
+# 
+#     # this is a .md file in 'event/', process it
+#     event = parse_frontmatter(filepath);
+# 
+#     ## Removing this behavior 9-Jun-2021. Only discrete, generated events should be in /past/. 
+#     ## Files should be manually removed from data/event/ as they expire.
+#     ## any site/data/event/*.md files that have passed, move them to the 'past' subdir and skip
+#     # if event_in_the_past(event):
+#     #   destination = past + filename;
+#     #   shutil.move(filepath, destination);
+#     #   print("  event was in the past so", filename, "was moved to the 'event/past' directory");
+#     #   break;   # skip this event
+# 
+#     # capture the "event_name" portion of the filename, after the '_', for re-use
+#     [named_date, event_name] = filename.split('_');
+#     if debug: print("  named_date and event_name are:", named_date, "and", event_name);
+# 
+#     # parse the event['dates'] string and expand it
+#     r = parse_dates_string(event);
+#     if r:
+#       if debug: print("  parse_dates_string returned an 'r' value of type", type(r));
+#     else:
+#       if debug: print("  parse_dates_string returned False so this event will be ignored");
+#       break;
+# 
+#     # single event (non-recurring)... add one .md file to the 'event/active' directory
+#     if isinstance(r, dt):
+#       if debug: print("  this is a discrete datetime event");
+#       # add a local date: value to the front matter and to the filename
+#       event['date'] = tz.localize(r);
+#       active_filename = active + r.strftime("%Y-%m-%d_") + event_name; 
+#       if debug and verbose: print(frontmatter.dumps(event));
+#       with open(active_filename, "w") as f:
+#         f.write(frontmatter.dumps(event));
+# 
+#     # recurring event... iterate through 'r' adding multiple .md to the 'event/active' directory
+#     if isinstance(r, str):
+#       r = add_one_day_until(r);
+#       if debug: print("  this recurring event string is:", r);
+#       rr = rrule.rrulestr(r);
+#       for index, recur in enumerate(rr): 
+#         if debug: print("  expanded event datetime is: ", recur);
+#         if index == 100:
+#           if debug: print("WHOA! This recurring event has generated more than 100 discrete dates.  Are you sure about this?");
+#           break;
+# 
+#         # if this generated date is in the past, put the file there too, else it is active
+#         if event_in_the_past(recur):
+#           dir = past;
+#         else:
+#           dir = active;
+#         event['date'] = tz.localize(recur);
+#         active_filename = dir + recur.strftime("%Y-%m-%d.%H%M_") + event_name; 
+#         if debug and verbose: print(frontmatter.dumps(event));
+#         with open(active_filename, "w") as f:
+#           f.write(frontmatter.dumps(event));
+# 
+#       # ok, if we got this far with no errors, it's time to delete all the active/*.bak files
+#       fileList = glob.glob(active + '*.bak');
+#       for filePath in fileList:
+#         try:
+#           os.remove(filePath)
+#         except:
+#           print("Error while deleting file : ", filePath);
 
 
 

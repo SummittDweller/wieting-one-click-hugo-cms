@@ -78,21 +78,6 @@
 
         <div class="remaining_details">
           <div class="field field--name-field-performance-times field--type-datetime">
-            <ul class="show-times">
-              {{ range .Params.performanceList.performance }}
-                <li class="field--item">
-                  {{ $dtime := time .date }}
-                  {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}
-                  {{ if .format }} 
-                    <b> [{{ .format }}]</b>
-                  {{ end }}
-                  {{ if .note }}   
-                    <br/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ .note }}</i>
-                  {{ end }}  
-                </li>
-              {{ end }}    
-            </ul>  
-            <hr/>
             <div class="synopsis">{{ .Content }}</div>
             <hr/>
             {{ if .Params.mpaaRating }}

@@ -30,7 +30,7 @@
                   <div class="view-content">
                     <!-- Display our marquee, a grid of upcoming shows -->
                     <div class="one-sheet-views-grid">
-                      {{ range where .Site.RegularPages.ByExpiryDate "Type" "show" }}
+                      {{ range where .Site.RegularPages.ByDate "Type" "show" }}
                       	{{ partial "marquee-show.html" . }}
                       {{ end }}
                     </div>

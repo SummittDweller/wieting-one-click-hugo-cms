@@ -41,10 +41,12 @@ collections:
         widget: string
         required: true
         
-      - label: First Date and Time
+      - label: First Date
         name: date
-        widget: datetime 
+        widget: date
+        required: true
         picker_utc: false 
+        hint: This will become part of the show's filename AND determine where it sorts on the front page display.
 
       - label: Dates String
         name: dates
@@ -63,12 +65,12 @@ collections:
         hint: "Populates the 'description' field."
         required: false
 
-      - label: Publish Date
-        name: publishDate
-        widget: date
-        reqiured: true
-        hint: "Pick the earliest date that this show should appear on the website."
-        format: "YYYY-MM-DD"
+      # - label: Publish Date
+      #   name: publishDate
+      #   widget: date
+      #   reqiured: true
+      #   hint: "Pick the earliest date that this show should appear on the website."
+      #   format: "YYYY-MM-DD"
 
       # - label: Expiration Date
       #   name: expiryDate
@@ -81,7 +83,7 @@ collections:
         name: dateRange
         widget: string
         required: false
-        hint: "Enter a brief date range as a string. Example: 'Jan 30 - Feb 2'."
+        hint: "Enter a SHORT date range to display in the marquee. Example: 'Jan 30 - Feb 2'."
 
       - label: Short Title
         name: shortTitle
@@ -129,6 +131,7 @@ collections:
       - label: Performances
         name: performanceList
         widget: object
+        required: false
         
         fields:
       
@@ -137,7 +140,7 @@ collections:
             widget: list
 
             fields:
-              - { label: When, name: date, widget: datetime, picker_utc: false }
+              - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true }
               - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: false }
               - { label: Peformance Note, name: note, required: false }
 
@@ -290,10 +293,11 @@ collections:
         widget: string
         required: true
         
-      - label: First Date and Time
+      - label: First Date
         name: date
-        widget: datetime 
+        widget: date
         picker_utc: false 
+        required: true
 
       - label: Dates String
         name: dates

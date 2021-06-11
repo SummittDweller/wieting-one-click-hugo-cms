@@ -1,28 +1,28 @@
 ---
-date: 2021-05-02T19:00:00-05:00
-# expiryDate: 2021-06-03
+date: 2021-05-02 19:00:00-05:00
 dateRange: May 2
-runningTime: 116
+description: ''
+draft: false
+imdbURL: https://www.imdb.com/title/tt0088763/
 mpaaRating: PG
 officialURL: https://www.backtothefuture.com/
-imdbURL: https://www.imdb.com/title/tt0088763/
+oneSheet: /img/back-to-the-future.png
 performanceList:
   performance:
-    - date: 2021-05-03T00:00:13.339Z
-      format: 2D
+  - date: 2021-05-03 00:00:13.339000+00:00
+    format: 2D
+publishDate: 2021-04-22
+runningTime: 116
+shortTitle: Back to the Future
+showFormat: null
+showType: Cinema
 studioInfo:
   studio: Universal
   studioFee: 0
   studioPercentage: 0
-draft: false
-showFormat: null
 title: Back to the Future
-description: ""
-publishDate: 2021-04-22
-shortTitle: Back to the Future
-oneSheet: /img/back-to-the-future.png
-showType: Cinema
 ---
+
 Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.
 
 #### Director:

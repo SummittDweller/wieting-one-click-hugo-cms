@@ -107,7 +107,31 @@ active = './site/content/event/active/';
 # create backup files...change all of the 'event/active/' .md files to .bak 
 files = os.listdir(active);
 
-# loop through the files in 'content/active'...
+### sweep through event/active and move past events to event/past ###
+files = os.listdir(active);
+
+for filename in files:  
+  if filename.endswith('.md'):    
+    filepath = active + filename;
+    if debug: print(Fore.GREEN + 'Active event path is:', filepath + Style.RESET_ALL);
+    
+    # this is a .md file in 'event/active', check it if should be in the past
+    event = parse_frontmatter(filepath);
+
+    if event_in_the_past(event['date']):
+      if debug: print(Fore.YELLOW + 'Moving active event', filepath, 'to the past' + Style.RESET_ALL);
+
+      # remove expiryDate from the frontmatter and write the result to past 
+      if 'expiryDate' in event: del event['expiryDate'];
+      if debug and verbose: print(frontmatter.dumps(event));
+      with open(past + filename, "w") as f:
+        f.write(frontmatter.dumps(event));
+      try:
+        os.remove(filePath);
+      except:
+        print(Fore.RED + "Error while deleting file: " + filepath + Style.RESET_ALL);
+
+### loop through the files in 'content/event/active' to make backups ###
 for filename in files:  
   if filename.endswith('.md'):    
     filepath = active + filename;
@@ -141,7 +165,7 @@ for filename in files:
       # iterate through 'r' adding individual .md files to 'event/active' directory
       for d in r: 
         if debug: print("  discrete/expanded datetime is: ", d);
-        # if this generated date is in the past, put the file there too, else it is active
+        # if this generated date is not in the past, process it
         if not event_in_the_past(d):
           event['date'] = tz.localize(d);
           active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
@@ -150,7 +174,7 @@ for filename in files:
             f.write(frontmatter.dumps(event));
           # add one performance to the frontmatter performanceList 
           performances.append({'date': tz.localize(d), 'format': '2D'});
-
+        
       # at the end of the for loop...calculate an expiryDate the day after 'd'
       day_after = d.date( ) + timedelta(days=1);
       expiryDate = day_after;  # .strftime("%Y%m%d");
@@ -161,14 +185,6 @@ for filename in files:
       event['performanceList'] = {'performance': performances};
       with open(filepath, "w") as f:
         f.write(frontmatter.dumps(event));
-
-
-# performanceList:
-#   performance:
-#     - date: 2021-07-03T00:00:40.164Z
-#     - date: 2021-07-04T00:00:01.328Z
-#     - date: 2021-07-05T00:00:20.838Z
-
 
     else:
       if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
@@ -195,7 +211,7 @@ for filename in files:
       # iterate through 'r' adding individual .md files to 'event/active' directory
       for d in r: 
         if debug: print("  discrete/expanded datetime is: ", d);
-        # if this generated date is in the past, put the file there too, else it is active
+        # if this generated date is not in the past make it active
         if not event_in_the_past(d):
           event['date'] = tz.localize(d);
           active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
@@ -206,14 +222,16 @@ for filename in files:
     else:
       if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
 
-
 # ok, if we got this far with no errors, it's time to delete all the active/*.bak files
 fileList = glob.glob(active + '*.bak');
 for filePath in fileList:
   try:
-    os.remove(filePath)
+    os.remove(filePath);
   except:
-    print(Fore.RED + "Error while deleting file: %s" + Style.RESET_ALL % filePath);
+    print(Fore.RED + "Error while deleting file: " + filepath + Style.RESET_ALL);
+
+
+
 
 
 

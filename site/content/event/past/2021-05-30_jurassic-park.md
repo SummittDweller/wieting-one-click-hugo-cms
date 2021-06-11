@@ -3,7 +3,6 @@ title: Jurassic Park
 date: 2021-05-30T19:00:00-05:00
 dates: 7:00 pm on may 30 2021
 publishDate: 2021-04-28
-# expiryDate: 2021-06-31
 dateRange: May 30th
 shortTitle: Jurassic Park
 oneSheet: /img/jurasic-park.png

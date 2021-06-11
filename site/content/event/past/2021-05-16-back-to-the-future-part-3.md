@@ -1,6 +1,5 @@
 ---
 date: 2021-05-16T19:00:00-05:00
-# expiryDate: 2021-06-17
 dateRange: May 16
 runningTime: 118
 mpaaRating: PG

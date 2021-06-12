@@ -26,7 +26,12 @@
     border: 2px solid black;
     border-radius: 3px;
   }
-  
+
+  p.rated-r {
+    color: red;
+    font-weight: bold;
+  }
+
   @media screen and (max-width: 630px) {
   
     .show-left-block {
@@ -84,6 +89,9 @@
               <div class="show-rating">
                 <span class="field--label">MPAA Rating: </span>
                 <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
+                {{ if eq .Params.mpaaRating "R" }}
+                  <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
+                {{ end }} 
               </div>
             {{ end }}
             {{ if .Params.runningTime }}

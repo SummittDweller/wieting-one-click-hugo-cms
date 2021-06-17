@@ -4,7 +4,7 @@ draft: false
 author: Mackenzie McFate
 date: 2021-06-09T13:27:32-05:00
 socialshare: false
-weight: 91
+weight: 85
 ---
 
 Dates and times for Wieting events are specified using descriptive strings that are parsed using the [kvh/recurrent](https://github.com/kvh/recurrent#recurring-events) _Python3_ package.  Therefore, event `dates` should be specified using strings like those shown in the sections below.  First, some "special" rules.
@@ -13,7 +13,7 @@ Dates and times for Wieting events are specified using descriptive strings that 
 
 By default, datetime parsers like the one the Wieting uses are NOT "inclusive", so if you specify a string like `8:30 am daily from jul 26 2021 thru jul 29 2021` you will generate only 3 events on July 26, 27 and 28, not four! There will be no event on July 29 because the start of that day, coinciding with 12:00:01 AM (1 second after midnight), occurs before 8:30 AM on the same day.  While that makes sense, it's not how most people think terms like `thru`, `to`, and `until` should work.
 
-So, when you specify a discrete end date/time for a Wieting event, we automatically add 24 hours for determination of a limiting date.  That means the specification we used above, `8:30 am daily from jul 26 2021 thru jul 29 2021`, will generate the following discrete event date/times:
+So, when you specify a range of dates/times for a Wieting event **always lead with the word `from`** and we will automatically add 24 hours for determination of an end date.  That means the specification we used above, `8:30 am daily from jul 26 2021 thru jul 29 2021`, will generate the following discrete event date/times:
 
   - Monday, July 26, 2021 @ 8:30 AM,
   - Tuesday, July 27, 2021 @ 8:30 AM,

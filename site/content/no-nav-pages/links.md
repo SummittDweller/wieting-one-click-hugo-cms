@@ -4,9 +4,9 @@ draft: false
 author: Mackenzie McFate
 date: 2021-05-21T21:32:49-05:00
 socialshare: false
-weight: 90
 ---
-<!-- 
+<!--
+weight: 90
 menu:
   main:
     identifier: prices

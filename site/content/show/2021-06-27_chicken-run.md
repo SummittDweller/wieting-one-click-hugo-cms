@@ -9,9 +9,7 @@ mpaaRating: G
 officialURL: ''
 oneSheet: /img/chicken-run-poster.jpg
 performanceList:
-  performance:
-  - date: 2021-06-27 19:00:00-05:00
-    format: 2D
+  performance: []
 publishDate: 2021-05-04
 runningTime: 84
 shortTitle: Chicken Run

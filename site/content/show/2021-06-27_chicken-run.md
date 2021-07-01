@@ -13,7 +13,8 @@ runningTime: 1
 officialURL: https://www.artsmidwest.org/programs/resiliencefund/phase-2-recipients
 imdbURL: ""
 performanceList:
-  performance: []
+  performance:
+    - date: 2021-08-01T02:35:00.000Z
 studioInfo:
   studio: ""
   studioFee: ""

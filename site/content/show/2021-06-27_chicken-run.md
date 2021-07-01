@@ -1,7 +1,7 @@
 ---
 title: Arts Midwest
 mpaaRating: Not Rated
-draft: false
+draft: true
 expiryDate: 2021-06-28
 date: 2021-08-01T00:00:00.000Z
 dates: 7:00 pm on July 31 2021

@@ -14,5 +14,5 @@ studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 ---

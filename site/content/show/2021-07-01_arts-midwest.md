@@ -1,7 +1,7 @@
 ---
 title: Arts Midwest
 date: 2021-08-01T02:41:43.457Z
-dates: 07/31/2021
+dates: 7:00 p.m. July 31, 2021
 shortTitle: Arts Midwest
 oneSheet: /img/arts-midwest-copy.jpg
 runningTime: 120

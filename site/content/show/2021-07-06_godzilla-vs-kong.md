@@ -1,7 +1,7 @@
 ---
 title: Godzilla VS Kong
 mpaaRating: PG-13
-draft: true
+draft: false
 expiryDate: 2021-07-12
 date: 2021-07-06T17:12:12.781Z
 dates: 7:00 pm every other day from July 9 2021 thru July 11 2021

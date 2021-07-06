@@ -1,28 +1,28 @@
 ---
-date: 2021-07-11 19:00:00-05:00
-dateRange: July 9 and 11
-dates: 7:00 pm every other day from July 9 2021 thru July 11 2021
+title: A Quiet Place Part II
+mpaaRating: PG-13
 draft: false
 expiryDate: 2021-07-12
-imdbURL: https://www.imdb.com/title/tt8332922/
-mpaaRating: PG-13
-officialURL: https://www.aquietplacemovie.com/home/
+date: 2021-07-19T00:00:00.000Z
+dates: 7:00 pm every other day from July 16 2021 thru July 18 2021
+dateRange: July 16 and 18
+shortTitle: Quiet Place II
 oneSheet: /img/quiet-place-2.png
+showType: Cinema
+runningTime: 97
+officialURL: https://www.aquietplacemovie.com/home/
+imdbURL: https://www.imdb.com/title/tt8332922/
 performanceList:
   performance:
-  - date: 2021-07-09 19:00:00-05:00
-    format: 2D
-  - date: 2021-07-11 19:00:00-05:00
-    format: 2D
-publishDate: 2021-06-04
-runningTime: 97
-shortTitle: Quiet Place II
-showType: Cinema
+    - date: 2021-07-17T00:00:00.000Z
+      format: 2D
+    - date: 2021-07-19T00:00:00.000Z
+      format: 2D
 studioInfo:
   studio: Paramount
   studioFee: 100
   studioPercentage: 35
-title: A Quiet Place Part II
+publishDate: 2021-06-04
 ---
 
 Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize the creatures that hunt by sound are not the only threats lurking beyond the sand path.

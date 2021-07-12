@@ -71,4 +71,4 @@ Just what the heading implies.  Links can be found on a OneTab at https://www.on
 
 ## Add a "Network" page to document systems and connections
 
-Just what the heading implies.  This page is available at https://wieting.tamatoledo.com/network. It includes a .png export of our latest networks diagram (still in progress).
+Just what the heading implies.  This page is available at https://wieting.tamatoledo.com/management/network. It includes a .png export of our latest networks diagram (still in progress).

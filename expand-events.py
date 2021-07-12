@@ -152,10 +152,21 @@ for filename in files:
     
     # this is a .md file in 'show/', process it
     event = parse_frontmatter(filepath);
+    keys = event.keys( );
 
     # capture the "event_name" portion of the filename, after the '_', for re-use
     [named_date, event_name] = filename.split('_');
     if debug: print("  named_date and event_name are:", named_date, "and", event_name);
+
+    # make the date portion of the filename match the event's 'date' field date
+    if 'date' in keys:
+      fdate = event['date'];
+      correct_path = shows + fdate.strftime("%Y-%m-%d_") + event_name; 
+      if (filepath != correct_path):
+        if debug: print(Fore.YELLOW + "  filepath and correct_path are:", filepath, "and", correct_path + Style.RESET_ALL);
+        os.rename(filepath, correct_path);
+        if debug: print(Fore.GREEN + "    File has been renamed to ", correct_path + Style.RESET_ALL);
+        filepath = correct_path;
 
     # parse the 'dates' string and expand it
     r = parse_dates_string(event);
@@ -199,11 +210,21 @@ for filename in files:
     
     # this is a .md file in 'data/events', process it
     event = parse_frontmatter(filepath);
-
+    keys = event.keys( );
+  
     # capture the "event_name" portion of the filename, after the '_', for re-use
     [named_date, event_name] = filename.split('_');
-    if debug: print("  named_date and event_name are:", named_date, "and", event_name);
+    if debug: print(Fore.GREEN + "  named_date and event_name are:", named_date, "and", event_name + Style.RESET_ALL);
 
+    # make the date portion of the filename match the event's 'date' field date
+    if 'date' in keys:
+      fdate = event['date'];
+      correct_path = data + fdate.strftime("%Y-%m-%d_") + event_name; 
+      if (filepath != correct_path):
+        if debug: print(Fore.YELLOW + "  filepath and correct_path are:", filepath, "and", correct_path + Style.RESET_ALL);
+        os.rename(filepath, correct_path);
+        if debug: print(Fore.GREEN + "    File has been renamed to ", correct_path + Style.RESET_ALL);
+    
     # parse the 'dates' string and expand it
     r = parse_dates_string(event);
 

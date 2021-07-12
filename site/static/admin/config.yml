@@ -52,7 +52,7 @@ collections:
         name: dates
         widget: string 
         required: true
-        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/dates' for guidance.
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.
 
       - label: Synopsis
         name: body
@@ -303,7 +303,7 @@ collections:
         name: dates
         widget: string 
         required: true
-        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/dates' for guidance.
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.
 
       - label: Body
         name: body

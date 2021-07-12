@@ -28,6 +28,7 @@ These are strings that have already been successfully used in the past.
 
   - 6:30 pm on june 9 2021
   - 7:00 pm on jun 13 2021
+  - 7:00 pm every other day from July 16 2021 thru July 18 2021
   - 1pm daily from June 14 2021 thru June 16 2021
   - 6:30 pm monthly every 3rd wednesday from may 1 2021 to december 31 2021
   - 8:30 am daily from jul 26 2021 thru jul 29 2021

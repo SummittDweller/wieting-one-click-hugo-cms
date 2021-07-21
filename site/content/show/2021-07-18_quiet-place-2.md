@@ -9,11 +9,7 @@ mpaaRating: PG-13
 officialURL: https://www.aquietplacemovie.com/home/
 oneSheet: /img/quiet-place-2.png
 performanceList:
-  performance:
-  - date: 2021-07-16 19:00:00-05:00
-    format: 2D
-  - date: 2021-07-18 19:00:00-05:00
-    format: 2D
+  performance: []
 publishDate: 2021-06-04
 runningTime: 97
 shortTitle: Quiet Place II

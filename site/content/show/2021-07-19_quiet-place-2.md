@@ -1,5 +1,5 @@
 ---
-date: 2021-07-18 19:00:00-05:00
+date: 2021-07-19 00:00:00
 dateRange: July 16 and 18
 dates: 7:00 pm every other day from July 16 2021 thru July 18 2021
 draft: false

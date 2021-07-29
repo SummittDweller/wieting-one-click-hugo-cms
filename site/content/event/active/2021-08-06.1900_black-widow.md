@@ -15,7 +15,7 @@ performanceList:
   - date: 2021-08-08 19:00:00-05:00
     format: 2D
 publishDate: 2021-07-04
-runningTime: 214
+runningTime: 134
 shortTitle: Black Widow
 showType: Cinema
 studioInfo:

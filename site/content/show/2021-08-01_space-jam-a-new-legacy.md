@@ -9,11 +9,7 @@ mpaaRating: PG
 officialURL: https://www.warnerbros.com/movies/space-jam-new-legacy
 oneSheet: /img/space_jam_new_legacy_lebron_dunk_2000x3000.png
 performanceList:
-  performance:
-  - date: 2021-07-30 19:00:00-05:00
-    format: 2D
-  - date: 2021-08-01 19:00:00-05:00
-    format: 2D
+  performance: []
 publishDate: 2021-06-04
 runningTime: 115
 shortTitle: 'Space Jam: A New Legacy'

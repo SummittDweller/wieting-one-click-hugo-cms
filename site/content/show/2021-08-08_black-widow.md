@@ -10,8 +10,6 @@ officialURL: https://www.marvel.com/movies/black-widow
 oneSheet: /img/black-widow.png
 performanceList:
   performance:
-  - date: 2021-08-06 19:00:00-05:00
-    format: 2D
   - date: 2021-08-08 19:00:00-05:00
     format: 2D
 publishDate: 2021-07-04

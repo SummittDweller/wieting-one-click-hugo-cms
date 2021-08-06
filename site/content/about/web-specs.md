@@ -24,6 +24,10 @@ Web site promotion of your event should include the following:
 
 Two sample "poster" images are provided below as examples.
 
+{{< figure src="/img/_no-movie.png" title="Sample one-sheet / poster image" >}}
+
+{{< figure src="/img/_keep_curbside-popcorn-sales.png" title="Sample one-sheet / poster image" >}}
+
 #### On-Screen Materials
 
 On-screen pre-show promotion of your event should include a "trailer" or video loop with background audio in .mov or .mp4 format. Typical trailer loops are generally 10, 20 or 30-seconds in length, or longer (particularly for feature films). You may find that PowerPoint or Keynote can be effectively used to create videos of this kind. Whatever the case, be sure to include the highest resolution images that you can find. Born-digital images will work best. Consider that any text or images you include may appear 16 feet tall, or more, on screen. If possible please provide us with both the finished video AND the source material in case we need to re-format.

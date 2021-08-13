@@ -82,7 +82,7 @@ collections:
       - label: Display Date Range
         name: dateRange
         widget: string
-        required: false
+        required: true
         hint: "Enter a SHORT date range to display in the marquee. Example: 'Jan 30 - Feb 2'."
 
       - label: Short Title

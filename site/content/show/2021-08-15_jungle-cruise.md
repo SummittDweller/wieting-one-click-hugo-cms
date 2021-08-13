@@ -10,8 +10,6 @@ officialURL: https://www.disneyplus.com/movies/jungle-cruise/73QMeTY6Drayjungle-
 oneSheet: /img/jungle-cruise.png
 performanceList:
   performance:
-  - date: 2021-08-13 19:00:00-05:00
-    format: 2D
   - date: 2021-08-15 19:00:00-05:00
     format: 2D
 publishDate: 2021-07-24

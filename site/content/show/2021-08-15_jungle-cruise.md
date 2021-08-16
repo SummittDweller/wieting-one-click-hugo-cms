@@ -9,9 +9,7 @@ mpaaRating: PG-13
 officialURL: https://www.disneyplus.com/movies/jungle-cruise/73QMeTY6Drayjungle-
 oneSheet: /img/jungle-cruise.png
 performanceList:
-  performance:
-  - date: 2021-08-15 19:00:00-05:00
-    format: 2D
+  performance: []
 publishDate: 2021-07-24
 runningTime: 127
 shortTitle: Jungle Cruise

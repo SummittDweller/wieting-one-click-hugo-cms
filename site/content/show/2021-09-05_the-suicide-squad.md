@@ -1,6 +1,6 @@
 ---
 title: The Suicide Squad
-date: 2021-08-19T17:30:25.197Z
+date: 2021-09-05 19:00:00-05:00
 dates: 7:00 pm every other day from Sept 3 2021 thru Sept 5 2021
 dateRange: Sept 3 and Sept 5
 shortTitle: The Suicide Squad

@@ -41,12 +41,13 @@ collections:
         widget: string
         required: true
         
-      - label: First Date
+      - label: Closing Date
         name: date
         widget: date
         required: true
         picker_utc: false 
-        hint: This will become part of the show's filename AND determine where it sorts on the front page display.
+        format: 'YYYY-MM-DD'
+        hint: Specify the date the show CLOSES. This will become part of the show's filename AND determine where it sorts on the front page display.
 
       - label: Dates String
         name: dates

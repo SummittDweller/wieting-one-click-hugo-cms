@@ -1,6 +1,6 @@
 ---
 date: 2021-09-05 19:00:00-05:00
-dateRange: Sept 3 and Sept 5
+dateRange: Sept 3 and 5
 dates: 7:00 pm every other day from Sep 3 2021 thru September 5 2021
 draft: false
 expiryDate: 2021-09-06

@@ -9,11 +9,7 @@ mpaaRating: PG
 officialURL: https://www.dreamworks.com/movies/the-boss-baby-2
 oneSheet: /img/the_poster_for_the_boss_baby-_family_business-_with_new_date.jpg
 performanceList:
-  performance:
-  - date: 2021-08-27 19:00:00-05:00
-    format: 2D
-  - date: 2021-08-29 19:00:00-05:00
-    format: 2D
+  performance: []
 runningTime: 107
 shortTitle: Boss Baby 2
 studioInfo:

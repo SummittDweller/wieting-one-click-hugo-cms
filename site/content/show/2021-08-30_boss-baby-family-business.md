@@ -1,5 +1,5 @@
 ---
-date: 2021-08-29 19:00:00-05:00
+date: 2021-08-30 00:00:00
 dateRange: Aug 27 and 29
 dates: 7:00 pm every other day from Aug 27 2021 thru Aug 29 2021
 draft: false

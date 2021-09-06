@@ -8,11 +8,7 @@ imdbURL: https://www.imdb.com/title/tt6334354/
 mpaaRating: R
 oneSheet: /img/suicide-squad.jpg
 performanceList:
-  performance:
-  - date: 2021-09-04 00:00:00
-    format: 2D
-  - date: 2021-09-06 00:00:00
-    format: 2D
+  performance: []
 runningTime: 132
 shortTitle: The Suicide Squad
 showType: Cinema

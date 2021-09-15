@@ -7,7 +7,7 @@ expiryDate: 2021-11-07
 imdbURL: ''
 mpaaRating: Not Rated
 officialURL: ''
-oneSheet: /img/_default_no-image-available.png
+oneSheet: /img/IntoTheWoodsPosterFinal.png
 performanceList:
   performance:
   - date: 2021-11-04 19:00:00-05:00
@@ -26,4 +26,6 @@ studioInfo:
 title: Into the Woods - STC High School Musical
 ---
 
-STC High School musical production of "Into the Woods".  Ticket details coming soon.
+STC High School musical production of "**Into the Woods**" by Stephen Sondheim and James Lapine.  Admission is $10 per adult, $5 per student.  Tickets will be available at the door or in advance from the STC High School Office beginning October 21st.
+
+This show is licensed with permission from _Music Theatre International_ (MTI).

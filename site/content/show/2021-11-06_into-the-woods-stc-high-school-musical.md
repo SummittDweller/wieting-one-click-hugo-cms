@@ -26,6 +26,8 @@ studioInfo:
 title: Into the Woods - STC High School Musical
 ---
 
-STC High School musical production of "**Into the Woods**" by Stephen Sondheim and James Lapine.  Admission is $10 per adult, $5 per student.  Tickets will be available at the door or in advance from the STC High School Office beginning October 21st.
+STC High School musical production of "**Into the Woods**" by Stephen Sondheim and James Lapine.  
+
+Admission is $10 per adult, $5 per student.  Tickets will be available at the door or in advance from the STC High School Office beginning October 21st.
 
 This show is licensed with permission from _Music Theatre International_ (MTI).

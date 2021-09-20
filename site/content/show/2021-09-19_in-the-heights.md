@@ -9,11 +9,7 @@ mpaaRating: PG
 officialURL: https://www.intheheights-movie.com/
 oneSheet: /img/in_the_heights_teaser_poster.jpg
 performanceList:
-  performance:
-  - date: 2021-09-17 19:00:00-05:00
-    format: 2D
-  - date: 2021-09-19 19:00:00-05:00
-    format: 2D
+  performance: []
 runningTime: 143
 shortTitle: In The Heights
 showType: Cinema

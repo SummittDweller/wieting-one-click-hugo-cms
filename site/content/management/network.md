@@ -53,7 +53,7 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | A | Wieting-Booth iMac | Projection Booth - Projection Desk |
 | B | Samsung Blu-Ray Player | Projection Booth - Projection Desk |
 | C | GDC SX-2000AR Cinema Server | Projection Booth - Projector Pedastal |
-| D | Dolby CP750 Audio Processor | Projection Booth - Audio Rack |
+| D | QSC DPM 100 Audio Processor | Projection Booth - Audio Rack |
 | E | Eero Wireless Mesh Gateway | Light Board Desk w/ 2 Satelite Units in the Annex |
 | F | Simplex Grinnell Fire Alarm | Stage North |
 | G | Netgear 16-Port Gigabit Switch | Projection Booth - Top of Audio Rack |

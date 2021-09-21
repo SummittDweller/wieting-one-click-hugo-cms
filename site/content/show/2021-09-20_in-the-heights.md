@@ -1,5 +1,5 @@
 ---
-date: 2021-09-19 19:00:00-05:00
+date: 2021-09-20 00:00:00
 dateRange: Sep 17 and 19
 dates: 7:00 pm every other day from Sep 17 2021 thru Sep 19 2021
 draft: false

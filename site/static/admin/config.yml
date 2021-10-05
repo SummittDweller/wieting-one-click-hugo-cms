@@ -22,7 +22,8 @@ collections:
     label: Shows
     folder: site/content/show    # site/content/show
     create: true
-    slug: '{{year}}-{{month}}-{{day}}_{{title}}'
+    # slug: '{{year}}-{{month}}-{{day}}_{{title}}'
+    slug: '{{fields.date}}_{{title}}'
     editor:
       preview: true
     

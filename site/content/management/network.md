@@ -2,7 +2,7 @@
 title: Network
 draft: false
 author: Mackenzie McFate
-date: 2021-05-22T06:40:53-05:00
+date: 2021-10-17T12:18:44-05:00
 socialshare: false
 weight: 80
 ---
@@ -24,11 +24,10 @@ The Wieting's systems are identified as follows:
 | System Name | Description | Addressing | Physical Locations |
 | --- | --- | ---- | --- |
 | THEATRE | This is the SSID of the Wieting's internet connection and house network. | 10.0.0.0 / 24 | Provides service to OPERATIONS and WEITING-WIFI/GUEST only. |
-| OPERATIONS | Cinema system network for systems control. | 10.11.128.0 / 24 | Ethernet only in the Projection Booth |
+| OPERATIONS | Cinema system network for systems control. | 10.11.128.0 / 24 | Ethernet only in the Projection Booth.  IP addresses must be manually assigned. |
 | WEITING-WIFI | Wireless only via our EERO devices. | 192.168.4.x / 24 | Wireless in the auditorium and south addition. |
 | WEITING-GUEST | Guest wireless only via our EERO devices. | 192.168.4.x / 24 | Wireless in the auditorium and south addition. |
-| Others | All other names indicate connection types of limited length like `USB`, `OPTICAL-AUDIO`, `HDMI`, `SERIAL`, etc. | Not applicable | Wherever the connected devices are. |
-| \*MEDIA | Cinema system gigabit network for transfer of media/content. | 10.0.0.0 / 23 | Ethernet only in the Projection Booth |
+| Others | All other names indicate connection types of limited length like `USB`, `HDMI`, `SERIAL`, etc. | Not applicable | Wherever the connected devices are. |
 {{< /table >}}            
 
 <!-- Notes from Andrew Peevler...

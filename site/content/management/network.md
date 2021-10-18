@@ -2,7 +2,7 @@
 title: Network
 draft: false
 author: Mackenzie McFate
-date: 2021-10-17T12:18:44-05:00
+date: 2021-10-17T20:35:01-05:00
 socialshare: false
 weight: 80
 ---
@@ -51,21 +51,21 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | --- | --- | --- |
 | A | Wieting-Booth iMac | Projection Booth - Projection Desk |
 | B | Samsung Blu-Ray Player | Projection Booth - Projection Desk |
-| C | GDC SX-2000AR Cinema Server | Projection Booth - Projector Pedastal |
+| C | GDC Enterprise Storage Plus 4 TB Content Store | Projection Booth - Projector Pedastal |
 | D | QSC DPM 100 Audio Processor | Projection Booth - Audio Rack |
 | E | Eero Wireless Mesh Gateway | Light Board Desk w/ 2 Satelite Units in the Annex |
 | F | Simplex Grinnell Fire Alarm | Stage North |
 | G | Netgear 16-Port Gigabit Switch | Projection Booth - Top of Audio Rack |
-| H | 4-Port HDMI Switch w/ Optical Audio Input | Projection Booth - Projection Desk |
-| J | JNIOR A-310 Programmable Logic Controller | Projection Booth - Rear of Cinema Pedestal |
-| K | 2-Port Ethernet Punch Box | **To Be Removed** |
-| L | Ubuntu-Trailers Linux Desktop | **To Be Removed** |
+| H | 4-Port HDMI Input Switch | Projection Booth - Projection Desk |
+| I | GDC SR-1000 Standalone IMB (Integrated Media Block) | Projection Booth - Projection Desk |
+| J | 2-Port HDMI Output Switch | Projection Booth - Rear of Cinema Pedestal |
+| K | Open USB Drive Boot | Projection Booth - Cinema Pedastal |
 | M | Thompson DCM476 Cable Modem from Mediacom | Projection Booth - Top of Audio Rack |
 | O | Wieting-BoxOffice Windows Desktop Computer | Box Office - North Desk |
 | P | Christie CP2210 Cinema Projector | Projection Booth - Cinema Pedestal |
 | R | NetGear 4-Port + Wireless Router | Projection Booth - Top of Audio Rack |
 | S | NetGear ProSafe 8-Port Gigabit Switch | Projection Booth - Rear of Cinema Pedestal |
-| W | Three Individual Ethernet Terminations | Stage - North (2) and South (1) Wings |
+| W | Two Individual Ethernet Terminations | Stage - North and South Wings |
 | X | Booth-Windows - Windows 10 Desktop | Projection Booth - Projection Desk |
 {{< /table >}}            
 

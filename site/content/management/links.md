@@ -28,7 +28,7 @@ Some of the resources listed here will require login credentials.
   - [Deluxe One - Sign In](https://login.bydeluxe.com/)
   - [Wieting Theatre Lighting Info - Google Docs](https://docs.google.com/document/d/1x5MBq82-BwqoVCwlm0UYcMhl2K7jn6Oz81SUxUrpIVg/edit)
   - [Google Calendar - Calendar settings for Toledo Wieting](https://calendar.google.com/calendar/u/4/r/settings/calendar/dG9sZWRvd2lldGluZ0BnbWFpbC5jb20)
-  - [SummittDweller/wieting-theatre-DO](https://github.com/SummittDweller/wieting-theatre-DO)
-  - [SummittDweller/wieting-theatre-netlify](https://github.com/SummittDweller/wieting-theatre-netlify)
+  - [SummittDweller/wieting-one-click-hugo-cms](https://github.com/SummittDweller/wieting-one-click-hugo-cms)
   - [Analytics](https://analytics.google.com/analytics/web/?authuser=4#/report-home/a194668720w269095608p241191842)
+  - [Fesliyan Studios Royalty-Free Music](https://www.fesliyanstudios.com/)
   

@@ -10,8 +10,6 @@ officialURL: https://www.facebook.com/dearevanhansenmovie
 oneSheet: /img/dearevanposter.png
 performanceList:
   performance:
-  - date: 2021-10-22 19:00:00-05:00
-    format: 2D
   - date: 2021-10-24 19:00:00-05:00
     format: 2D
 runningTime: 137

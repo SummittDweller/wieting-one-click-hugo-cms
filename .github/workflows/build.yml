@@ -21,7 +21,7 @@ jobs:
       uses: BSFishy/pip-action@v1
       with:
         packages: |
-         frontmatter
+         python-frontmatter
          recurrent
          pytz
          python-dateutil

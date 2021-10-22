@@ -1,5 +1,9 @@
 # Lifted from 
 # https://github.community/t/can-github-actions-directly-edit-files-in-a-repository/17884/2
+# and https://github.community/t/possible-to-commit-files-after-workflow-runs/17824/2
+
+name: expand-events
+on: [push]
 
 jobs:
   build:

@@ -1,0 +1,24 @@
+# Lifted from 
+# https://github.community/t/can-github-actions-directly-edit-files-in-a-repository/17884/2
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: python ./.github/workflows/expand-events.py
+    - name: switching from HTTPS to SSH
+      run: git remote set-url origin ${{ secrets.ssh }}
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "Auto expand events"
+    - name: fetch from main
+      run: git fetch origin main
+    - name: push code to main
+      run: git push origin HEAD:main

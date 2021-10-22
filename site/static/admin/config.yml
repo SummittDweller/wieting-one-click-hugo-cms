@@ -22,7 +22,6 @@ collections:
     label: Shows
     folder: site/content/show    # site/content/show
     create: true
-    # slug: '{{year}}-{{month}}-{{day}}_{{title}}'
     slug: '{{fields.date}}_{{title}}'
     editor:
       preview: true
@@ -276,7 +275,7 @@ collections:
     label: Events
     folder: site/data/events    
     create: true
-    slug: '{{year}}-{{month}}-{{day}}_{{title}}'
+    slug: '{{fields.date}}_{{title}}'
     editor:
       preview: true
     
@@ -294,12 +293,15 @@ collections:
         name: title
         widget: string
         required: true
+        hint: Consider appending the event date to the end of the title like this example: 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles.
         
       - label: First Date
         name: date
         widget: date
         picker_utc: false 
         required: true
+        format: 'YYYY-MM-DD'
+        hint: Specify the FIRST date of this event. This will become part of the events's filename AND determine where it sorts/appears in our events list.
 
       - label: Dates String
         name: dates

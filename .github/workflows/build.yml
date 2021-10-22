@@ -56,4 +56,5 @@ jobs:
         ## Include all .md files generated in the site/content/event/* directories
         file-path: site/content/event/*/*.md
         commit-msg: Update resources
+        allow-removing: true
         github-token: ${{ secrets.GITHUB_TOKEN }}

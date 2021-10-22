@@ -293,7 +293,7 @@ collections:
         name: title
         widget: string
         required: true
-        hint: Consider appending the event date to the end of the title like this example: 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles.
+        hint: Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles.
         
       - label: First Date
         name: date

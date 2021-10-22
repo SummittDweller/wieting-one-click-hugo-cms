@@ -23,6 +23,9 @@ jobs:
         packages: |
          frontmatter
          recurrent
+         pytz
+         dateutil
+         colorama
     - name: Run my Python script
       run: python ./.github/workflows/expand-events.py
     - name: switching from HTTPS to SSH

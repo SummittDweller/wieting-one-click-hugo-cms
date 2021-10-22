@@ -24,7 +24,7 @@ jobs:
          frontmatter
          recurrent
          pytz
-         dateutil
+         python-dateutil
          colorama
     - name: Run my Python script
       run: python ./.github/workflows/expand-events.py

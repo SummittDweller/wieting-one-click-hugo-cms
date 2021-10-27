@@ -9,9 +9,7 @@ mpaaRating: PG-13
 officialURL: https://www.facebook.com/dearevanhansenmovie
 oneSheet: /img/dearevanposter.png
 performanceList:
-  performance:
-  - date: 2021-10-24 19:00:00-05:00
-    format: 2D
+  performance: []
 runningTime: 137
 shortTitle: Dear Evan Hansen
 showType: Cinema

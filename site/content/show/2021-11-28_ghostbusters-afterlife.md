@@ -1,23 +1,34 @@
 ---
-title: "Ghostbusters: Afterlife"
-date: 2021-11-28
-dates: 7:00 pm every other day from Nov 26 2021 thru Nov 28 2021
-dateRange: Nov 26 and 28
-shortTitle: "Ghostbusters: Afterlife"
-oneSheet: /img/il_1140xn.2976262000_jd3k.jpg
-showType: Cinema
-runningTime: 120
+date: 2022-07-21 19:00:00-05:00
+dateRange: Nov 19, 21, 25!, 26 and 28
+dates: every Thursday Friday Sunday at 7:00 pm starting Nov 19 2021 ending Nov 28 2021
+draft: false
+expiryDate: 2021-11-29
+imdbURL: https://www.imdb.com/title/tt4513678/?ref_=tt_mv_close
 mpaaRating: PG-13
 officialURL: https://www.facebook.com/Ghostbusters/
-imdbURL: https://www.imdb.com/title/tt4513678/?ref_=tt_mv_close
-performanceList:
-  performance:
-    - date: 2021-11-27T01:00:05.410Z
-    - date: 2021-11-29T01:00:27.707Z
+oneSheet: /img/il_1140xn.2976262000_jd3k.jpg
+runningTime: 120
+shortTitle: 'Ghostbusters: Afterlife'
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: 'Ghostbusters: Afterlife'
+performanceList:
+  performance:
+  - date: 2021-11-19 19:00:00-06:00
+    format: 2D
+  - date: 2021-11-21 19:00:00-06:00
+    format: 2D
+  - date: 2021-11-25 19:00:00-06:00
+    format: 2D
+    note: SPECIAL Thanskgiving show!
+  - date: 2021-11-26 19:00:00-06:00
+    format: 2D
+  - date: 2021-11-28 19:00:00-06:00
+    format: 2D
 ---
+
 When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and a secret legacy.

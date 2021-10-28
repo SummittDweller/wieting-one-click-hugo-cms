@@ -1,5 +1,5 @@
 ---
-date: 2021-10-24 19:00:00-05:00
+date: 2021-10-25 00:00:00
 dateRange: Oct 22 and 24
 dates: 7:00 pm every other day from Oct 22 2021 thru Oct 24 2021
 draft: false

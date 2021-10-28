@@ -1,7 +1,7 @@
 ---
 mpaaRating: PG
 draft: false
-expiryDate: 2021-10-25
+expiryDate: 2021-12-20
 title: Clifford the Big Red Dog
 date: 2021-12-19
 dates: every other day at 7:00 pm beginning Dec 17 2021 ending Dec 19 2021

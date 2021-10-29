@@ -1,8 +1,7 @@
 ---
 date: 2021-11-28 19:00:00-06:00
-dateRange: Nov 19, 21, 25!, 26 and 28
-dates: every Thursday Friday Sunday at 7:00 pm starting Nov 19 2021 ending Nov 28
-  2021
+dateRange: Nov 19-21, 25!, and 26-28
+dates: every Thursday Friday Saturday Sunday at 7:00 pm starting Nov 19 2021 ending Nov 28 2021
 draft: false
 expiryDate: 2021-11-29
 imdbURL: https://www.imdb.com/title/tt4513678/?ref_=tt_mv_close
@@ -13,11 +12,16 @@ performanceList:
   performance:
   - date: 2021-11-19 19:00:00-06:00
     format: 2D
+  - date: 2021-11-20 19:00:00-06:00
+    format: 2D
   - date: 2021-11-21 19:00:00-06:00
     format: 2D
   - date: 2021-11-25 19:00:00-06:00
     format: 2D
+    note: A special showing on Thanksgiving!
   - date: 2021-11-26 19:00:00-06:00
+    format: 2D
+  - date: 2021-11-27 19:00:00-06:00
     format: 2D
   - date: 2021-11-28 19:00:00-06:00
     format: 2D

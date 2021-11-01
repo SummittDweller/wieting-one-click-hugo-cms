@@ -9,11 +9,7 @@ mpaaRating: PG
 officialURL: https://www.mgm.com/movies/the-addams-family-2
 oneSheet: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1F6lMDDoZjESJZFalH0I8t_gQPnbem8-jGYxYLJFHj-DfgQwq
 performanceList:
-  performance:
-  - date: 2021-10-29 19:00:00-05:00
-    format: 2D
-  - date: 2021-10-31 19:00:00-05:00
-    format: 2D
+  performance: []
 runningTime: 93
 shortTitle: Addams Family 2
 showType: Cinema

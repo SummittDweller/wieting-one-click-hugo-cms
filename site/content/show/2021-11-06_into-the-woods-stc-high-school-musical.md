@@ -9,13 +9,7 @@ mpaaRating: Not Rated
 officialURL: ''
 oneSheet: /img/IntoTheWoodsPosterFinal.png
 performanceList:
-  performance:
-  - date: 2021-11-04 19:00:00-05:00
-    format: 2D
-  - date: 2021-11-05 19:00:00-05:00
-    format: 2D
-  - date: 2021-11-06 19:00:00-05:00
-    format: 2D
+  performance: []
 runningTime: 150
 shortTitle: Into the Woods
 showType: Live Performance

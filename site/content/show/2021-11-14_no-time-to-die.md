@@ -9,11 +9,7 @@ mpaaRating: PG-13
 officialURL: https://www.mgm.com/movies/no-time-to-die
 oneSheet: /img/mv5bywq2nzq1njktmznkns00mgy1ltgwmmmtytllyti5yznmmme0xkeyxkfqcgdeqxvymjm4ntm5ndy-._v1_.jpg
 performanceList:
-  performance:
-  - date: 2021-11-12 19:00:00-06:00
-    format: 2D
-  - date: 2021-11-14 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 163
 shortTitle: No Time To Die
 showType: Cinema

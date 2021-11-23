@@ -1,5 +1,5 @@
 ---
-date: 2021-11-20 19:00:00-06:00
+date: 2021-11-28 19:00:00-06:00
 dateRange: Nov 19-21, 25!, and 26-28
 dates: every Thursday Friday Saturday Sunday at 7:00 pm starting Nov 19 2021 ending
   Nov 28 2021
@@ -11,12 +11,6 @@ officialURL: https://www.facebook.com/Ghostbusters/
 oneSheet: /img/il_1140xn.2976262000_jd3k.jpg
 performanceList:
   performance:
-  - date: 2021-11-19 19:00:00-06:00
-    format: 2D
-  - date: 2021-11-20 19:00:00-06:00
-    format: 2D
-  - date: 2021-11-21 19:00:00-06:00
-    format: 2D
   - date: 2021-11-25 19:00:00-06:00
     format: 2D
   - date: 2021-11-26 19:00:00-06:00

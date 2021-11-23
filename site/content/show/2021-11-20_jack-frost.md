@@ -8,9 +8,7 @@ imdbURL: https://www.imdb.com/title/tt0141109/
 mpaaRating: PG
 oneSheet: /img/jack-frost-matinee-copy.jpg
 performanceList:
-  performance:
-  - date: 2021-11-20 14:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 101
 shortTitle: Jack Frost
 showType: Cinema

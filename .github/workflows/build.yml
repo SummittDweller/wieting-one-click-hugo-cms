@@ -1,0 +1,60 @@
+## Lifted from 
+## https://github.community/t/can-github-actions-directly-edit-files-in-a-repository/17884/2,
+## https://github.community/t/possible-to-commit-files-after-workflow-runs/17824/2, and
+## https://github.com/marketplace/actions/update-files-on-github
+
+name: expand-events
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Python3
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: x64
+    - name: Install Python packages
+      uses: BSFishy/pip-action@v1
+      with:
+        packages: |
+         python-frontmatter
+         recurrent
+         pytz
+         python-dateutil
+         colorama
+    - name: Run my Python script
+      run: python ./.github/workflows/expand-events.py
+    ##
+    ## The following section from 
+    ## https://github.community/t/can-github-actions-directly-edit-files-in-a-repository/17884/2 
+    ## replaced by block immediately below it.
+    ##
+    # - name: switching from HTTPS to SSH
+    #   run: git remote set-url origin ${{ secrets.ssh }}
+    # - name: check for changes
+    #   run: git status
+    # - name: stage changed files
+    #   run: git add .
+    # - name: commit changed files
+    #   run: git commit -m "Auto expand events"
+    # - name: fetch from main
+    #   run: git fetch origin main
+    # - name: push code to main
+    #   run: git push origin HEAD:main
+    ##
+    ## The following from https://github.com/marketplace/actions/update-files-on-github
+    ## replaces section above.
+    ##
+    - name: Update resources
+      uses: test-room-7/action-update-file@v1
+      with:
+        ## Include all .md files generated in the site/content/event/* directories
+        file-path: site/content/event/*/*.md
+        commit-msg: Update resources
+        allow-removing: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}

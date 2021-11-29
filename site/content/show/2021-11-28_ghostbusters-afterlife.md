@@ -10,11 +10,7 @@ mpaaRating: PG-13
 officialURL: https://www.facebook.com/Ghostbusters/
 oneSheet: /img/il_1140xn.2976262000_jd3k.jpg
 performanceList:
-  performance:
-  - date: 2021-11-27 19:00:00-06:00
-    format: 2D
-  - date: 2021-11-28 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 120
 shortTitle: 'Ghostbusters: Afterlife'
 showType: Cinema

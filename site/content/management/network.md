@@ -63,6 +63,7 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | M | Thompson DCM476 Cable Modem from Mediacom | Projection Booth - Top of Audio Rack |
 | O | Wieting-BoxOffice Windows Desktop Computer | Box Office - North Desk |
 | P | Christie CP2210 Cinema Projector | Projection Booth - Cinema Pedestal |
+| Q | HI/VI (Hearing-Impaired / Vision-Impaired) Panel | Outside Projection Booth |
 | R | NetGear 4-Port + Wireless Router | Projection Booth - Top of Audio Rack |
 | S | NetGear ProSafe 8-Port Gigabit Switch | Projection Booth - Rear of Cinema Pedestal |
 | W | Two Individual Ethernet Terminations | Stage - North and South Wings |

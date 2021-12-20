@@ -9,11 +9,7 @@ mpaaRating: PG
 officialURL: https://www.facebook.com/CliffordMovie
 oneSheet: /img/clifford.png
 performanceList:
-  performance:
-  - date: 2021-12-17 19:00:00-06:00
-    format: 2D
-  - date: 2021-12-19 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 97
 shortTitle: Clifford the Big Red Dog
 showType: Animated Cinema

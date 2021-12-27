@@ -1,7 +1,7 @@
 ---
 title: Encanto en Espanol
 date: 2022-01-08
-dates: Saturday at 7:00 pm Jan 8 2022
+dates: 7:00 pm on Jan 8 2022
 dateRange: Jan 8
 shortTitle: Encanto en Espanol
 oneSheet: /img/encanto-en-espanol-disney.png
@@ -15,6 +15,6 @@ studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 ---
 A young Colombian girl has to face the frustration of being the only member of her family without special powers.

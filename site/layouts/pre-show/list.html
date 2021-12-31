@@ -1,0 +1,170 @@
+{{ define "main" }}
+  {{ `<!-- hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
+  
+  <style>    
+    
+    body {
+      overflow: hidden;
+    }
+    
+    span.big-bold {
+      font-size: 1.5em;
+      font-weight: 800;
+    }
+    
+    div.single-show {
+      margin: 0 10px;
+      width: 95%;
+    }
+    
+    div.synopsis p {
+      line-height: 1.4em;
+    }
+        
+    .single-column {
+      position: absolute;
+    	top: 0;
+      animation: scroll 60s linear 10s infinite;
+    }
+    
+    span.show-container {
+      min-width: 290px;
+      min-height: 450px;
+      display: block;
+      margin: 15px;
+    }
+    
+    @keyframes scroll {
+    	100% { top: -2800px; }  
+    }
+    
+    nav.menu {
+      display: none;
+    }
+    
+    footer {
+      display: none;
+    }
+    
+    .single-column {
+      width: 100%;
+    }
+    
+    .show-container {
+      margin: 15px;
+      padding: 10px;
+      width: 100%;
+      min-height: 450px;
+    }
+    
+    .show-left-block {
+      width: 15%;
+      float: left;
+      width: auto;
+      vertical-align: top;
+      margin-right: 10px;
+      min-width: 185px;
+    }
+    
+    .show-right-block {
+      margin-left: 15%;
+      vertical-align: top;
+    }
+    
+    div.field--name-field-one-sheet img {
+      display: block;
+      border: 2px solid black;
+      border-radius: 3px;
+    }
+
+    p.rated-r {
+      color: red;
+      font-weight: bold;
+    }
+    
+    @media screen and (max-width: 630px) {
+    
+      .show-left-block {
+        width: 100% !important;
+        float: left;
+        width: auto;
+        vertical-align: top;
+        margin-right: 2px;
+        /* min-width: 185px; */
+      }
+      
+      .show-right-block {
+        margin-left: 0% !important;
+        padding-top: 1em;
+        vertical-align: top;
+      }
+      
+      div.field--name-field-one-sheet img {
+        margin-bottom: 1em;
+      }
+
+    }
+  </style>
+
+  <!-- <audio src="/music.mp3" autoplay> -->
+
+  {{ $range := .Pages }}
+  <div class="single-column">
+    {{ range $range.Reverse }}
+
+      <div class="single-show">
+        <div class="show-title">
+          <h1>{{ .Title }}</h1>
+        </div>
+
+        <div class="content">
+          <span class="show-container">
+            <div class="show-left-block">
+              <div class="field field--name-field-one-sheet field--type-image">
+                <img src="{{ .Params.oneSheet }}" width="320" height="414" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
+              </div>
+            </div>  
+            <div class="show-right-block">
+              <hr/>
+              <div class="remaining_details">
+                <div class="field field--name-field-performance-times field--type-datetime">
+                  <ul class="show-times">
+                    {{ range .Params.performanceList.performance }}
+                      <li class="field--item">
+                        {{ $dtime := time .date }}
+                        <span class="big-bold">{{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}</span>
+                        {{ if .format }} 
+                          <b> [{{ .format }}]</b>
+                        {{ end }}
+                        {{ if .note }}   
+                          <i><b>&nbsp;&nbsp;{{ .note }}</b></i> 
+                        {{ end }}  
+                      </li>
+                    {{ end }}    
+                  </ul>  
+                  <hr/>
+                    <div class="synopsis">{{ .Content }}</div>
+                  <hr/>
+                  <div class="show-rating">
+                    <span class="field--label">MPAA Rating: </span>
+                    <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
+                    {{ if eq .Params.mpaaRating "R" }}
+                      <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
+                     {{ end }} 
+                  </div>
+                  <div class="running-time">
+                    <span class="field--label">Running Time: </span>
+                    <span content="10" class="field--item-bold">{{ .Params.runningTime }} minutes</span>
+                  </div>
+                  <br/>
+                </div>
+              </div>
+            </div>  
+          </span>
+        </div>
+      </div>  
+    {{ end }}
+  </div>
+    
+  {{ `<!-- /hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
+{{ end }} 

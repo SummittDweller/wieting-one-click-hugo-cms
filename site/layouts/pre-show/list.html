@@ -119,6 +119,18 @@
   {{ partial "debug" $paginator.TotalPages }}
   {{ partial "debug" $paginator.HasNext }}
   {{ partial "debug" $paginator.TotalNumberOfElements }}
+  
+  <!-- Load a series of 15-second audio .mp3 clips -->
+  <audio id="audio1" autoplay>
+    <source src="/audio/1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="audio2" autoplay>
+    <source src="/audio/2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
 
   <div class="carousel-wrapper">
     <div class="carousel">
@@ -222,6 +234,11 @@
       // Next navigation handler
       function moveNext() {
 
+        var m = mp3s[Math.floor(Math.random()*mp3s.length)];
+        var x = document.getElementById(m);
+        x.autoplay = true;
+        x.load(); 
+
         // Check if moving
         if (!moving) {
 
@@ -265,6 +282,7 @@
       }
 
       // make it rain
+      var mp3s = [ 'audio1', 'audio2' ];
       initCarousel();
       window.setInterval(moveNext, 15000);
 

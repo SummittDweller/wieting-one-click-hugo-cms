@@ -23,4 +23,4 @@ studioInfo:
 title: 'Spiderman: No Way Home'
 ---
 
-With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from start to appear, forcing Peter to discover what it truly means to be Spider-Man.
+With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes start to appear, forcing Peter to discover what it truly means to be Spider-Man.

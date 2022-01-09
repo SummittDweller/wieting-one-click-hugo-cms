@@ -8,11 +8,7 @@ imdbURL: https://www.imdb.com/title/tt11214590/?ref_=ttmi_tt
 mpaaRating: R
 oneSheet: https://media.flickeringmyth.com/q:intelligent/retina:false/webp:false/w:1/url:https://cdn.flickeringmyth.com/wp-content/uploads/2021/07/house-of-gucci-character-poster-lady-gaga-600x889.jpg
 performanceList:
-  performance:
-  - date: 2021-12-31 19:00:00-06:00
-    format: 2D
-  - date: 2022-01-02 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 158
 shortTitle: House of Gucci
 showType: Cinema

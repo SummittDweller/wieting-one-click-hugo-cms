@@ -14,7 +14,7 @@ performanceList:
   - date: 2022-01-16 19:00:00-06:00
     format: 2D
 runningTime: 156
-shortTitle: West Side Story
+shortTitle: "West Side Story"
 showType: Cinema
 studioInfo:
   studio: Disney

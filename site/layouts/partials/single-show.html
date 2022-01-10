@@ -111,17 +111,21 @@
             <hr/>
               <div class="synopsis">{{ .Content }}</div>
             <hr/>
-            <div class="show-rating">
-              <span class="field--label">MPAA Rating: </span>
-              <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
-              {{ if eq .Params.mpaaRating "R" }}
-                <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
-               {{ end }} 
-            </div>
-            <div class="running-time">
-              <span class="field--label">Running Time: </span>
-              <span content="10" class="field--item-bold">{{ .Params.runningTime }} minutes</span>
-            </div>
+            {{ if .Params.mpaaRating }}
+              <div class="show-rating">
+                <span class="field--label">MPAA Rating: </span>
+                <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
+                {{ if eq .Params.mpaaRating "R" }}
+                  <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
+                 {{ end }} 
+              </div>
+            {{ end }}
+            {{ if .Params.runningTime }}
+              <div class="running-time">
+                <span class="field--label">Running Time: </span>
+                <span content="10" class="field--item-bold">{{ .Params.runningTime }} minutes</span>
+              </div>
+            {{ end }}
             <br/>
           </div>
         </div>

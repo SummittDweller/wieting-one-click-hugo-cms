@@ -1,23 +1,27 @@
 ---
-title: American Underdog
-date: 2022-02-06
-dates: every Friday Sunday at 7:00 pm starting Feb 4 2022 ending Feb 6  2022
+date: 2022-02-06 19:00:00-06:00
 dateRange: Feb 4 and 6
-shortTitle: American Underdog
-oneSheet: /img/amer-underdog.jpg
-showType: Cinema
-runningTime: 112
+dates: every Friday Sunday at 7:00 pm starting Feb 4 2022 ending Feb 6  2022
+draft: false
+expiryDate: 2022-02-07
+imdbURL: https://www.imdb.com/title/tt11729298/
 mpaaRating: PG
 officialURL: https://americanunderdog.movie/
-imdbURL: https://www.imdb.com/title/tt11729298/
+oneSheet: /img/amer-underdog.jpg
 performanceList:
   performance:
-    - date: 2022-02-05T01:00:48.083Z
-    - date: 2022-02-07T01:00:48.681Z
+  - date: 2022-02-04 19:00:00-06:00
+    format: 2D
+  - date: 2022-02-06 19:00:00-06:00
+    format: 2D
+runningTime: 112
+shortTitle: American Underdog
+showType: Cinema
 studioInfo:
   studio: Lionsgate
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: American Underdog
 ---
+
 The national release of the story of Iowa's own NFL MVP and Hall of Fame quarterback Kurt Warner, who went from stocking shelves at Hy-Vee to becoming Iowa's own American Football star!

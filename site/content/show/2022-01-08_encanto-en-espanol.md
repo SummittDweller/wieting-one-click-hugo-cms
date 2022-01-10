@@ -7,9 +7,7 @@ expiryDate: 2022-01-09
 mpaaRating: PG
 oneSheet: /img/encanto-en-espanol-disney.png
 performanceList:
-  performance:
-  - date: 2022-01-08 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 102
 shortTitle: Encanto en Espanol
 showType: Cinema

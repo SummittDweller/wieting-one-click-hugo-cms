@@ -19,6 +19,7 @@
     /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
     .carousel-wrapper * {
       box-sizing: border-box;
+      margin-right: 10px;
     }
 
     /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
@@ -120,7 +121,7 @@
   {{ partial "debug" $paginator.HasNext }}
   {{ partial "debug" $paginator.TotalNumberOfElements }}
   
-  <!-- Load a series of 15-second audio .mp3 clips
+  <!-- Load a series of 15-second audio .mp3 clips -->
   <audio id="audio1" autoplay>
     <source src="/audio/01-fesliyanstudios-15.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -159,7 +160,7 @@
   <audio id="audio8" autoplay>
     <source src="/audio/03-Feeling-The-Best-15.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>  -->
+  </audio>  
 
   <!-- Now the page... -->
   <div class="carousel-wrapper">
@@ -265,10 +266,10 @@
       function moveNext() {
 
         // Invoke a random audio clip change and play it...
-        // var m = mp3s[Math.floor(Math.random()*mp3s.length)];
-        // var x = document.getElementById(m);
-        // x.autoplay = true;
-        // x.load(); 
+        var m = mp3s[Math.floor(Math.random()*mp3s.length)];
+        var x = document.getElementById(m);
+        x.autoplay = true;
+        x.load(); 
 
         // Check if moving
         if (!moving) {
@@ -313,7 +314,7 @@
       }
 
       // make it rain
-      // var mp3s = [ 'audio1', 'audio2', 'audio3', 'audio4', 'audio5', 'audio6', 'audio7', 'audio8' ];
+      var mp3s = [ 'audio1', 'audio2', 'audio3', 'audio4', 'audio5', 'audio6', 'audio7', 'audio8' ];
       initCarousel();
       window.setInterval(moveNext, 15000);
 

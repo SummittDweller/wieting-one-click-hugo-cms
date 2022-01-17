@@ -262,10 +262,6 @@
             items[newNext].className = itemClassName + " next";
           }
         }
-      }
-
-      // Next navigation handler
-      function moveNext() {
 
         // // Invoke a random audio clip change and play it...
         // var m = mp3s[Math.floor(Math.random()*mp3s.length)];
@@ -273,6 +269,11 @@
         var x = document.getElementById(id);
         x.autoplay = true;
         x.load(); 
+
+      }
+
+      // Next navigation handler
+      function moveNext() {
 
         // Check if moving
         if (!moving) {

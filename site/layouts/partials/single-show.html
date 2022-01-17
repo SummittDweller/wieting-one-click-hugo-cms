@@ -117,6 +117,7 @@
             <hr/>
               <div class="synopsis">{{ .context.Content }}</div>
             <hr/>
+
             {{ if .context.Params.mpaaRating }}
               <div class="show-rating">
                 <span class="field--label">MPAA Rating: </span>
@@ -126,18 +127,21 @@
                  {{ end }} 
               </div>
             {{ end }}
+
             {{ if .context.Params.runningTime }}
               <div class="running-time">
                 <span class="field--label">Running Time: </span>
                 <span content="10" class="field--item-bold">{{ .context.Params.runningTime }} minutes</span>
               </div>
             {{ end }}
+
             {{ if .context.Params.audio }}
               <audio id="clip-audio-{{- .position }}" autoplay>
                 <source src="{{ .context.Params.audio }}" type="audio/mpeg">
                 Your browser does not support the audio element.
               </audio>
             {{ end }}
+
             <br/>
           </div>
         </div>

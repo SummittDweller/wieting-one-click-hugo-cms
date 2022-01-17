@@ -80,51 +80,63 @@
 
 <div class="single-show">
   <div class="show-title">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .context.Title }}</h1>
   </div>
 
   <div class="content">
     <span class="show-container">
+
+      <!-- left block -->
       <div class="show-left-block">
         <div class="field field--name-field-one-sheet field--type-image">
-          <img src="{{ .Params.oneSheet }}" width="320" height="414" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
+          <img src="{{ .context.Params.oneSheet }}" width="320" height="414" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
         </div>
       </div>  
+
+      <!-- right block -->
       <div class="show-right-block">
-        <hr/>
+        {{ if .context.Params.performanceList }}
+          <hr/>
+        {{ end }}
         <div class="remaining_details">
           <div class="field field--name-field-performance-times field--type-datetime">
             <ul class="show-times">
-              {{ range .Params.performanceList.performance }}
+              {{ range .context.Params.performanceList.performance }}
                 <li class="field--item">
                   {{ $dtime := time .date }}
                   <span class="big-bold">{{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}</span>
-                  {{ if .format }} 
-                    <b> [{{ .format }}]</b>
+                  {{ if .context.format }} 
+                    <b> [{{ .context.format }}]</b>
                   {{ end }}
-                  {{ if .note }}   
-                    <i><b>&nbsp;&nbsp;{{ .note }}</b></i> 
+                  {{ if .context.note }}   
+                    <i><b>&nbsp;&nbsp;{{ .context.note }}</b></i> 
                   {{ end }}  
                 </li>
               {{ end }}    
             </ul>  
             <hr/>
-              <div class="synopsis">{{ .Content }}</div>
+              <div class="synopsis">{{ .context.Content }}</div>
             <hr/>
-            {{ if .Params.mpaaRating }}
+            {{ if .context.Params.mpaaRating }}
               <div class="show-rating">
                 <span class="field--label">MPAA Rating: </span>
-                <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
-                {{ if eq .Params.mpaaRating "R" }}
+                <span class="field--item-bold">{{ .context.Params.mpaaRating }}</span>
+                {{ if eq .context.Params.mpaaRating "R" }}
                   <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
                  {{ end }} 
               </div>
             {{ end }}
-            {{ if .Params.runningTime }}
+            {{ if .context.Params.runningTime }}
               <div class="running-time">
                 <span class="field--label">Running Time: </span>
-                <span content="10" class="field--item-bold">{{ .Params.runningTime }} minutes</span>
+                <span content="10" class="field--item-bold">{{ .context.Params.runningTime }} minutes</span>
               </div>
+            {{ end }}
+            {{ if .context.Params.audio }}
+              <audio id="clip-audio-{{- .position }}" autoplay>
+                <source src="{{ .context.Params.audio }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
             {{ end }}
             <br/>
           </div>

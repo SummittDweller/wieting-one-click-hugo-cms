@@ -121,7 +121,7 @@
   {{ partial "debug" $paginator.HasNext }}
   {{ partial "debug" $paginator.TotalNumberOfElements }}
   
-  <!-- Load a series of 15-second audio .mp3 clips -->
+  <!-- Load a series of 15-second audio .mp3 clips
   <audio id="audio1" autoplay>
     <source src="/audio/01-fesliyanstudios-15.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -160,13 +160,15 @@
   <audio id="audio8" autoplay>
     <source src="/audio/03-Feeling-The-Best-15.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>  
+  </audio>  -->
 
   <!-- Now the page... -->
   <div class="carousel-wrapper">
     <div class="carousel">
+      {{ $position := 0 }}
       {{- range $paginator.Pages.Reverse -}}
-        {{ partial "single-show" . }}
+        {{ partial "single-show" (dict "context" . "position" $position ) }}
+        {{ $position = add $position 1 }}
       {{ end }}
       <div class="carousel__button--next"></div>
       <div class="carousel__button--prev"></div>         
@@ -265,9 +267,10 @@
       // Next navigation handler
       function moveNext() {
 
-        // Invoke a random audio clip change and play it...
-        var m = mp3s[Math.floor(Math.random()*mp3s.length)];
-        var x = document.getElementById(m);
+        // // Invoke a random audio clip change and play it...
+        // var m = mp3s[Math.floor(Math.random()*mp3s.length)];
+        var id = "clip-audio-".concat(slide)
+        var x = document.getElementById(id);
         x.autoplay = true;
         x.load(); 
 
@@ -313,8 +316,8 @@
         moving = false;
       }
 
-      // make it rain
-      var mp3s = [ 'audio1', 'audio2', 'audio3', 'audio4', 'audio5', 'audio6', 'audio7', 'audio8' ];
+      // // make it rain
+      // var mp3s = [ 'audio1', 'audio2', 'audio3', 'audio4', 'audio5', 'audio6', 'audio7', 'audio8' ];
       initCarousel();
       window.setInterval(moveNext, 15000);
 

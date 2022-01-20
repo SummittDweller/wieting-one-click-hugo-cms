@@ -128,6 +128,7 @@
       {{- range $paginator.Pages.Reverse -}}
         {{ partial "single-show" (dict "context" . "position" $position ) }}
         {{ $position = add $position 1 }}
+        {{ partial "dynamic.html" . }}
       {{ end }}
       <div class="carousel__button--next"></div>
       <div class="carousel__button--prev"></div>         
@@ -139,11 +140,15 @@
     
     !(function(d){
       // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
+
       var itemClassName = "single-show";
           items = d.getElementsByClassName(itemClassName),
           totalItems = items.length,
           slide = 0,
           moving = true; 
+
+      interval = 60000;  // set default interval to 1 minute
+      var run = setInterval(moveNext, interval);  
 
       // To initialise the carousel we'll want to update the DOM with our own classes
       function setInitialClasses() {
@@ -275,9 +280,9 @@
         moving = false;
       }
 
-      // make it rain
+      // make it rain.  Last parameter is default duration in seconds/1000
       initCarousel();
-      window.setInterval(moveNext, 15000);
+      window.setInterval(moveNext, interval);
 
     }(document));
 

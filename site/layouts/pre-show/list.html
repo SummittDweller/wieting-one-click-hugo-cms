@@ -1,14 +1,14 @@
 {{ define "main" }}
   {{ `<!-- hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
 
-  <!-- Based on https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9 
+  <!-- Based on https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 
   Class "carousel__photo" becomes "single-show"
   -->
 
   <!-- The page's CSS -->
-  <style> 
-    
+  <style>
+
     /* Parent wrapper to carousel. Width can be changed as needed. */
     .carousel-wrapper {
       overflow: hidden;
@@ -35,7 +35,7 @@
       position: absolute;
       top:0;
       width: 100%;
-      margin: auto;
+      margin: 10px 10px 0;
       padding: 1rem 4rem;
       z-index: 100;
       transition: transform .5s, opacity .5s, z-index .5s;
@@ -75,10 +75,10 @@
       background-color: #FFF;
       transform: translateY(-50%);
       border-radius: 50%;
-      cursor: pointer; 
+      cursor: pointer;
       z-index: 1001; /* Sit on top of everything */
       border:1px solid black;
-    /*  opacity: 0;  Hide buttons until carousel is initialised 
+    /*  opacity: 0;  Hide buttons until carousel is initialised
       transition:opacity 1s;*/
       display: none;  /* when active this hides the buttons */
     }
@@ -111,16 +111,16 @@
     }
 
   </style>
-  
+
   <!-- The page's HTML is created here -->
   <!-- Create the paginator before it's used -->
   {{ $paginator := .Paginate .Pages }}
-  
+
   {{ partial "debug" .Pages }}
   {{ partial "debug" $paginator.TotalPages }}
   {{ partial "debug" $paginator.HasNext }}
   {{ partial "debug" $paginator.TotalNumberOfElements }}
-    
+
   <!-- Now the page... -->
   <div class="carousel-wrapper">
     <div class="carousel">
@@ -130,20 +130,20 @@
         {{ $position = add $position 1 }}
       {{ end }}
       <div class="carousel__button--next"></div>
-      <div class="carousel__button--prev"></div>         
+      <div class="carousel__button--prev"></div>
     </div>
   </div>
-  
+
   <!-- The page's javascript -->
   <script>
-    
+
     !(function(d){
       // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
       var itemClassName = "single-show";
           items = d.getElementsByClassName(itemClassName),
           totalItems = items.length,
           slide = 0,
-          moving = true; 
+          moving = true;
 
       // To initialise the carousel we'll want to update the DOM with our own classes
       function setInitialClasses() {
@@ -226,7 +226,7 @@
         var id = "clip-audio-".concat(slide)
         var x = document.getElementById(id);
         x.autoplay = true;
-        x.load(); 
+        x.load();
 
       }
 
@@ -282,6 +282,6 @@
     }(document));
 
   </script>
-        
+
   {{ `<!-- /hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
-{{ end }} 
+{{ end }}

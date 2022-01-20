@@ -1,0 +1,7 @@
+<script>
+  console.log('Title "' + {{ .Title }} + '" has duration ' + {{ .Params.duration }}) 
+  {{ if .Params.duration }}
+    clearInterval(run);   // stop the setInterval()
+    run = setInterval(moveNext, {{ .Params.duration }}); // start the setInterval()
+  {{ end }}
+</script>

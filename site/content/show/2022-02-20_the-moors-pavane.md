@@ -4,7 +4,7 @@ dateRange: Feb 20
 dates: 2:00 pm on feb 20 2022
 draft: false
 expiryDate: 2022-02-21
-mpaaRating: Not Rated
+mpaaRating: Viewer Discretion Advised
 oneSheet: /img/TheMoorsPavanePoster.jpg
 performanceList:
   performance:

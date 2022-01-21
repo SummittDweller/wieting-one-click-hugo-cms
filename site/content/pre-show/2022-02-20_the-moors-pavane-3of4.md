@@ -4,13 +4,7 @@ dateRange: Feb 20
 dates: 2:00 pm on feb 20 2022
 draft: false
 expiryDate: 2022-02-21
-mpaaRating: Not Rated
 oneSheet: /img/TheMoorsPavanePoster.jpg
-performanceList:
-  performance:
-  - date: 2022-02-20 14:00:00-06:00
-    format: 2D
-runningTime: 60
 shortTitle: The Moor's Pavane
 showType: Live Performance
 studioInfo:

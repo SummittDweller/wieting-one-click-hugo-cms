@@ -16,7 +16,7 @@ menu:
 
 The Wieting has lots of opportunities for volunteers as EVERYONE at the theatre will atest. We also have ample opportunites to host your event, be it a dance, concert, play, wedding, lecture, meeting... you name it.
 
-Please use this form to let us know how we can help you.  Be sure you include an email address or phone number, and someone, a Wieting volunteer, will contact you as soon as we are able.  We promise not to share your email address to anyone.  Thank you!
+Please use this form to let us know how we can help you.  Be sure you include an email address or phone number, and someone, a Wieting volunteer, will contact you as soon as we are able.  We promise not to share your email address with anyone.  Thank you!
 
 <!-- If your interest is in becoming a Wieting Volunteer please use this online form to capture some sense of your interests and availability so we can make your service at the Wieting stress-free and fun.  We do our best to share information with you via this web site and through e-mail, so please provide us with an e-mail address if you have one.  If not, that's OK too.  We have several volunteers without e-mail so we also send out updates in the postal mail. -->
 

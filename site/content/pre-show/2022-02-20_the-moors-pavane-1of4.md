@@ -18,7 +18,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: The Moor's Pavane
-audio: /audio/60/drama-1.mp3
+audio: /audio/30/drama-1.mp3
 ---
 
 **University of Iowa's Arts Share**presents **Moor's Pavane.**  Donations will be accepted for this **free**performance. Viewer discretion is advised.

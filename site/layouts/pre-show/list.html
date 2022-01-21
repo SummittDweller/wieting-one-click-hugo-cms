@@ -182,7 +182,8 @@
           // temporarily disable interactivity
           disableInteraction();
 
-          // Preemptively set variables for the current next and previous slide, as well as the potential next or previous slide.
+          // Preemptively set variables for the current, next, and previous slide, as well as the potential next or previous slide.
+          
           var newPrevious = slide - 1,
               newNext = slide + 1,
               oldPrevious = slide - 2,
@@ -227,6 +228,8 @@
         var x = document.getElementById(id);
         x.autoplay = true;
         x.load();
+        
+        
 
       }
 
@@ -275,7 +278,7 @@
         moving = false;
       }
 
-      // make it rain
+      // make it rain.  15 seconds is the minimum slide duration
       initCarousel();
       window.setInterval(moveNext, 15000);
 

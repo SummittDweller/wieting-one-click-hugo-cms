@@ -1,97 +1,3 @@
-<style>
-
-    div.show-title {
-      margin-left: 10px;
-      display: none;
-    }
-
-    span.big-bold {
-      font-size: 1.5em;
-      font-weight: 800;
-    }
-    
-    div.single-show {
-      margin: 40px 10px 0;
-      width: 95%;
-    }
-    
-    div.synopsis p {
-      line-height: 1.4em;
-    }
-        
-    .single-column {
-      position: absolute;
-      top: 0;
-      animation: scroll 60s linear 10s infinite;
-    }
-    
-    span.show-container {
-      min-width: 290px;
-      min-height: 450px;
-      display: block;
-      margin: 15px;
-    }
-    
-    nav.menu {
-      display: none;
-    }
-    
-    footer {
-      display: none;
-    }
-    
-    .single-column {
-      width: 100%;
-    }
-    
-    .show-container {
-      margin: 15px;
-      padding: 10px;
-      width: 100%;
-      min-height: 450px;
-    }
-    
-    .show-left-block {
-      width: 15%;
-      float: left;
-      width: auto;
-      vertical-align: top;
-      margin-right: 10px;
-      min-width: 185px;
-    }
-    
-    .show-right-block {
-      margin-left: 15%;
-      vertical-align: top;
-    }
-    
-    div.field--name-field-one-sheet img {
-      display: block;
-      border: 2px solid black;
-      border-radius: 3px;
-    }
-
-    p.rated-r {
-      color: red;
-      font-weight: bold;
-    }
-
-
-    /* // Hide unwanted elements of Tama-Toledo News Chronicle
-
-    .lazyload {
-      display: none;
-    }
-
-    div.row-container {
-      display: none !important;
-    }
-
-    aside #right-column-inside {
-      display: none !important;
-    } */
-    
-</style>
 
       <!-- left block -->
       <div class="was-show-left-block">
@@ -99,15 +5,7 @@
           <img src="{{ .context.Params.bannerImage }}" width="60%" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
           <p/>
           <div id="myFrame" class="pre-show-iframe">
-            <iframe src="{{ .context.Params.iframeURL }}" onload="custom()" width="100%" height="165"></iframe>
-            <script>
-              function custom(){
-                var iframe = document.getElementById("myFrame");
-                // var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
-                var elmnt = iframe.contentWindow.document.getElementById("google_center_div");
-                elmnt.style.display = "none";     
-              }
-            </script>
+            <iframe src="{{ .context.Params.iframeURL }}" width="100%" height="165"></iframe>
           </div>  
         </div>
       </div>  

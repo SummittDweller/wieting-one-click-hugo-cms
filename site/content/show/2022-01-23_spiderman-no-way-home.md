@@ -9,8 +9,6 @@ mpaaRating: PG-13
 oneSheet: /img/spiderman.jpg
 performanceList:
   performance:
-  - date: 2022-01-21 19:00:00-06:00
-    format: 2D
   - date: 2022-01-23 19:00:00-06:00
     format: 2D
 runningTime: 148

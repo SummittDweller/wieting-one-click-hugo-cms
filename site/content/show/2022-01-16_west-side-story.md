@@ -8,9 +8,7 @@ imdbURL: https://www.imdb.com/title/tt3581652/?ref_=nv_sr_srsg_0
 mpaaRating: PG-13
 oneSheet: /img/westside-story.jpg
 performanceList:
-  performance:
-  - date: 2022-01-16 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 156
 shortTitle: West Side Story
 showType: Cinema

@@ -18,6 +18,6 @@ studioInfo:
   studioFee: 350
   studioPercentage: 0
 draft: false
-audio: /audio/hero-1.mp3
+audio: /audio/15/hero-1.mp3
 ---
 With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes start to appear, forcing Peter to discover what it truly means to be Spider-Man.

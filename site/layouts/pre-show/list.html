@@ -115,7 +115,6 @@
   <!-- The page's HTML is created here -->
   <!-- Create the paginator before it's used -->
   {{ $paginator := .Paginate .Pages }}
-
   {{ partial "debug" .Pages }}
   {{ partial "debug" $paginator.TotalPages }}
   {{ partial "debug" $paginator.HasNext }}
@@ -229,8 +228,6 @@
         x.autoplay = true;
         x.load();
         
-        
-
       }
 
       // Next navigation handler

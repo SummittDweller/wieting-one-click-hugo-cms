@@ -1,5 +1,5 @@
 ---
-date: 2015-01-01 19:00:00-06:00
+date: 2020-01-01 19:00:00-06:00
 draft: false
 expiryDate: 2022-12-31
 shortTitle: Tama-Toledo News Chronicle

@@ -5,6 +5,7 @@ theme: vanilla-bootstrap-hugo-theme
 socialshare: true
 # disableKinds: [ "section", "RSS" ]
 disableKinds: [ "RSS" ]
+paginate: 40
 
 googleAnalytics: UA-194668720-1
 

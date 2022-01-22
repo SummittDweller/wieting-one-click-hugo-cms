@@ -224,10 +224,17 @@
 
         // Load and autoplay the corresponding audio clip...
         var id = "clip-audio-".concat(slide)
-        var x = document.getElementById(id);
-        x.autoplay = true;
-        x.load();
+        var a = document.getElementById(id);
+        a.autoplay = true;
+        a.load();
         
+        // Load and autoplay the corresponding video clip...
+        var id = "clip-video-".concat(slide)
+        var v = document.getElementById(id);
+        // v.autoplay = true;
+        v.currentTime = 0;
+        v.play();
+
       }
 
       // Next navigation handler

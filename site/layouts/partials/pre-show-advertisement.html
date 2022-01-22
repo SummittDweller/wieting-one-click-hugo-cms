@@ -7,8 +7,8 @@
             <p/>
           {{ end }}
           {{ if .context.Params.mp4 }}
-            <div class="pre-show-iframe">
-              <video width="100%" height="600" autoplay muted>
+            <div id="pre-show-video">
+              <video id="clip-video-{{- .position }}" width="100%" height="600" autoplay muted>
                 <source src="/mp4/{{ .context.Params.mp4 }}" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>

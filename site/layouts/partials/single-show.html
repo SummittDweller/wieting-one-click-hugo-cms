@@ -2,54 +2,55 @@
 
     div.show-title {
       margin-left: 10px;
+      margin-top: 20px !important;
     }
 
     span.big-bold {
       font-size: 1.5em;
       font-weight: 800;
     }
-    
+
     div.single-show {
       margin: 40px 10px 0;
       width: 95%;
     }
-    
+
     div.synopsis p {
       line-height: 1.4em;
     }
-        
+
     .single-column {
       position: absolute;
       top: 0;
       animation: scroll 60s linear 10s infinite;
     }
-    
+
     span.show-container {
       min-width: 290px;
       min-height: 450px;
       display: block;
       margin: 15px;
     }
-    
+
     nav.menu {
       display: none;
     }
-    
+
     footer {
       display: none;
     }
-    
+
     .single-column {
       width: 100%;
     }
-    
+
     .show-container {
       margin: 15px;
       padding: 10px;
       width: 100%;
       min-height: 450px;
     }
-    
+
     .show-left-block {
       width: 15%;
       float: left;
@@ -58,12 +59,12 @@
       margin-right: 10px;
       min-width: 185px;
     }
-    
+
     .show-right-block {
       margin-left: 15%;
       vertical-align: top;
     }
-    
+
     div.field--name-field-one-sheet img {
       display: block;
       border: 2px solid black;
@@ -74,12 +75,12 @@
       color: red;
       font-weight: bold;
     }
-    
+
 </style>
 
 
 <div class="single-show">
-  
+
   <div class="show-title">
     <h1>{{ .context.Title }}</h1>
   </div>
@@ -89,10 +90,10 @@
 
     {{ if .context.Params.oneSheet }}
       {{ partial "pre-show-with-oneSheet" . }}
-    {{ else }} 
+    {{ else }}
       {{ partial "pre-show-advertisement" . }}
     {{ end }}
 
     </span>
   </div>
-</div>  
+</div>

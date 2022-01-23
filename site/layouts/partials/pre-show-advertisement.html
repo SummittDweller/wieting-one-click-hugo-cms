@@ -6,23 +6,23 @@
             <img src="{{ .context.Params.bannerImage }}" width="80%" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
             <p/>
           {{ end }}
-          {{ if .context.Params.mp4 }}
+          
+          {{ if .context.Params.mp4 }} 
             <div id="pre-show-video">
-              <video id="clip-video-{{- .position }}" width="100%" height="600" autoplay muted>
+              <video id="clip-video-{{- .position }}" width="100%" height="80%" autoplay muted>
                 <source src="/mp4/{{ .context.Params.mp4 }}" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
+                  Sorry, your browser doesn't support embedded videos.
               </video>
-              <!-- <iframe src="{{ .context.Params.iframe }}/index.html" width="100%" height="600"></iframe> -->
             </div>
-          {{ end }} 
+          {{ end }}    
         </div>
       </div>  
 
       <!-- right block -->
       <div class="was-show-right-block">
-        <hr/>
+        <p>
           <div class="synopsis">{{ .context.Content }}</div>
-        <hr/>
+        </p>
 
         {{ if .context.Params.audio }}
           <audio id="clip-audio-{{- .position }}" autoplay>

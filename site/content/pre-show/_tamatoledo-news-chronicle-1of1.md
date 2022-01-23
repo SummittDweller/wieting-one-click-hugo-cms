@@ -6,8 +6,7 @@ shortTitle: Tama-Toledo News Chronicle
 title: Tama-Toledo News Chronicle
 bannerImage: /img/_tamatoledo-news-chronicle-logo.png
 audio: /audio/15/adventure-1.mp3
-iframeURL: https://www.tamatoledonews.com/
-iframeID: homepage_featured_headlines  
+duration: 30000
 ---
 
 The Wieting is pleased to support our local hometown newspaper.  We hope you will too!  

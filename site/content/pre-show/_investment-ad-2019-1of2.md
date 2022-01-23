@@ -6,4 +6,5 @@ shortTitle: Tama County Investment Services
 title: Tama County Investment Services
 audio: /audio/30/happy-1.mp3
 mp4: investment-ad-revised2019-1of2.mp4
+duration: 30000
 ---

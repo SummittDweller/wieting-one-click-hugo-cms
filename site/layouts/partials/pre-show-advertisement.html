@@ -1,9 +1,14 @@
+      <style>
+        img.ad-banner {
+          width: 100%;
+        }
+      </style>  
 
       <!-- left block -->
       <div class="was-show-left-block">
         <div class="was-field--name-field-one-sheet">
           {{ if .context.Params.bannerImage }}
-            <img src="{{ .context.Params.bannerImage }}" width="80%" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive" />
+            <img src="{{ .context.Params.bannerImage }}" width="80%" alt="&nbsp;&nbsp; Sorry, this image has been removed." typeof="foaf:Image" class="img-responsive ad-banner" />
             <p/>
           {{ end }}
           

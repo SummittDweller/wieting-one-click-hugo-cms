@@ -157,20 +157,19 @@
       // Set click events to navigation buttons
 
       function setEventListeners() {
-        var next = d.getElementsByClassName('carousel__button--next')[0],
-            prev = d.getElementsByClassName('carousel__button--prev')[0];
+        var next = d.getElementsByClassName('carousel__button--next')[0];
+        var prev = d.getElementsByClassName('carousel__button--prev')[0];
 
         next.addEventListener('click', moveNext);
         prev.addEventListener('click', movePrev);
       }
 
       // Disable interaction by setting 'moving' to true for the same duration as our transition (0.5s = 500ms)
-      function disableInteraction() {
+      function disableInteraction(d) {
         moving = true;
-
         setTimeout(function(){
           moving = false
-        }, 500);
+        }, d);
       }
 
       function moveCarouselTo(slide) {
@@ -179,14 +178,14 @@
         if(!moving) {
 
           // temporarily disable interactivity
-          disableInteraction();
+          // disableInteraction(500);
 
           // Preemptively set variables for the current, next, and previous slide, as well as the potential next or previous slide.
           
-          var newPrevious = slide - 1,
-              newNext = slide + 1,
-              oldPrevious = slide - 2,
-              oldNext = slide + 2;
+          var newPrevious = slide - 1;
+          var newNext = slide + 1;
+          var oldPrevious = slide - 2;
+          var oldNext = slide + 2;
 
           // Test if carousel has more than three items
           if ((totalItems - 1) > 3) {
@@ -223,33 +222,39 @@
         }
 
         // Load and autoplay the corresponding audio clip...
-        var id = "clip-audio-".concat(slide)
+        var id = "clip-audio-".concat(slide);
         var a = document.getElementById(id);
         a.autoplay = true;
         a.load();
         
         // Load and autoplay the corresponding video clip...
-        var id = "clip-video-".concat(slide)
+        var id = "clip-video-".concat(slide);
         var v = document.getElementById(id);
-        console.log(v)
-        v.currentTime = 0;
-        v.play();
+        if (v != null) {
+          console.log(v)
+          v.currentTime = 0;
+          v.play();
+        }
+        
+        // Fetch the duration attribute from id=duration-<slide>
+        var id = "duration-".concat(slide);
+        var dur = document.getElementById(id);
+        var duration = dur.getAttribute('duration');
+        console.log(duration);
+        disableInteraction(duration);
 
       }
 
       // Next navigation handler
       function moveNext() {
-
         // Check if moving
         if (!moving) {
-
           // If it's the last slide, reset to 0, else +1
           if (slide === (totalItems - 1)) {
             slide = 0;
           } else {
             slide++;
           }
-
           // Move carousel to updated slide
           moveCarouselTo(slide);
         }
@@ -257,17 +262,14 @@
 
       // Previous navigation handler
       function movePrev() {
-
         // Check if moving
         if (!moving) {
-
           // If it's the first slide, set as the last slide, else -1
           if (slide === 0) {
             slide = (totalItems - 1);
           } else {
             slide--;
           }
-
           // Move carousel to updated slide
           moveCarouselTo(slide);
         }
@@ -282,7 +284,7 @@
         moving = false;
       }
 
-      // make it rain.  15 seconds is the minimum slide duration
+      // Make it rain.  15 seconds is the minimum slide duration
       initCarousel();
       window.setInterval(moveNext, 15000);
 

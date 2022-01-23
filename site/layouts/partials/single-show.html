@@ -88,12 +88,18 @@
 
   <div class="content">
     <span class="show-container">
+      
+      {{ if .context.Params.additionalDuration }}
+        <span id="duration-{{- .position }}" duration="{{ mul .context.Params.additionalDuration 1000 }}">
+      {{ else }}    
+        <span id="duration-{{- .position }}" duration="0">
+      {{ end }}    
 
-    {{ if .context.Params.oneSheet }}
-      {{ partial "pre-show-with-oneSheet" . }}
-    {{ else }}
-      {{ partial "pre-show-advertisement" . }}
-    {{ end }}
+      {{ if .context.Params.oneSheet }}
+        {{ partial "pre-show-with-oneSheet" . }}
+      {{ else }}
+        {{ partial "pre-show-advertisement" . }}
+      {{ end }}
 
     </span>
   </div>

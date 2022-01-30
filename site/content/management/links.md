@@ -31,4 +31,5 @@ Some of the resources listed here will require login credentials.
   - [SummittDweller/wieting-one-click-hugo-cms](https://github.com/SummittDweller/wieting-one-click-hugo-cms)
   - [Analytics](https://analytics.google.com/analytics/web/?authuser=4#/report-home/a194668720w269095608p241191842)
   - [Fesliyan Studios Royalty-Free Music](https://www.fesliyanstudios.com/)
+  - [Wieting Pre-Show Music](https://docs.google.com/spreadsheets/d/1aAWQt_F-KDSoX9OkxEF4MXKqgYqMAteUvU2Tb4V7_So)
   

@@ -2,7 +2,7 @@
 title: Network
 draft: false
 author: Mackenzie McFate
-date: 2021-10-17T20:35:01-05:00
+date: 2022-01-30T09:35:01-05:00
 socialshare: false
 weight: 80
 ---
@@ -41,7 +41,7 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 
 ## Diagram
 
-{{< imgfig "/img/_Wieting-Networks-Topology-2021.png" >}}
+{{< imgfig "/img/_Wieting-Networks-Topology-2022.png" >}}
 
 
 ## Wieting Network Topology "Secret Decoder Ring"
@@ -56,9 +56,9 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | E | Eero Wireless Mesh Gateway | Light Board Desk w/ 2 Satelite Units in the Annex |
 | F | Simplex Grinnell Fire Alarm | Stage North |
 | G | Netgear 16-Port Gigabit Switch | Projection Booth - Top of Audio Rack |
-| H | 4-Port HDMI Input Switch | Projection Booth - Projection Desk |
+| H | Raspberry Pi Pre-Show Computer | Projection Booth - Cinema Pedestal |
 | I | GDC SR-1000 Standalone IMB (Integrated Media Block) | Projection Booth - Projection Desk |
-| J | 2-Port HDMI Output Switch | Projection Booth - Rear of Cinema Pedestal |
+| J | 2-Port HDMI Output Switch | Projection Booth - Projection Desk |
 | K | Open USB Drive Boot | Projection Booth - Cinema Pedastal |
 | M | Thompson DCM476 Cable Modem from Mediacom | Projection Booth - Top of Audio Rack |
 | O | Wieting-BoxOffice Windows Desktop Computer | Box Office - North Desk |

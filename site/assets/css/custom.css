@@ -8,10 +8,6 @@ div.debug {
   margin-bottom: 2em;
 }
 
-@media print {
-.page-break { display: block; page-break-before: always; }
-}
-
 /* Make the Donate! menu item stand out */
 .menu__list > li:nth-child(3) > a:nth-child(1) {
   color: #ffc107; 

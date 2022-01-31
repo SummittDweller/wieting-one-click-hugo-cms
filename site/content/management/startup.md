@@ -33,17 +33,6 @@ If the power switch on the power strip is glowing red then the system is ready-t
 
 Once the power strip is on move to step `C` below.
 
-<div class="page-break"></div>  
-
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-
 ### C - Content Power-Up
 
 The content server should be left on at all times, but if the blue lights at `C` are NOT lit, check the small toggle switch near the lights.  Turn it on if necessary.

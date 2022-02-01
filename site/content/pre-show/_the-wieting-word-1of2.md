@@ -5,7 +5,7 @@ expiryDate: 2022-12-31
 oneSheet: /img/_Wieting-Word.png
 shortTitle: The Wieting Word
 title: Subscribe to the Wieting Word!
-audio: /audio/30/happy-1.mp3
+audio: /audio/30/family-simple.mp3
 duration: 30000
 ---
 

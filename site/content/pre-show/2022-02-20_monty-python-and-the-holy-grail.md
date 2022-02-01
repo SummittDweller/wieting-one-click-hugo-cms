@@ -18,7 +18,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 draft: false
-audio: /audio/15/happy-1.mp3
+audio: /audio/15/kid-happy.mp3
 ---
 Tell your friends that this classic is coming to the Wieting in February!
 

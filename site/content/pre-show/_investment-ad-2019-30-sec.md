@@ -4,7 +4,7 @@ draft: false
 expiryDate: 2022-12-31
 shortTitle: Tama County Investment Services
 title: Tama County Investment Services
-audio: /audio/30/happy-1.mp3
+audio: /audio/30/pop-simple.mp3
 mp4: investment-ad-revised2019-30-sec.mp4
 additionalDuration: 15
 ---

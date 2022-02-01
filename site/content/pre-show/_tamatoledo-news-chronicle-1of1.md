@@ -5,7 +5,7 @@ expiryDate: 2022-12-31
 shortTitle: Tama-Toledo News Chronicle
 title: Tama-Toledo News Chronicle
 bannerImage: /img/_tamatoledo-news-chronicle-logo.png
-audio: /audio/15/adventure-1.mp3
+audio: /audio/15/adventure-upbeat.mp3
 ---
 
 The Wieting is pleased to support our local hometown newspaper.  We hope you will too!  

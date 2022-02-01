@@ -19,6 +19,6 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 draft: false
-audio: /audio/15/inspiration-1.mp3
+audio: /audio/15/story-happy.mp3
 ---
 The national release of the story of Iowa's own NFL MVP and Hall of Fame quarterback Kurt Warner, who went from stocking shelves at Hy-Vee to becoming Iowa's own American Football star!

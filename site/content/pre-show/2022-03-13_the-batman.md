@@ -25,6 +25,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: The Batman
+audio: /audio/15/hero-cool.mp3
 ---
 
 StartIng his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.

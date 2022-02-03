@@ -1,7 +1,7 @@
 ---
 title: Monty Python and the Holy Grail
 date: 2022-02-20
-dates: 7:00 pm friday sunday from feb18 2022 thru feb 20 2022
+dates: 7:00 pm friday sunday from feb 18 2022 thru feb 20 2022
 dateRange: Feb 18 and 20
 shortTitle: Monty Python and the Holy Grail
 oneSheet: /img/hg_new_flag_2mb.jpg

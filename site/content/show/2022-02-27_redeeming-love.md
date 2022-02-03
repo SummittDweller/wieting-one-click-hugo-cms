@@ -2,7 +2,7 @@
 title: Redeeming Love
 date: 2022-02-27
 dates: every Friday Sunday at 7:00 pm starting Feb 25 2022 ending Feb 27 2022
-dateRange: Fev 25 and 27
+dateRange: Feb 25 and 27
 shortTitle: Redeeming Love
 oneSheet: /img/redeeming-love.jpg
 showType: Cinema

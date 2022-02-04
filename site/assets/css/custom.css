@@ -8,6 +8,12 @@ div.debug {
   margin-bottom: 2em;
 }
 
+
+td, th {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
 /* Make the Donate! menu item stand out */
 .menu__list > li:nth-child(3) > a:nth-child(1) {
   color: #ffc107; 

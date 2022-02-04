@@ -21,7 +21,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: Redeeming Love
-audio: /audio/15/story-happy.mp3
+audio: /audio/15/somber-calm.mp3
 ---
 
 Sold into prostitution as a child, Angel knows nothing but betrayal. Can her heart ever be healed? Based upon the novel by Francine Rivers.

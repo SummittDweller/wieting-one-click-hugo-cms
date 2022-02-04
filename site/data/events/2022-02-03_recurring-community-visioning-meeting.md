@@ -1,7 +1,7 @@
 ---
 title: Community Visioning Meetings
 date: 2022-02-03  
-dates: 5:00 pm monthly every 1st thursday from february 3 2022 to december 31 2022
+dates: 5:00 pm monthly every 1st thursday from april 1 2022 to december 31 2022
 durationMinutes: 120
 draft: false
 ---

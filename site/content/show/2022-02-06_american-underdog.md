@@ -9,9 +9,7 @@ mpaaRating: PG
 officialURL: https://americanunderdog.movie/
 oneSheet: /img/amer-underdog.jpg
 performanceList:
-  performance:
-  - date: 2022-02-06 19:00:00-06:00
-    format: 2D
+  performance: []
 runningTime: 112
 shortTitle: American Underdog
 showType: Cinema

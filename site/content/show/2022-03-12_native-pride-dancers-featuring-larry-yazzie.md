@@ -1,0 +1,31 @@
+---
+title: Native Pride Dancers featuring Larry Yazzie
+date: 2022-03-12
+dates: 7:00 pm on Mar 12 2022
+dateRange: Mar 12
+shortTitle: Native Pride Dancers
+oneSheet: /img/larry-website-poster-copy.jpg
+showType: Live Performance
+runningTime: 90
+mpaaRating: Not Rated
+officialURL: https://nativeprideproductions.com/
+performanceList:
+  performance:
+    - date: 2022-03-13T01:00:26.600Z
+studioInfo:
+  studio: Not Specified
+  studioFee: 0
+  studioPercentage: 0
+draft: false
+---
+
+
+About Native Pride Dancer:
+
+We celebrate the spirit and beauty of Indigenous peoples! We honor the uniqueness and history of First Nations Peoples including the Meskwaki Nation, Lakota, Ojibwe, Dakota, Nakota, Menominee, Cree, Ho-Chunk, Navajo, and other tribes.
+
+As individual artists, we join together as one!
+
+We honor our elders through many beautiful forms of art: music, dance and storytelling to reflect our rich cultural history and customs passed down from generation to generation. We share the true history of bravery, fortitude, generosity and wisdom of our People. We also share our current issues.
+
+We are passionately devoted to keeping our traditions alive. Our mission is to educate, inspire, motivate and empower diverse communities to bridge cultural gaps through Indigenous traditions.

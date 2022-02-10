@@ -6,7 +6,7 @@ draft: false
 expiryDate: 2022-02-21
 imdbURL: https://www.imdb.com/title/tt0071853/?ref_=nv_sr_srsg_0
 mpaaRating: PG
-oneSheet: /img/hg_new_flag_2mb.jpg
+oneSheet: /img/monty-python-website-poster-copy.jpg
 performanceList:
   performance:
   - date: 2022-02-18 19:00:00-06:00

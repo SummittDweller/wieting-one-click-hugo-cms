@@ -6,7 +6,7 @@ oneSheet: /img/_Wieting-Word.png
 shortTitle: The Wieting Word
 title: Subscribe to the Wieting Word!
 audio: /audio/30/family-simple.mp3
-duration: 30000
+additionalDuration: 15
 ---
 
 If you'd like to know what's happening at the Wieting please visit our website at  

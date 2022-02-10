@@ -1,24 +1,25 @@
 ---
-title: Native Pride Dancers featuring Larry Yazzie
-date: 2022-03-12
-dates: 7:00 pm on Mar 12 2022
+date: 2022-03-12 19:00:00-06:00
 dateRange: Mar 12
-shortTitle: Native Pride Dancers
-oneSheet: /img/larry-website-poster-copy.jpg
-showType: Live Performance
-runningTime: 90
+dates: 7:00 pm on Mar 12 2022
+draft: false
+expiryDate: 2022-03-13
 mpaaRating: Not Rated
 officialURL: https://nativeprideproductions.com/
+oneSheet: /img/larry-website-poster-copy.jpg
 performanceList:
   performance:
-    - date: 2022-03-13T01:00:26.600Z
+  - date: 2022-03-12 19:00:00-06:00
+    format: 2D
+runningTime: 90
+shortTitle: Native Pride Dancers
+showType: Live Performance
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: Native Pride Dancers featuring Larry Yazzie
 ---
-
 
 About Native Pride Dancer:
 

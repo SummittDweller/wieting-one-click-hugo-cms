@@ -1,5 +1,5 @@
 ---
-date: 2022-02-06 19:00:00-06:00
+date: 2022-02-07 01:00:00
 dateRange: Feb 4 and 6
 dates: every Friday Sunday at 7:00 pm starting Feb 4 2022 ending Feb 6  2022
 draft: false

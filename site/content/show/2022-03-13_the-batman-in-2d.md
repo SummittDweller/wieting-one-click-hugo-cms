@@ -2,7 +2,7 @@
 title: The Batman in 2D
 date: 2022-03-13
 expiryDate: 2022-03-14
-dates: 7:00 pm every friday sunday from mar 11 2022 thru mar 13 2022
+dates: 7:00 pm every other day from mar 11 2022 thru mar 13 2022
 dateRange: Mar 11 and 13
 shortTitle: The Batman in 2D
 oneSheet: /img/batman.jpg

@@ -9,12 +9,12 @@ mpaaRating: PG-13
 oneSheet: /img/batman.jpg
 performanceList:
   performance:
-  - date: 2022-03-05 01:00:00
-    format: 3D
-  - date: 2022-03-06 01:00:00
-    format: 3D
-  - date: 2022-03-07 01:00:00
-    format: 3D
+  - date: 2022-03-04 19:00:00-06:00
+    format: 2D
+  - date: 2022-03-05 19:00:00-06:00
+    format: 2D
+  - date: 2022-03-06 19:00:00-06:00
+    format: 2D
 runningTime: 175
 shortTitle: The Batman in 3D
 showType: Cinema

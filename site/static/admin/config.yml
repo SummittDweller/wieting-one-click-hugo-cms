@@ -53,7 +53,13 @@ collections:
         name: dates
         widget: string 
         required: true
-        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  A valid string is required but can be overridden if you choose FALSE below. 
+
+      # - label: Expand Dates String? 
+      #   name: expand
+      #   widget: boolean
+      #   default: true
+      #   hint: Select TRUE to always expand the Dates String entered above.  Select FALSE if you wish to enter discrete performance details below.
 
       - label: Synopsis
         name: body

@@ -1,5 +1,5 @@
 ---
-date: 2022-03-11 19:00:00-06:00
+date: 2022-03-13 19:00:00-05:00
 dateRange: Mar 11 and 13
 dates: 7:00 pm every other day from March 11 2022 thru March 13 2022
 draft: false
@@ -9,9 +9,9 @@ mpaaRating: PG-13
 oneSheet: /img/batman.jpg
 performanceList:
   performance:
-  - date: 2022-03-12 01:00:00
+  - date: 2022-03-11 19:00:00-06:00
     format: 2D
-  - date: 2022-03-14 00:00:00
+  - date: 2022-03-13 19:00:00-05:00
     format: 2D
 runningTime: 175
 shortTitle: The Batman in 2D

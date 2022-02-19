@@ -9,8 +9,6 @@ mpaaRating: PG
 oneSheet: /img/monty-python-website-poster-copy.jpg
 performanceList:
   performance:
-  - date: 2022-02-18 19:00:00-06:00
-    format: 2D
   - date: 2022-02-20 19:00:00-06:00
     format: 2D
 runningTime: 91

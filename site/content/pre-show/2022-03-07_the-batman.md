@@ -9,11 +9,11 @@ mpaaRating: PG-13
 oneSheet: /img/batman.jpg
 performanceList:
   performance:
-  - date: 2022-03-05 01:00:00
+  - date: 2022-03-04 19:00:00-06:00
     format: 3D
-  - date: 2022-03-06 01:00:00
+  - date: 2022-03-05 19:00:00-06:00
     format: 3D
-  - date: 2022-03-07 01:00:00
+  - date: 2022-03-06 19:00:00-06:00
     format: 3D
 runningTime: 175
 shortTitle: The Batman in 3D
@@ -23,6 +23,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: The Batman in 3D
+audio: /audio/15/hero-cool.mp3
 ---
 
 Starting his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.

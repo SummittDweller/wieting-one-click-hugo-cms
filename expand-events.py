@@ -168,10 +168,18 @@ for filename in files:
         if debug: print(Fore.GREEN + "    File has been renamed to ", correct_path + Style.RESET_ALL);
         filepath = correct_path;
 
-    # parse the 'dates' string and expand it
-    r = parse_dates_string(event);
-    performances = [ ];
-
+    # parse the 'dates' string and expand it IF event['expand'] is not FALSE
+    if 'expand' in keys:
+      expand = event['expand'];
+    else:
+      expand = True;          
+    
+    if expand:
+      r = parse_dates_string(event);
+      performances = [ ];
+    else:
+      r = False;
+        
     if r:
       # iterate through 'r' adding individual .md files to 'event/active' directory
       for d in r: 

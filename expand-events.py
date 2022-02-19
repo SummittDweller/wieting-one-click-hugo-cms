@@ -162,7 +162,7 @@ for filename in files:
         if 'note' in p_keys:
           n = p['note'];
         else:
-          n = False;
+          n = '';
         captured.append({'format': p['format'], 'note': n});
 
     else:

@@ -10,11 +10,14 @@ oneSheet: /img/batman.jpg
 performanceList:
   performance:
   - date: 2022-03-04 19:00:00-06:00
-    format: 2D
+    format: 3D
+    note: Note this is a special 3D showing!
   - date: 2022-03-05 19:00:00-06:00
-    format: 2D
+    format: 3D
+    note: Note this is a special 3D showing!
   - date: 2022-03-06 19:00:00-06:00
-    format: 2D
+    format: 3D
+    note: Note this is a special 3D showing!
 runningTime: 175
 shortTitle: The Batman in 3D
 showType: Cinema

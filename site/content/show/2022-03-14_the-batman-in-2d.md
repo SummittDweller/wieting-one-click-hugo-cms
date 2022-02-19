@@ -11,8 +11,10 @@ performanceList:
   performance:
   - date: 2022-03-11 19:00:00-06:00
     format: 2D
+    note: false
   - date: 2022-03-13 19:00:00-05:00
     format: 2D
+    note: false
 runningTime: 175
 shortTitle: The Batman in 2D
 showType: Cinema

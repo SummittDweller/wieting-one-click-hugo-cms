@@ -11,6 +11,7 @@ performanceList:
   performance:
   - date: 2022-02-20 19:00:00-06:00
     format: 2D
+    note: false
 runningTime: 91
 shortTitle: Monty Python and the Holy Grail
 showType: Cinema

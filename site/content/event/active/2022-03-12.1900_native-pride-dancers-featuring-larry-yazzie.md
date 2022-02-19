@@ -11,6 +11,7 @@ performanceList:
   performance:
   - date: 2022-03-12 19:00:00-06:00
     format: 2D
+    note: false
 runningTime: 90
 shortTitle: Native Pride Dancers
 showType: Live Performance

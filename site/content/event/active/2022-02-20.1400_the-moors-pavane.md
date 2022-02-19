@@ -10,6 +10,7 @@ performanceList:
   performance:
   - date: 2022-02-20 14:00:00-06:00
     format: 2D
+    note: false
 runningTime: 60
 shortTitle: The Moor's Pavane
 showType: Live Performance

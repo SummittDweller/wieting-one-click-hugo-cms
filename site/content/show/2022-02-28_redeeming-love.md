@@ -11,8 +11,10 @@ performanceList:
   performance:
   - date: 2022-02-25 19:00:00-06:00
     format: 2D
+    note: false
   - date: 2022-02-27 19:00:00-06:00
     format: 2D
+    note: false
 runningTime: 134
 shortTitle: Redeeming Love
 showType: Cinema

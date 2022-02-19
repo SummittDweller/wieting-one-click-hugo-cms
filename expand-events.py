@@ -153,6 +153,20 @@ for filename in files:
     # this is a .md file in 'show/', process it
     event = parse_frontmatter(filepath);
     keys = event.keys( );
+    
+    # if this show already has a performanceList, capture the format and note values and re-use them
+    if 'performanceList' in keys:
+      captured = [ ];
+      for p in event['performanceList']['performance']:
+        p_keys = p.keys();
+        if 'note' in p_keys:
+          n = p['note'];
+        else:
+          n = False;
+        captured.append({'format': p['format'], 'note': n});
+
+    else:
+      captured = False;
 
     # capture the "event_name" portion of the filename, after the '_', for re-use
     [named_date, event_name] = filename.split('_');
@@ -167,21 +181,11 @@ for filename in files:
         os.rename(filepath, correct_path);
         if debug: print(Fore.GREEN + "    File has been renamed to ", correct_path + Style.RESET_ALL);
         filepath = correct_path;
-
-    # parse the 'dates' string and expand it IF event['expand'] is not FALSE
-    if 'expand' in keys:
-      expand = event['expand'];
-    else:
-      expand = True;          
     
-    if expand:
-      r = parse_dates_string(event);
-      performances = [ ];
-    else:
-      r = False;
+    r = parse_dates_string(event);
+    performances = [ ];
         
-    if r:
-      # iterate through 'r' adding individual .md files to 'event/active' directory
+    if r:  # iterate through 'r' adding individual .md files to 'event/active' directory
       for d in r: 
         if debug: print("  discrete/expanded datetime is: ", d);
         # if this generated date is not in the past, process it
@@ -193,6 +197,13 @@ for filename in files:
             f.write(frontmatter.dumps(event));
           # add one performance to the frontmatter performanceList 
           performances.append({'date': tz.localize(d), 'format': '2D'});
+    
+      # ok, if the number of performances is the same as caotured, keep the old 'format' and 'note' values
+      if len(performances) == len(captured):
+        for i, p in enumerate(performances):
+          performances[i]['format'] = captured[i]['format'];
+          performances[i]['note'] = captured[i]['note'];
+        if debug: print(Fore.GREEN + "  Old performance 'format' and 'notes' have been preserved!" + Style.RESET_ALL);
         
       # at the end of the for loop...calculate an expiryDate the day after 'd'
       day_after = d.date( ) + timedelta(days=1);

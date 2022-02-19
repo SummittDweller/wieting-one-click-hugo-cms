@@ -1,7 +1,7 @@
 ---
 mpaaRating: PG-13
 draft: false
-expiryDate: 2022-03-14
+expiryDate: 2022-03-08
 title: The Batman in 3D
 date: 2022-03-06
 dates: 7:00 pm every friday saturday sunday from mar 4 2022 thru mar 6 2022

@@ -9,10 +9,6 @@ showType: Cinema
 runningTime: 116
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt1464335/
-performanceList:
-  performance:
-    - date: 2022-03-19T00:00:38.324Z
-    - date: 2022-03-21T00:00:38.945Z
 studioInfo:
   studio: Sony
   studioFee: 0

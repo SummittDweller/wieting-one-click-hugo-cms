@@ -1,5 +1,5 @@
 ---
-date: 2022-02-27 19:00:00-06:00
+date: &id001 2022-02-27 19:00:00-06:00
 dateRange: Feb 25 and 27
 dates: every Friday Sunday at 7:00 pm starting Feb 25 2022 ending Feb 27 2022
 draft: false
@@ -11,10 +11,10 @@ performanceList:
   performance:
   - date: 2022-02-25 19:00:00-06:00
     format: 2D
-    note: false
-  - date: 2022-02-27 19:00:00-06:00
+    note: ''
+  - date: *id001
     format: 2D
-    note: false
+    note: ''
 runningTime: 134
 shortTitle: Redeeming Love
 showType: Cinema

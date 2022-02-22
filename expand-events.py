@@ -26,11 +26,10 @@ tz = pytz.timezone('America/Chicago');
 ## ---------- Functions --------------------- ##
 ## ------------------------------------------ ##
 
-# parse a 'dates' string using https://github.com/kvh/recurrent and return False
-#   or a list of equivalent datatime values
-#   returns False if 'dates' is not present or not valid
+# parse a 'dates' string using https://github.com/kvh/recurrent and return a list of equivalent datetime values
+# if 'dates' is not present or is not a valid recurring date string, return the localized dates event['performanceList']
 def parse_dates_string(event):
-  d = [ ];
+  dd = [ ];
   keys = event.keys( );
 
   if 'dates' in keys:
@@ -39,20 +38,32 @@ def parse_dates_string(event):
     if debug: print("  dates string '%s' successfully parsed" % event['dates']);
     if debug: print("  recurrence params are:", r.get_params( ));
     if not r.is_recurring:
-      if debug: print("  attention: NOT a recurring date but a discrete datetime of:", rp);      
-      d.append(rp);
+      print(Fore.YELLOW + "  WARNING: 'dates' is not recurring. Is it a discrete date?" + Style.RESET_ALL);
+      if rp:
+        lp = tz.localize(rp);
+        dd.append(lp);
+        print(Fore.YELLOW + "  WARNING: Discrete date '%s' will be used." % lp + Style.RESET_ALL);
+      else:
+        for p in event['performanceList']['performance']:
+          pd = p['date'];
+          print(Fore.YELLOW + "  WARNING: Discrete performanceList date '%s' will be used." % pd + Style.RESET_ALL);
+          dd.append(pd);
+
     else:
       r = add_one_day_until(rp);
       if debug: print("  this recurring event string is:", r);
       rr = rrule.rrulestr(r);
       for index, recur in enumerate(rr): 
-        if debug: print("  individual datetime is: ", recur);
+        lp = tz.localize(recur)
+        if debug: print("  individual datetime is: ", lp);
         if index == 100:
           if debug: print("WHOA! This recurring dates has generated more than 100 discrete dates.  Are you sure about this?");
           break;
-        d.append(recur);
-    if debug: print("  parse_dates_string returns datetime list:", d);
-    return d;
+        dd.append(lp);
+
+    if debug: print("  parse_dates_string returns datetime list:", dd);
+    return dd;
+
   else:
     print(Fore.RED + "  ERROR: No 'dates' string found in this event!" + Style.RESET_ALL);
     return False;
@@ -70,20 +81,20 @@ def add_one_day_until(recur_string):
   return recur_string;
 
 # event_in_the_past - Checks if date or expiryDate has passed and returns True or False
-def event_in_the_past(event):
-  if isinstance(event, dt):
-    if not (date.today( ) < event.date( )):
+def event_in_the_past(ed):
+  if isinstance(ed, dt):
+    if not (date.today( ) < ed.date( )):
       if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
       return True;
   
   else:
-    keys = event.keys( );
+    keys = ed.keys( );
     if 'date' in keys:
-      if not (date.today( ) < event['date'].date( )):
+      if not (date.today( ) < ed['date'].date( )):
         if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
         return True;
     if 'expiryDate' in keys:
-      if not (date.today( ) < event['expiryDate']):
+      if not (date.today( ) < ed['expiryDate']):
         if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
         return True;
   
@@ -118,7 +129,10 @@ for filename in files:
     # this is a .md file in 'event/active', check it if should be in the past
     event = parse_frontmatter(filepath);
 
-    if event_in_the_past(event['date']):
+    # if this is a 'draft' event, skip it.
+    if event['draft']:
+      continue;
+    elif event_in_the_past(event['date']):
       if debug: print(Fore.YELLOW + 'Moving active event', filepath, 'to the past' + Style.RESET_ALL);
 
       # remove expiryDate from the frontmatter and write the result to past 
@@ -127,7 +141,7 @@ for filename in files:
       with open(past + filename, "w") as f:
         f.write(frontmatter.dumps(event));
       try:
-        os.remove(filePath);
+        os.remove(filepath);
       except:
         print(Fore.RED + "Error while deleting file: " + filepath + Style.RESET_ALL);
 
@@ -158,12 +172,17 @@ for filename in files:
     if 'performanceList' in keys:
       captured = [ ];
       for p in event['performanceList']['performance']:
+        d = p['date'];
         p_keys = p.keys();
         if 'note' in p_keys:
           n = p['note'];
         else:
           n = '';
-        captured.append({'format': p['format'], 'note': n});
+        if 'format' in p_keys:
+          f = p['format'];
+        else:
+          f = '2D';
+        captured.append({'date': d, 'format': f, 'note': n});
 
     else:
       captured = False;
@@ -181,43 +200,42 @@ for filename in files:
         os.rename(filepath, correct_path);
         if debug: print(Fore.GREEN + "    File has been renamed to ", correct_path + Style.RESET_ALL);
         filepath = correct_path;
-    
+
+    # parse the 'dates' string and process the results
     r = parse_dates_string(event);
-    performances = [ ];
-        
     if r:  # iterate through 'r' adding individual .md files to 'event/active' directory
-      for d in r: 
+      performances = [ ];
+      for d in r:
         if debug: print("  discrete/expanded datetime is: ", d);
         # if this generated date is not in the past, process it
         if not event_in_the_past(d):
-          event['date'] = tz.localize(d);
-          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
+          event['date'] = d;   # update frontmatter 'date' to the last of the generated dates
+          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name;
           if debug and verbose: print(frontmatter.dumps(event));
           with open(active_filename, "w") as f:
             f.write(frontmatter.dumps(event));
-          # add one performance to the frontmatter performanceList 
-          performances.append({'date': tz.localize(d), 'format': '2D'});
-    
-      # ok, if the number of performances is the same as caotured, keep the old 'format' and 'note' values
+          ## add one performance to the frontmatter performanceList
+          performances.append({'date': d, 'format': '2D', 'note': ''});
+
+    # ok, if the number of performances is the same as captured, keep the old 'format' and 'note' values
+    if performances and captured:
       if len(performances) == len(captured):
         for i, p in enumerate(performances):
           performances[i]['format'] = captured[i]['format'];
           performances[i]['note'] = captured[i]['note'];
         if debug: print(Fore.GREEN + "  Old performance 'format' and 'notes' have been preserved!" + Style.RESET_ALL);
         
-      # at the end of the for loop...calculate an expiryDate the day after 'd'
-      day_after = d.date( ) + timedelta(days=1);
-      expiryDate = day_after;  # .strftime("%Y%m%d");
-      if debug: print("  expiryDate is: ", expiryDate);
+    # at the end of the for loop...calculate an expiryDate the day after 'd'
+    day_after = d.date( ) + timedelta(days=1);
+    expiryDate = day_after;  # .strftime("%Y%m%d");
+    if debug: print("  expiryDate is: ", expiryDate);
 
-      # write the calculated expiryDate and performances back into the .md file 
-      event['expiryDate'] = expiryDate;
-      event['performanceList'] = {'performance': performances};
-      with open(filepath, "w") as f:
-        f.write(frontmatter.dumps(event));
+    # write the calculated expiryDate and performances back into the .md file
+    event['expiryDate'] = expiryDate;
+    event['performanceList'] = {'performance': performances};
+    with open(filepath, "w") as f:
+      f.write(frontmatter.dumps(event));
 
-    else:
-      if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
 
 ### process the data/events .md files ###
 files = os.listdir(data);
@@ -253,8 +271,8 @@ for filename in files:
         if debug: print("  discrete/expanded datetime is: ", d);
         # if this generated date is not in the past make it active
         if not event_in_the_past(d):
-          event['date'] = tz.localize(d);
-          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name; 
+          event['date'] = d;
+          active_filename = active + d.strftime("%Y-%m-%d.%H%M_") + event_name;
           if debug and verbose: print(frontmatter.dumps(event));
           with open(active_filename, "w") as f:
             f.write(frontmatter.dumps(event));

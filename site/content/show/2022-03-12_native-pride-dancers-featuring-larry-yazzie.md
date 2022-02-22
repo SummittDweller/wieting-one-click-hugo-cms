@@ -1,5 +1,5 @@
 ---
-date: 2022-03-12 19:00:00-06:00
+date: &id001 2022-03-12 19:00:00-06:00
 dateRange: Mar 12
 dates: 7:00 pm on Mar 12 2022
 draft: false
@@ -9,9 +9,9 @@ officialURL: https://nativeprideproductions.com/
 oneSheet: /img/larry-website-poster-copy.jpg
 performanceList:
   performance:
-  - date: 2022-03-12 19:00:00-06:00
+  - date: *id001
     format: 2D
-    note: false
+    note: ''
 runningTime: 90
 shortTitle: Native Pride Dancers
 showType: Live Performance

@@ -28,7 +28,7 @@ tz = pytz.timezone('America/Chicago');
 
 # parse a 'dates' string using https://github.com/kvh/recurrent and return a list of equivalent datetime values
 # if 'dates' is not present or is not a valid recurring date string, return the localized dates event['performanceList']
-def parse_dates_string(event):
+def parse_dates_string(event): 
   dd = [ ];
   keys = event.keys( );
 

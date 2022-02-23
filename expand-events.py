@@ -35,38 +35,43 @@ def parse_dates_string(event):
   if 'dates' in keys:
     r = RecurringEvent(now_date=date.today( ));    
     rp = r.parse(event['dates']);
-    if debug: print("  dates string '%s' successfully parsed" % event['dates']);
-    if debug: print("  recurrence params are:", r.get_params( ));
-    if not r.is_recurring:
-      print(Fore.YELLOW + "  WARNING: 'dates' is not recurring. Is it a discrete date?" + Style.RESET_ALL);
-      if rp:
+
+    if rp:
+      if debug: print("  dates string '%s' successfully parsed" % event['dates']);
+      if debug: print("  recurrence params are:", r.get_params( ));
+
+      # if this is a discrete datetime...
+      if isinstance(rp, dt):
+        if debug: print("  Parsed event['dates'] is a discrete datetime object");
         lp = tz.localize(rp);
-        dd.append(lp);
-        print(Fore.YELLOW + "  WARNING: Discrete date '%s' will be used." % lp + Style.RESET_ALL);
-      else:
-        for p in event['performanceList']['performance']:
-          pd = p['date'];
-          print(Fore.YELLOW + "  WARNING: Discrete performanceList date '%s' will be used." % pd + Style.RESET_ALL);
-          dd.append(pd);
-
-    else:
-      r = add_one_day_until(rp);
-      if debug: print("  this recurring event string is:", r);
-      rr = rrule.rrulestr(r);
-      for index, recur in enumerate(rr): 
-        lp = tz.localize(recur)
-        if debug: print("  individual datetime is: ", lp);
-        if index == 100:
-          if debug: print("WHOA! This recurring dates has generated more than 100 discrete dates.  Are you sure about this?");
-          break;
+        print(Fore.YELLOW + "  Attention: Discrete date '%s' will be used." % lp + Style.RESET_ALL);
         dd.append(lp);
 
+      # if it's a valid recurring date...
+      elif r.is_recurring:
+        r = add_one_day_until(rp);
+        if debug: print("  this recurring event string is:", r);
+        rr = rrule.rrulestr(r);
+        for index, recur in enumerate(rr): 
+          lp = tz.localize(recur);
+          if debug: print("  individual datetime is: ", lp);
+          if index == 100:
+            if debug: print("WHOA! This recurring dates has generated more than 100 discrete dates.  Are you sure about this?");
+            break;
+          dd.append(lp);
+
+    else:   # not a discrete date nor recurring... use the 'performanceList' performance dates
+      print(Fore.YELLOW + "  WARNING: 'dates' is neither discrete nor recurring!" + Style.RESET_ALL);
+      for p in event['performanceList']['performance']:
+        pd = p['date'];
+        print(Fore.YELLOW + "  WARNING: Discrete performanceList date '%s' will be used." % pd + Style.RESET_ALL);
+        dd.append(pd);
+    
     if debug: print("  parse_dates_string returns datetime list:", dd);
     return dd;
 
-  else:
-    print(Fore.RED + "  ERROR: No 'dates' string found in this event!" + Style.RESET_ALL);
-    return False;
+  print(Fore.RED + "  ERROR: No valid 'dates' string found in this event!" + Style.RESET_ALL);
+  return False;
 
 # add_one_day_until - Adds a day (24 hours) to any recurring date UNTIL value to make it inclusive
 def add_one_day_until(recur_string):

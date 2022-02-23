@@ -52,8 +52,8 @@ collections:
       - label: Dates String
         name: dates
         widget: string 
-        required: true
-        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  A valid string is required but can be overridden if you choose FALSE below. 
+        required: false
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  This field is no longer required!  If you omit it, be sure to populate discrete 'Performances' details in the fields provided below. 
 
       # - label: Expand Dates String? 
       #   name: expand
@@ -147,9 +147,9 @@ collections:
             widget: list
 
             fields:
-              - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true }
-              - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: false }
-              - { label: Peformance Note, name: note, required: false }
+              - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true, required: true }
+              - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: true, default: "2D" }
+              - { label: Peformance Note, name: note, required: true, default: "" }
 
       - label: "Studio Info"
         name: studioInfo 

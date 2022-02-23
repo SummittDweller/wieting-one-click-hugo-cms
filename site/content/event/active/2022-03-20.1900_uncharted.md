@@ -6,7 +6,7 @@ draft: false
 expiryDate: 2022-03-21
 imdbURL: https://www.imdb.com/title/tt1464335/
 mpaaRating: PG-13
-oneSheet: /img/uncharted.jpg
+oneSheet: /img/Uncharted.png
 performanceList:
   performance:
   - date: 2022-03-18 19:00:00-05:00

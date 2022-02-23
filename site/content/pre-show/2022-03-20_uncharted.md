@@ -4,7 +4,7 @@ date: 2022-03-20
 dates: every Friday Sunday at 7:00 pm starting Mar 18 2022 ending Mar 20 2022
 dateRange: Mar 18 and 20
 shortTitle: Uncharted
-oneSheet: /img/uncharted.jpg
+oneSheet: /img/Uncharted.png
 showType: Cinema
 runningTime: 116
 mpaaRating: PG-13

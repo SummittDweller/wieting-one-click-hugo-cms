@@ -149,7 +149,7 @@ collections:
             fields:
               - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true, required: true }
               - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: true, default: "2D" }
-              - { label: Peformance Note, name: note, required: true, default: "" }
+              - { label: Peformance Note, name: note, required: false, default: "" }
 
       - label: "Studio Info"
         name: studioInfo 

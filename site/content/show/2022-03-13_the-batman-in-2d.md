@@ -1,7 +1,6 @@
 ---
 date: &id001 2022-03-13 19:00:00-05:00
 dateRange: Mar 11 and 13
-dates: Not a valid dates string.
 draft: false
 expiryDate: 2022-03-14
 imdbURL: https://www.imdb.com/title/tt1877830/

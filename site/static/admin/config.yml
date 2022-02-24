@@ -178,6 +178,13 @@ collections:
             default: 0 
             required: false
                     
+      - label: Pre-Show Audio
+        name: audio_selection
+        widget: select
+        options: [ "action-cool", "action-rock", "adventure-upbeat", "challenge-story", "drama-calm", "drama-hopeful", "drama-innovative", "drama-pop", "family-simple", "family-upbeat", "hero-cool", "insipirational-innovative", "kid-happy", "lobby-calm", "lobby-simple", "party-pop", "pop-simple", "somber-calm", "somber-tragedy", "spy-groovy", "story-happy", "story-simple", "upbeat-friendly" ]
+        required: true
+        hint: Select a single audio clip to accompany this show in our pre-show sequence.
+
       - label: Draft 
         name: draft
         widget: boolean

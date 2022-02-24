@@ -26,6 +26,16 @@ tz = pytz.timezone('America/Chicago');
 ## ---------- Functions --------------------- ##
 ## ------------------------------------------ ##
 
+# no valid 'dates' string so harvest the 'performanceList' dates
+def harvest_perfomance_dates(event):
+  dd = [ ];
+  print(Fore.YELLOW + "  WARNING: 'dates' is neither discrete nor recurring!" + Style.RESET_ALL);
+  for p in event['performanceList']['performance']:
+    pd = p['date'];
+    print(Fore.YELLOW + "  WARNING: Discrete performanceList date '%s' will be used." % pd + Style.RESET_ALL);
+    dd.append(pd);
+  return dd;
+
 # parse a 'dates' string using https://github.com/kvh/recurrent and return a list of equivalent datetime values
 # if 'dates' is not present or is not a valid recurring date string, return the localized dates from event['performanceList']
 def parse_dates_string(event): 
@@ -61,17 +71,13 @@ def parse_dates_string(event):
           dd.append(lp);
 
     else:   # not a discrete date nor recurring... use the 'performanceList' performance dates
-      print(Fore.YELLOW + "  WARNING: 'dates' is neither discrete nor recurring!" + Style.RESET_ALL);
-      for p in event['performanceList']['performance']:
-        pd = p['date'];
-        print(Fore.YELLOW + "  WARNING: Discrete performanceList date '%s' will be used." % pd + Style.RESET_ALL);
-        dd.append(pd);
-    
-    if debug: print("  parse_dates_string returns datetime list:", dd);
-    return dd;
+      dd = harvest_perfomance_dates(event);
 
-  print(Fore.RED + "  ERROR: No valid 'dates' string found in this event!" + Style.RESET_ALL);
-  return False;
+  else:  # not a discrete date nor recurring... use the 'performanceList' performance dates
+    dd = harvest_perfomance_dates(event);
+
+  if debug: print("  parse_dates_string returns datetime list:", dd);
+  return dd;
 
 # add_one_day_until - Adds a day (24 hours) to any recurring date UNTIL value to make it inclusive
 def add_one_day_until(recur_string):
@@ -120,9 +126,6 @@ data = './site/data/events/';
 past = './site/content/event/past/';
 active = './site/content/event/active/';
 
-# create backup files...change all of the 'event/active/' .md files to .bak 
-files = os.listdir(active);
-
 ### sweep through event/active and move past events to event/past ###
 files = os.listdir(active);
 
@@ -131,7 +134,7 @@ for filename in files:
     filepath = active + filename;
     if debug: print(Fore.GREEN + 'Active event path is:', filepath + Style.RESET_ALL);
     
-    # this is a .md file in 'event/active', check it if should be in the past
+    # this is a .md file in 'event/active', check if it should be in the past
     event = parse_frontmatter(filepath);
 
     # if this is a 'draft' event, skip it.
@@ -172,7 +175,14 @@ for filename in files:
     # this is a .md file in 'show/', process it
     event = parse_frontmatter(filepath);
     keys = event.keys( );
-    
+
+    # if we have an audio_selection: key, add an audio: tag and re-write the .mp3 path
+    if 'audio' not in keys:
+      if 'audio_selection' in keys:
+        selection = event['audio_selection'];
+        event['audio'] = "/audio/15/" + selection + ".mp3";
+        if debug: print(Fore.YELLOW + "  audio_selection: ", selection, " converted to audio: " + Style.RESET_ALL);
+
     # if this show already has a performanceList, capture the format and note values and re-use them
     if 'performanceList' in keys:
       captured = [ ];

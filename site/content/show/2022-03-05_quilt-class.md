@@ -1,22 +1,24 @@
 ---
-date: &id001 2022-03-05 15:30:46.452000
-dateRange: Mar 5
+mpaaRating: Not Rated
 draft: false
 expiryDate: 2022-03-06
-mpaaRating: Not Rated
+title: Quilt class
+date: 2022-03-05 15:30:46.452000
+dateRange: Mar 5
+shortTitle: Quilt Class
 oneSheet: /img/quilt-class-website-poster-copy.jpg
+runningTime: 240
 performanceList:
   performance:
-  - date: *id001
-    format: 2D
-    note: ''
-runningTime: 240
-shortTitle: Quilt Class
+    - date: 2022-03-05 15:30:46.452000
+      format: 2D
+      note: ""
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: Quilt class
+audio_selection: family-simple
+pre_show: true
 ---
 
 **Only 5 spots left! Call or text 641-751-0775 to register.**

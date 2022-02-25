@@ -182,10 +182,16 @@ collections:
         name: audio_selection
         widget: select
         options: [ "action-cool", "action-rock", "adventure-upbeat", "challenge-story", "drama-calm", "drama-hopeful", "drama-innovative", "drama-pop", "family-simple", "family-upbeat", "hero-cool", "insipirational-innovative", "kid-happy", "lobby-calm", "lobby-simple", "party-pop", "pop-simple", "somber-calm", "somber-tragedy", "spy-groovy", "story-happy", "story-simple", "upbeat-friendly" ]
-        required: true
+        required: false
         hint: Select a single audio clip to accompany this show in our pre-show sequence.
 
-      - label: Draft 
+      - label: Copy Show to Pre-Show List?
+        name: pre_show
+        widget: boolean
+        default: true
+        hint: Set FALSE if you do NOT want this show presented during the Wieting's 30-minute pre-show sequence.  If TRUE be sure you select a pre-show audio clip above!
+
+      - label: Draft? 
         name: draft
         widget: boolean
         default: false

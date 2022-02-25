@@ -20,6 +20,7 @@ performanceList:
   - date: *id001
     format: 2D
     note: ''
+pre_show: true
 runningTime: 175
 shortTitle: The Batman
 showType: Cinema

@@ -122,6 +122,7 @@ def parse_frontmatter(filepath):
 ## ------------------------------------------ ##
 
 shows = './site/content/show/';
+pre_shows = './site/content/pre-show/';
 data = './site/data/events/';
 past = './site/content/event/past/';
 active = './site/content/event/active/';
@@ -129,7 +130,8 @@ active = './site/content/event/active/';
 ### sweep through event/active and move past events to event/past ###
 files = os.listdir(active);
 
-for filename in files:  
+### loop through the files in 'content/event/active' to make check for events that have passed
+for filename in files:
   if filename.endswith('.md'):    
     filepath = active + filename;
     if debug: print(Fore.GREEN + 'Active event path is:', filepath + Style.RESET_ALL);
@@ -251,6 +253,10 @@ for filename in files:
     with open(filepath, "w") as f:
       f.write(frontmatter.dumps(event));
 
+    # if this show is marked to copy as a "pre_show", make it so, but no duplicates
+    if 'pre_show' in keys:
+      if event['pre_show']:
+        shutil.copyfile(filepath, pre_shows + filename);
 
 ### process the data/events .md files ###
 files = os.listdir(data);

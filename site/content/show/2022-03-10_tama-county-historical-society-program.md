@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-03-10 01:00:33.169000+00:00
+date: &id001 2022-03-10 01:00:33.169000
 dateRange: Mar 9
 draft: false
 expiryDate: 2022-03-11
@@ -12,7 +12,7 @@ performanceList:
     note: ''
 pre_show: true
 runningTime: 120
-shortTitle: Tama County Historical Society Program
+shortTitle: Tama Co. Historical Society
 studioInfo:
   studio: Not Specified
   studioFee: 0

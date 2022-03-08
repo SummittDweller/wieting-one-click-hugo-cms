@@ -1,17 +1,14 @@
 ---
 audio: /audio/15/family-simple.mp3
 audio_selection: family-simple
-date: &id001 2022-03-05 15:30:46.452000
+date: 2022-03-05 15:30:46.452000
 dateRange: Mar 5
 draft: false
 expiryDate: 2022-03-06
 mpaaRating: Not Rated
 oneSheet: /img/quilt-class-website-poster-copy.jpg
 performanceList:
-  performance:
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 pre_show: true
 runningTime: 240
 shortTitle: Quilt Class

@@ -1,7 +1,7 @@
 ---
 audio: /audio/15/hero-cool.mp3
 audio_selection: hero-cool
-date: 2022-03-05 19:00:00-06:00
+date: 2022-03-07 01:00:00
 dateRange: Mar 4 5 and 6
 dates: 7:00 pm every friday saturday sunday from mar 4 2022 thru mar 6 2022
 draft: false
@@ -10,16 +10,7 @@ imdbURL: https://www.imdb.com/title/tt1877830/mediaindex/?ref_=tt_mv_close
 mpaaRating: PG-13
 oneSheet: /img/batman.jpg
 performanceList:
-  performance:
-  - date: 2022-03-04 19:00:00-06:00
-    format: 2D
-    note: ''
-  - date: 2022-03-05 19:00:00-06:00
-    format: 2D
-    note: Note this is a special Saturday showing!
-  - date: 2022-03-06 19:00:00-06:00
-    format: 2D
-    note: ''
+  performance: []
 pre_show: true
 runningTime: 175
 shortTitle: The Batman

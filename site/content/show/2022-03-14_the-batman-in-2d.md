@@ -10,12 +10,6 @@ mpaaRating: PG-13
 oneSheet: /img/batman2.png
 performanceList:
   performance:
-  - date: 2022-03-12 01:00:00
-    format: 2D
-    note: ''
-  - date: 2022-03-13 19:00:00
-    format: 2D
-    note: This is a special matinee showing!
   - date: *id001
     format: 2D
     note: ''

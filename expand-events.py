@@ -163,8 +163,11 @@ for filename in files:
     
     # this is a .md file in 'event/active', keep it temporarily as a backup
     destination = active + os.path.splitext(filename)[0] + '.bak';  
-    shutil.move(filepath, destination);
-    print('  active event', filepath, 'was moved to backup file', destination);
+    try:
+      shutil.move(filepath, destination);
+      print('  active event', filepath, 'was moved to backup file', destination);
+    except:
+      print(Fore.YELLOW + "Warning: Could not make backup of file: " + filepath + Style.RESET_ALL);
 
 ### process the site/content/show .md files ###
 files = os.listdir(shows);

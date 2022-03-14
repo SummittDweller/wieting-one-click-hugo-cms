@@ -18,7 +18,7 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 pre_show: true
-draft: true
+draft: false
 ---
 This is a free performance sponsored by Grace Believers Church in Toledo.
 

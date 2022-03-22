@@ -1,4 +1,6 @@
 ---
+audio: /audio/15/spy-groovy.mp3
+audio_selection: spy-groovy
 date: &id001 2022-04-03 19:00:00-05:00
 dateRange: Apri 1 and 3
 dates: every Friday Sunday at 7:00 pm starting Apr 1 2022 ending Apr 3 2022
@@ -24,8 +26,6 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: Death on the Nile
-audio: /audio/15/spy-groovy.mp3
-audio_selection: spy-groovy
 ---
 
 While on vacation on the Nile, Hercule Poirot (Kenneth Branagh) must investigate the murder of a young heiress.

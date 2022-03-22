@@ -1,10 +1,28 @@
 ---
-date: 2022-04-03 13:30:00-05:00
+date: &id001 2022-04-03 13:30:00-05:00
+dateRange: Apr 3
 dates: 1:30 pm on Apr 3 2022
 draft: false
-durationMinutes: 120
+expiryDate: 2022-04-04
+mpaaRating: Not Rated
+oneSheet: /img/corrie-ten-boom-poster-copy.jpg
+performanceList:
+  performance:
+  - date: *id001
+    format: Not Applicable
+    note: ''
+pre_show: true
+runningTime: 120
+shortTitle: Corrie Ten Boom
+showType: Live Performance
+studioInfo:
+  studio: Not Specified
+  studioFee: 0
+  studioPercentage: 0
 title: 'Corrie Ten Boom: History Repeats Itself'
 ---
+
+This is a free performance sponsored by Grace Believers Church in Toledo.
 
 Corrie ten Boom is a one person drama by Evelyn Hinds where “Corrie” tells her amazing story of imprisonment in a Nazi death camp, her release, and later travel around the world telling her story. Evelyn is committed to telling the condensed story of Corrie and her family, as much as possible, in Corrie’s own words from her recordings or books.
 

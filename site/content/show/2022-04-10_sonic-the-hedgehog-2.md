@@ -1,7 +1,7 @@
 ---
 title: Sonic the Hedgehog 2
 date: 2022-04-10
-dates: every Friday Sunday at 7:00 pm starting Apr 6 2022 ending Apr 10 2022
+dates: every Friday Sunday at 7:00 pm starting Apr 8 2022 ending Apr 10 2022
 dateRange: Apr 8 and 10
 shortTitle: Sonic The Hedgehog 2
 oneSheet: /img/sonic_the_hedgehog_2_film_poster.jpg

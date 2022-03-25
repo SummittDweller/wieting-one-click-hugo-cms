@@ -20,8 +20,6 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: 'Corrie Ten Boom: History Repeats Itself'
-audio: /audio/15/somber-calm.mp3
-audio_selection: somber-calm
 ---
 
 This is a free performance sponsored by Grace Believers Church in Toledo.

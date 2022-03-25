@@ -23,6 +23,6 @@ studioInfo:
   studioPercentage: 0
 audio_selection: kid-happy
 pre_show: true
-draft: true
+draft: false
 ---
 When the manic Dr Robotnik returns to Earth with a new ally, Knuckles the Echidna, Sonic and his new friend Tails is all that stands in their way.

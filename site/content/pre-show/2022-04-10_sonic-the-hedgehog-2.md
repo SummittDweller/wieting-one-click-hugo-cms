@@ -1,5 +1,5 @@
 ---
-audio: /audio/30/kid-happy.mp3
+audio: /audio/15/kid-happy.mp3
 audio_selection: kid-happy
 date: &id001 2022-04-10 19:00:00-05:00
 dateRange: Apr 8 and 10

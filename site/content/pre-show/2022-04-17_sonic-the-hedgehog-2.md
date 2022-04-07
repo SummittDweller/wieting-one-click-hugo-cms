@@ -1,6 +1,6 @@
 ---
-audio: /audio/15/story-happy.mp3
-audio_selection: story-happy
+audio: /audio/15/kid-happy.mp3
+audio_selection: kid-happy
 date: &id001 2022-04-17 19:00:00-05:00
 dateRange: Apr 15 and 17
 dates: every Friday Sunday at 7:00 pm starting Apr 15 2022 ending Apr 17 2022

@@ -1,7 +1,8 @@
 ---
 title: Tama County Historical Society Live Program
-dates: 7:00 pm on First Wednesday in May 2022
+date: 2022-05-11
+dates: 7:00 pm on May 11 2022
 durationMinutes: 120
-draft: false
+draft: true
 ---
 Tama County Historical Society Live Program

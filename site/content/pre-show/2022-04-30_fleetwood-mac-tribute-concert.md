@@ -19,6 +19,8 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 title: Fleetwood Mac Tribute Concert
+audio: /audio/15/drama-innovative.mp3
+audio_selection: drama-innovative
 ---
 
 After the smashing success of her revue of the music of Carole King, Amy Friedl Stoner returns to the stage with a new show chronicling the hits and heartbreak of rock superstars Fleetwood Mac. STC graduate, Jeremiah Murphy will be playing at this concert

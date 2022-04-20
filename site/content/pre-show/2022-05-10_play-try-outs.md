@@ -1,30 +1,30 @@
 ---
-title: Play Try-outs
-date: 2022-05-14
+date: &id001 2022-05-10 23:00:29.804000+00:00
 dateRange: May 9 10 and 14
-shortTitle: Play Try-ouots
-oneSheet: /img/rehersalformurder-11x8.5-hires.jpg
-runningTime: 90
+draft: false
+expiryDate: 2022-05-11
 mpaaRating: Not Rated
+oneSheet: /img/rehersalformurder-11x8.5-hires.jpg
 performanceList:
   performance:
-    - format: Not Applicable
-      note: ""
-      date: 2022-05-14T18:30:00.850Z
-    - format: Not Applicable
-      note: ""
-      date: 2022-05-09T23:00:29.181Z
-    - format: Not Applicable
-      note: ""
-      date: 2022-05-10T23:00:29.804Z
+  - date: 2022-05-14 18:30:00.850000+00:00
+    format: Not Applicable
+    note: ''
+  - date: 2022-05-09 23:00:29.181000+00:00
+    format: Not Applicable
+    note: ''
+  - date: *id001
+    format: Not Applicable
+    note: ''
+pre_show: true
+runningTime: 90
+shortTitle: Play Try-ouots
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-pre_show: true
-draft: false
+title: Play Try-outs
 ---
-
 
 We have another exciting opportunity! Audition for the murder mystery that is coming to the Wieting this summer.
 

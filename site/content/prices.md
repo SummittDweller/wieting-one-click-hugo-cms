@@ -39,7 +39,7 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 
 ### Candy
 
-* Regular Size Candy - $1.50 each
+* Regular Size Candy - $2.00 each
 * Large Size Candy - $2.50 each
 
 ### Popcorn
@@ -49,7 +49,7 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 
 ### Specials
 
-* Snack Pack - $5 (Drink + Popcorn + Regular Candy)
+* Snack Pack - $6 (Drink + Popcorn + Regular Candy)
 * Combo Pack - $9 (2 Drinks + Jumbo Popcorn)
 
 #### We also have Snack Pack and Combo Pack gift cards available too!

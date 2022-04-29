@@ -20,3 +20,4 @@ studioInfo:
 pre_show: true
 draft: false
 ---
+An STC Music Department production featuring vocal and instrumental solos and ensemble performances by several outstanding STC musicians.

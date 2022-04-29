@@ -19,3 +19,4 @@ studioInfo:
 pre_show: true
 draft: false
 ---
+Tama County HIstorical Society presents another program at the Wieting.  "The Names on the Legion" chronicles many Tama County residents who fought in World War I.  Admission is free, donations accepted.

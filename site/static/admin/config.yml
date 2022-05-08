@@ -6,10 +6,10 @@ backend:
 ##   from the project root, preferably in a 2nd terminal window.
 # local_backend: true
 
-backend:  
-  name: github
-  repo: SummittDweller/wieting-one-click-hugo-cms
-  branch: main
+# backend:  
+#   name: github
+#   repo: SummittDweller/wieting-one-click-hugo-cms
+#   branch: main
 
 media_folder: site/static/img    
 public_folder: /img

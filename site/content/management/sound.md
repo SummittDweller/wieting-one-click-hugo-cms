@@ -22,7 +22,7 @@ During the first 15-20 minutes of the pre-show you should see advertisements and
 When the pre-show ads are playing the QSC DPM100 display (see image above) should indicate:
 
   - Fader level approximately `-9.0 dB`
-  - Mode `PR 4 :Non-Sync`
+  - Mode `PR 4 :NON-SYNC`
   
 ### Movie Trailers
 
@@ -31,14 +31,14 @@ During the second 15-20 minutes of the pre-show you should see movie trailers an
 When the movie trailers are playing the QSC DPM100 display (see image above) should indicate:
 
   - Fader level approximately `-9.0 dB`
-  - Mode `PR 1 :Digital`
+  - Mode `PR 1 :DIGITAL`
 
 ### Movie / Feature
  
 When the movie/feature begins the QSC DPM100 display (see image above) should indicate:
 
   - Fader level approximately `-4.0 dB`
-  - Mode `PR 1 :Digital`
+  - Mode `PR 1 :DIGITAL`
   
 # Correcting the DPM100 Sound Settings
 
@@ -47,7 +47,7 @@ If there is NO sound or if the WRONG sound is playing, use the two buttons to th
 The following sequence is recommended:
 
   - Press the top `curled arrow` button.
-  - Turn the `MONITOR VOLUME` knob to select the correct "mode".  This should be `PR 1 :Digital` during the trailers and during the movie.  The mode should be `PR 4 :Non-sync` during the pre-show ads (before the trailers).
+  - Turn the `MONITOR VOLUME` knob to select the correct "mode".  This should be `PR 1 :DIGITAL` during the trailers and during the movie.  The mode should be `PR 4 :NON-SYNC` during the pre-show ads (before the trailers).
   - Once the proper mode is displayed, press the bottom `select arrow` button to lock in the mode change.
   - Press the top `curled arrow` button again to complete the sequence.
   

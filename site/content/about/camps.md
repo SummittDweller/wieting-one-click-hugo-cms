@@ -16,7 +16,7 @@ The Wieting has Summer Camp opportunities for 3rd through 6th graders in July an
 ## All About Art Camp  
 ![Art Camp Poster](/img/_art-camp-2022-form-copy.jpg)  
 
-Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to [download and print here](/img/_art-camp-2022-form-copy.pdf).
+Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to [download and print here](/img/_art-camp-2022-form.pdf).
 
 ## Children's Theatre Camp - Call of the Matterhorn
 ![Theatre Camp Poster](/img/_call-of-the-matterhorn-registration-form.jpg)

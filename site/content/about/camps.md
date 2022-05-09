@@ -29,4 +29,4 @@ Information and a registration form for current 2nd graders and up that are inte
 
 {{< imgfig "/img/_camps_High Flying Fun Camp 2022 edits (1) copy.jpg" >}}
 
-Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, July 26-29, is available to [download and print here](/power-of-air-camp-registration.pdf).
+Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, August 1-4, is available to [download and print here](/power-of-air-camp-registration.pdf).

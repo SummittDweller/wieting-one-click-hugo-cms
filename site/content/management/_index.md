@@ -21,6 +21,7 @@ Pages listed here are intended strictly for Wieting Theatre management.
   - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
   - [Movie Startup](/management/startup)
   - [No Sound, or Wrong Sound?](/management/sound)
+  - [Reliable Lights Control](/management/lights)
   - [Links](/management/links/)
   - [Network](/management/network/)
   - [Projects](/management/projects/)

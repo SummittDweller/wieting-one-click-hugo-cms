@@ -17,13 +17,13 @@ menu:
 
 {{< imgfig "/img/_camps_art-camp-2022-form-copy.jpg" >}}
 
-Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to
+Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to \[download and print here] (/img/art-camp-2022-form-copy.ext)
 
 ## Children's Theatre Camp- Call of the Matterhorn
 
 {{< imgfig "/img/_camps_Call of the matterhorn registration form.jpg" >}}
 
-Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 25-29, is available to 
+Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 25-29, is available to \[download and print here] (/img/Call of the matterhorn registration form.ext)
 
 ## STEM Camp - High Flying Fun
 

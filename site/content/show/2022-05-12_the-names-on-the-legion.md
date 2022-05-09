@@ -1,5 +1,5 @@
 ---
-date: 2022-05-11 19:00:00-05:00
+date: &id001 2022-05-11 19:00:00-05:00
 dateRange: May 11
 dates: 7:00 pm on May 11 2022
 draft: false
@@ -8,7 +8,7 @@ mpaaRating: Not Rated
 oneSheet: /img/the-names-on-the-legion.jpg
 performanceList:
   performance:
-  - date: 2022-05-12 00:00:00
+  - date: *id001
     format: Not Applicable
     note: ''
 pre_show: true

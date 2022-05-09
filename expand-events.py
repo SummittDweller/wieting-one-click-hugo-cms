@@ -95,20 +95,24 @@ def add_one_day_until(recur_string):
 def event_in_the_past(ed):
   if isinstance(ed, dt):
     if not (date.today( ) < ed.date( )):
-      if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
+      if debug: print(Fore.YELLOW + "  datetime event is in the past!" + Style.RESET_ALL);
       return True;
-  
-  else:
-    keys = ed.keys( );
-    if 'date' in keys:
-      if not (date.today( ) < ed['date'].date( )):
-        if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
-        return True;
-    if 'expiryDate' in keys:
-      if not (date.today( ) < ed['expiryDate']):
-        if debug: print(Fore.YELLOW + "  event is in the past!" + Style.RESET_ALL);
-        return True;
-  
+    else:
+     return False;
+             
+  if isinstance(ed, date):
+    if not (date.today( ) < ed):
+      if debug: print(Fore.YELLOW + "  date event is in the past!" + Style.RESET_ALL);
+      return True;
+    else:
+     return False;
+     
+  keys = ed.keys( );
+  if 'expiryDate' in keys:
+    return event_in_the_past(ed['expiryDate']);
+  if 'date' in keys:
+    return event_in_the_past(ed['date']);
+
   return False;
 
 # parse_frontmatter - Returns a .md file's full frontmatter content
@@ -181,12 +185,12 @@ for filename in files:
     event = parse_frontmatter(filepath);
     keys = event.keys( );
 
-    # if we have an audio_selection: key, add an audio: tag and re-write the .mp3 path
-    if 'audio' not in keys:
-      if 'audio_selection' in keys:
-        selection = event['audio_selection'];
-        event['audio'] = "/audio/15/" + selection + ".mp3";
-        if debug: print(Fore.YELLOW + "  audio_selection: ", selection, " converted to audio: " + Style.RESET_ALL);
+    # # if we have an audio_selection: key, add an audio: tag and re-write the .mp3 path
+    # if 'audio' not in keys:
+    #   if 'audio_selection' in keys:
+    #     selection = event['audio_selection'];
+    #     event['audio'] = "/audio/15/" + selection + ".mp3";
+    #     if debug: print(Fore.YELLOW + "  audio_selection: ", selection, " converted to audio: " + Style.RESET_ALL);
 
     # if this show already has a performanceList, capture the format and note values and re-use them
     if 'performanceList' in keys:
@@ -256,10 +260,9 @@ for filename in files:
     with open(filepath, "w") as f:
       f.write(frontmatter.dumps(event));
 
-    # if this show is marked to copy as a "pre_show", make it so, but no duplicates
-    if 'pre_show' in keys:
-      if event['pre_show']:
-        shutil.copyfile(filepath, pre_shows + filename);
+    # copy as a "pre_show"
+    if not event_in_the_past(event):
+      shutil.copyfile(filepath, pre_shows + filename);
 
 ### process the data/events .md files ###
 files = os.listdir(data);
@@ -303,6 +306,22 @@ for filename in files:
     
     else:
       if debug: print(Fore.RED + "  parse_dates_string=False so event was ignored" + Style.RESET_ALL);
+
+### process the site/content/pre-show .md files ###
+files = os.listdir(pre_shows);
+
+for filename in files:  
+  if filename.endswith('.md'):    
+    filepath = pre_shows + filename;
+    if debug: print(Fore.GREEN + 'Pre-show path is:', filepath + Style.RESET_ALL);
+    
+    # this is a .md file in 'pre-show/', delete it if in the past
+    event = parse_frontmatter(filepath);
+    if event_in_the_past(event['expiryDate']):
+      try:
+        os.remove(filepath);
+      except:
+        print(Fore.RED + "Error while deleting file: " + filepath + Style.RESET_ALL);
 
 # ok, if we got this far with no errors, it's time to delete all the active/*.bak files
 fileList = glob.glob(active + '*.bak');

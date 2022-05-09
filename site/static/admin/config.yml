@@ -185,11 +185,11 @@ collections:
       #   required: false
       #   hint: Select a single audio clip to accompany this show in our pre-show sequence.
 
-      - label: Copy Show to Pre-Show List?
-        name: pre_show
-        widget: boolean
-        default: true
-        hint: Set FALSE if you do NOT want this show presented during the Wieting's 30-minute pre-show sequence.
+      # - label: Copy Show to Pre-Show List?
+      #   name: pre_show
+      #   widget: boolean
+      #   default: true
+      #   hint: Set FALSE if you do NOT want this show presented during the Wieting's 30-minute pre-show sequence.
 
       - label: Draft? 
         name: draft

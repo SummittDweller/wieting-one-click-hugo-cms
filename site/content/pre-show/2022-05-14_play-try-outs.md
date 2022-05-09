@@ -28,6 +28,4 @@ title: Play Try-outs
 
 We have another exciting opportunity! Audition for the murder mystery that is coming to the Wieting this summer.
 
-Try-out times are May 9th and 10th from 6:30-9:00 pm and May 14th from 1:30-3:00 pm.  
-
-The performances will be Thursday, Friday, Saturday, July 7th, 8th and 9th!
+Try-out times are May 9th and 10th from 6:30-9:00 p.m. and May 14th from 1:30-3:00 pm.  If those times do not work, please contact Mary Fasse-Shaw. Scripts are available to be checked out for 2 days at both the Tama and Toledo libraries. The performances will be Thursday, Friday, Saturday, July 7th, 8th and 9th!

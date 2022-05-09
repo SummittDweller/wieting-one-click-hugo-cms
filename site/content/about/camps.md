@@ -24,6 +24,6 @@ Information and a registration form for current 4th-6th graders interested in **
 Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 25-29, is available to [download and print here](/img/_call-of-the-matterhorn-registration-form.pdf).
 
 ## STEM Camp - High Flying Fun
-
 ![STEM Camp Poster](/img/_high-flying-fun-camp-2022-edits-1-copy.jpg)
+
 Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, August 1-4, is available to [download and print here](/img/_high-flying-fun-camp-2022-edits-1.pdf).

@@ -2,7 +2,7 @@
 title: Summer Camps
 draft: false
 author: Mackenzie McFate
-date: 2021-05-10T12:39:57-05:00
+date: 2022-05-09T12:43:56-05:00
 socialshare: false
 weight: 195
 menu:
@@ -11,22 +11,19 @@ menu:
     parent: about
     weight: 805
 ---
-### The Wieting has Summer Camp opportunities for 3rd through 6th graders in July and August!
+The Wieting has Summer Camp opportunities for 3rd through 6th graders in July and August!
 
-## All About Art Camp
+## All About Art Camp  
+![Art Camp Poster](/img/_art-camp-2022-form-copy.jpg)  
 
-{{< imgfig "/img/_camps_art-camp-2022-form-copy.jpg" >}}
+Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to [download and print here](/img/_art-camp-2022-form-copy.pdf).
 
-Information and a registration form for current 4th-6th graders interested in **All About Art Camp** July 11-15, is available to \[download and print here] (/img/art-camp-2022-form-copy.ext)
+## Children's Theatre Camp - Call of the Matterhorn
+![Theatre Camp Poster](/img/_call-of-the-matterhorn-registration-form.jpg)
 
-## Children's Theatre Camp- Call of the Matterhorn
-
-{{< imgfig "/img/_camps_Call of the matterhorn registration form.jpg" >}}
-
-Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 25-29, is available to \[download and print here] (/img/Call of the matterhorn registration form.ext)
+Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 25-29, is available to [download and print here](/img/_call-of-the-matterhorn-registration-form.pdf).
 
 ## STEM Camp - High Flying Fun
 
-{{< imgfig "/img/_camps_High Flying Fun Camp 2022 edits (1) copy.jpg" >}}
-
-Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, August 1-4, is available to [download and print here](/power-of-air-camp-registration.pdf).
+![STEM Camp Poster](/img/_high-flying-fun-camp-2022-edits-1-copy.jpg)
+Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, August 1-4, is available to [download and print here](/img/_high-flying-fun-camp-2022-edits-1.pdf).

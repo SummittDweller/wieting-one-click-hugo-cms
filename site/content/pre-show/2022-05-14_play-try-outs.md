@@ -7,18 +7,15 @@ mpaaRating: Not Rated
 oneSheet: /img/rehersalformurder-11x8.5-hires.jpg
 performanceList:
   performance:
-  - date: 2022-05-09 23:30:29.804000
-    format: Not Applicable
-    note: ''
   - date: 2022-05-10 23:30:29.181000
-    format: Not Applicable
+    format: 2D
     note: ''
   - date: *id001
-    format: Not Applicable
+    format: 2D
     note: ''
 pre_show: true
 runningTime: 90
-shortTitle: Play Try-ouots
+shortTitle: Play Try-outs
 studioInfo:
   studio: Not Specified
   studioFee: 0

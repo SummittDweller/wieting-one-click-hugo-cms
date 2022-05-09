@@ -11,9 +11,9 @@ weight: 65
 
 {{< imgfig "/img/_DPM100.png" >}}
 
-If the QSC DPM100 is on you may need to turn the `MONITOR VOLUME` knob to "wake up" the display (see image above).
+If the QSC DPM100 is ON but the display is dark, you may need to turn the `MONITOR VOLUME` knob to "wake up" the display (see image above).
 
-Note that the `MASTER MUTE` red light shown in the image above should NEVER be on.  If it is, please push the button below `MASTER MUTE` to turn the red indicator light off!
+Note that the `MASTER MUTE` red light shown in the image above should NEVER be ON.  If it is, please push the button below `MASTER MUTE` to turn the red indicator light OFF!
 
 ### Pre-Show Ads
 

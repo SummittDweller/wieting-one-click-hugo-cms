@@ -7,9 +7,6 @@ mpaaRating: Not Rated
 oneSheet: /img/rehersalformurder-11x8.5-hires.jpg
 performanceList:
   performance:
-  - date: 2022-05-10 23:30:29.181000
-    format: 2D
-    note: ''
   - date: *id001
     format: 2D
     note: ''

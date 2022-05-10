@@ -182,6 +182,7 @@ div.site-info {
 img.oneSheet {
   width: 270px;
   height: 400px;
+  padding: 10px;
 }
 
 ul.show-times {

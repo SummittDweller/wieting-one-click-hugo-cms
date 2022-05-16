@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-05-16 19:00:00-05:00
+date: 2022-05-16 19:00:00-05:00
 dateRange: May 16
 dates: 7:00 pm on May 16 2022
 draft: false
@@ -7,10 +7,7 @@ expiryDate: 2022-05-17
 mpaaRating: Not Rated
 oneSheet: /img/chamber-concertwebsite-copy.jpg
 performanceList:
-  performance:
-  - date: *id001
-    format: Not Applicable
-    note: ''
+  performance: []
 runningTime: 60
 shortTitle: U-of-I Chamber Music Concert
 showType: Live Performance

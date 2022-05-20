@@ -9,9 +9,6 @@ mpaaRating: PG
 oneSheet: /img/the-bad-guys-posters.jpg
 performanceList:
   performance:
-  - date: 2022-05-20 19:00:00-05:00
-    format: 2D
-    note: ''
   - date: *id001
     format: 2D
     note: ''

@@ -1,17 +1,18 @@
 ---
-date: 2022-06-03 19:00:00-05:00
-dateRange: June 10 and 12
-dates: 'every Friday Sunday at 7:00 pm starting June10 2022 ending Jun 12 2022 '
+date: &id001 2022-06-19 19:00:00-05:00
+dateRange: June 17 and 19
+dates: 'every Friday Sunday at 7:00 pm starting June 17 2022 ending Jun 19 2022 '
 draft: false
+expiryDate: 2022-06-20
 imdbURL: https://www.imdb.com/title/tt8041270/
 mpaaRating: PG-13
-oneSheet: /img/jurassic-world.jpeg
+oneSheet: /img/Jurassic-World.png
 performanceList:
   performance:
-  - date: 2022-06-11 00:00:37.406000+00:00
+  - date: 2022-06-17 19:00:00-05:00
     format: 2D
     note: ''
-  - date: 2022-06-13 00:00:17.825000+00:00
+  - date: *id001
     format: 2D
     note: ''
 runningTime: 146

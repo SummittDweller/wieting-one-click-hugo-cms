@@ -4,7 +4,7 @@ date: 2022-06-12
 dates: "every Friday Sunday at 7:00 pm starting June 10 2022 ending Jun 12 2022 "
 dateRange: June 10 and 12
 shortTitle: "Jurassic World: Dominion"
-oneSheet: /img/jurassic-world.jpeg
+oneSheet: /img/Jurassic-World.png
 showType: Cinema
 runningTime: 146
 mpaaRating: PG-13

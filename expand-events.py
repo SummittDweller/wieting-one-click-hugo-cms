@@ -83,11 +83,12 @@ def parse_dates_string(event):
 def add_one_day_until(recur_string):
   if debug: print("  incoming recur_string is:", recur_string);      
   if isinstance(recur_string, str):
-    [junk, until] = recur_string.split("UNTIL=");
-    if debug: print("  until is:", until);      
-    if until:
-      day_after = dt.strptime(until, "%Y%m%d").date( ) + timedelta(days=1);
-      recur_string = recur_string.replace(until, day_after.strftime("%Y%m%d"));
+    if "UNTIL=" in recur_string:
+      [junk, until] = recur_string.split("UNTIL=");
+      if debug: print("  until is:", until);      
+      if until:
+        day_after = dt.strptime(until, "%Y%m%d").date( ) + timedelta(days=1);
+        recur_string = recur_string.replace(until, day_after.strftime("%Y%m%d"));
   if debug: print("  outgoing recur_string is:", recur_string);      
   return recur_string;
 

@@ -1,11 +1,16 @@
 [
-  {{ range $index, $e := (where .Data.Pages "Type" "event" ) }}
+  {{ range $index, $e := (where .Data.Pages "Type" "event" ) }}  
     {{ if $index }}, {{ end }}
       {
         "title": "{{ .Title }}",
         "start": "{{ dateFormat "2006-01-02T15:04:00" .Date.Local }}",
         "allDay": {{ .Params.allday | default "false" }},
-        "url": "{{ .Permalink | absURL }}"
+        "url": "{{ .Permalink | absURL }}",
+        {{ if $e.Params.oneSheet }}
+          "color": "blue"
+        {{ else }}  
+          "color": "green"
+        {{ end }}  
       }
     {{ end }}
 ]

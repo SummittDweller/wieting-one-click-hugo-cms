@@ -8,7 +8,7 @@ expiryDate: 2022-07-10
 imdbURL: ''
 mpaaRating: Not Rated
 officialURL: wieting.TamaToledo.com
-oneSheet: /img/_default_no-image-available.png
+oneSheet: /img/rehearsal-for-murder-website-copy.jpg
 performanceList:
   performance:
   - date: 2022-07-07 19:30:00-05:00

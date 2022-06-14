@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-06-12 19:00:00-05:00
+date: 2022-06-12 19:00:00-05:00
 dateRange: June 10 and 12
 dates: 'every Friday Sunday at 7:00 pm starting June 10 2022 ending Jun 12 2022 '
 draft: false
@@ -8,13 +8,7 @@ imdbURL: https://www.imdb.com/title/tt8041270/
 mpaaRating: PG-13
 oneSheet: /img/Jurassic-World.png
 performanceList:
-  performance:
-  - date: 2022-06-10 19:00:00-05:00
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 146
 shortTitle: 'Jurassic World: Dominion'
 showType: Cinema

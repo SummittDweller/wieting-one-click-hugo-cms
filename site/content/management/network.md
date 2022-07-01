@@ -55,16 +55,16 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | D | QSC DPM 100 Audio Processor | Projection Booth - Audio Rack |
 | E | Eero Wireless Mesh Gateway | Light Board Desk w/ 2 Satelite Units in the Annex |
 | F | Simplex Grinnell Fire Alarm | Stage North |
-| G | Netgear 16-Port Gigabit Switch | Projection Booth - Top of Audio Rack |
+| G | Netgear 16-Port Gigabit Switch | Projection Booth - Wall between Pedestal and Audio Rack |
 | H | Raspberry Pi Pre-Show Computer | Projection Booth - Cinema Pedestal |
 | I | GDC SR-1000 Standalone IMB (Integrated Media Block) | Projection Booth - Projection Desk |
 | J | 2-Port HDMI Output Switch | Projection Booth - Projection Desk |
 | K | Open USB Drive Boot | Projection Booth - Cinema Pedastal |
-| M | Thompson DCM476 Cable Modem from Mediacom | Projection Booth - Top of Audio Rack |
+| ~M~ | ~Thompson DCM476 Cable Modem from Mediacom~ | ~Projection Booth - Top of Audio Rack~ |
 | O | Wieting-BoxOffice Windows Desktop Computer | Box Office - North Desk |
 | P | Christie CP2210 Cinema Projector | Projection Booth - Cinema Pedestal |
 | Q | HI/VI (Hearing-Impaired / Vision-Impaired) Panel | Outside Projection Booth |
-| R | NetGear 4-Port + Wireless Router | Projection Booth - Top of Audio Rack |
+| R | ZyXEL VMG4927-B50A DSL Modem + Router + Wireless | Projection Booth - Top of Audio Rack |
 | S | NetGear ProSafe 8-Port Gigabit Switch | Projection Booth - Rear of Cinema Pedestal |
 | W | Two Individual Ethernet Terminations | Stage - North and South Wings |
 | X | Booth-Windows - Windows 10 Desktop | Projection Booth - Projection Desk |

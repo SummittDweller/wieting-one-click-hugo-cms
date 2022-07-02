@@ -21,6 +21,7 @@ Pages listed here are intended strictly for Wieting Theatre management.
   - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
   - [Volunteer Assignments](/management/assignments)
   - [Movie Startup](/management/startup)
+  - [Hearing Imparied / Vision Impaired System](/management/hivi)
   - [No Sound, or Wrong Sound?](/management/sound)
   - [Reliable Lights Control](/management/lights)
   - [Links](/management/links/)

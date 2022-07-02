@@ -471,3 +471,10 @@ ul.menu__list {
 li.menu__item {
   display: inline-block;
 }
+
+div.attention {
+  background-color: #eae2a0;
+  padding: 0.5em 1em !important;
+  margin: 0.5em 1em !important;
+  font-weight: bolder;
+}

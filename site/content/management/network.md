@@ -59,8 +59,8 @@ Problem:  When the iMac's ethernet connection is active, the iMac cannot access 
 | H | Raspberry Pi Pre-Show Computer | Projection Booth - Cinema Pedestal |
 | I | GDC SR-1000 Standalone IMB (Integrated Media Block) | Projection Booth - Projection Desk |
 | J | 2-Port HDMI Output Switch | Projection Booth - Projection Desk |
-| K | Open USB Drive Boot | Projection Booth - Cinema Pedastal |
-| ~M~ | ~Thompson DCM476 Cable Modem from Mediacom~ | ~Projection Booth - Top of Audio Rack~ |
+| ~K~ | ~Open USB Drive Boot~ | ~Projection Booth - Cinema Pedastal~ |
+| M | QNAP Deluxe Film Vault | Projection Booth - Cinema Pedastal |
 | O | Wieting-BoxOffice Windows Desktop Computer | Box Office - North Desk |
 | P | Christie CP2210 Cinema Projector | Projection Booth - Cinema Pedestal |
 | Q | HI/VI (Hearing-Impaired / Vision-Impaired) Panel | Outside Projection Booth |

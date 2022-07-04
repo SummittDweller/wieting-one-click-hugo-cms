@@ -10,7 +10,7 @@ performanceList:
   performance:
   - date: 2022-07-10 14:00:00-05:00
     format: 2D
-    note: 'Special matinee showing!'
+    note: Special matinee showing!
   - date: 2022-07-10 19:00:00-05:00
     format: 2D
     note: ''

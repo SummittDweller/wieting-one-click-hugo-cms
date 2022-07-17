@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-07-17 19:00:00-05:00
+date: 2022-07-17 19:00:00-05:00
 dateRange: July 10 15 and 17
 draft: false
 expiryDate: 2022-07-18
@@ -7,19 +7,7 @@ imdbURL: https://www.imdb.com/title/tt5113044/?ref_=nv_sr_srsg_0
 mpaaRating: PG
 oneSheet: /img/mv5byjk4ngjjzdutmdk1my00owzklwjkndktngyyy2izmda3zmewxkeyxkfqcgdeqxvymtkxnjuynq-._v1_.jpg
 performanceList:
-  performance:
-  - date: 2022-07-10 14:00:00-05:00
-    format: 2D
-    note: Special matinee showing!
-  - date: 2022-07-10 19:00:00-05:00
-    format: 2D
-    note: ''
-  - date: 2022-07-15 19:00:00-05:00
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 90
 shortTitle: 'Minions: Rise of Gru'
 showType: Cinema

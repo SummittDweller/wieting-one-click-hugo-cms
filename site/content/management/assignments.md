@@ -2,7 +2,7 @@
 title: Assignments
 draft: false
 author: Mackenzie McFate
-date: 2022-06-03T10:06:08-05:00
+date: 2022-07-20T21:26:27-05:00
 socialshare: false
 weight: 72
 ---
@@ -19,4 +19,4 @@ menu:
 
 This page is intended to display the PDF listing of future volunteer assignments.
 
-{{< embed-pdf url="../../pdf/WIETING-SCHEDULE-June-3-to-August-28-2022.pdf" >}}
+{{< embed-pdf url="../../pdf/WIETING-SCHEDULE-July-22-to-Sept-25-2022.pdf" >}}

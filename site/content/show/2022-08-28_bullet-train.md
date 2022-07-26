@@ -3,7 +3,7 @@ title: Bullet Train
 date: 2022-08-28
 dateRange: Coming Soon!
 shortTitle: Bullet Train
-oneSheet: /img/poster-bullet-train.jpg
+oneSheet: /img/Bullet-Train.png 
 showType: Cinema
 runningTime: 126
 mpaaRating: R
@@ -20,6 +20,6 @@ studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 ---
 Five assassins aboard a fast moving bullet train find out their missions have something in common.

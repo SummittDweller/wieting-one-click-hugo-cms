@@ -20,6 +20,6 @@ studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 ---
 Five assassins aboard a fast moving bullet train find out their missions have something in common.

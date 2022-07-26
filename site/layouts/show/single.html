@@ -81,18 +81,30 @@
       <div class="remaining_details">
         <div class="field field--name-field-performance-times field--type-datetime">
           <ul class="show-times">
-            {{ range .Params.performanceList.performance }}
+            {{ if in .Params.dateRange "Soon" }}
               <li class="field--item">
-                {{ $dtime := time .date }}
-                {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}
-                {{ if .format }} 
-                  <b> [{{ .format }}]</b>
-                {{ end }}
-                {{ if .note }}   
-                  <i><b>&nbsp;&nbsp;{{ .note }}</b></i> 
-                {{ end }}  
+                Coming Soon to the Wieting! 
+              </li>  
+              <li class="field--item">
+                Sorry, we have booked this show but our intended dates have yet to be confirmed. 
+              </li> 
+              <li class="field--item">
+                Check back regularly for updates!  
               </li>
-            {{ end }}    
+            {{ else }}     
+              {{ range .Params.performanceList.performance }}
+                <li class="field--item">
+                  {{ $dtime := time .date }}
+                  {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}
+                  {{ if .format }} 
+                    <b> [{{ .format }}]</b>
+                  {{ end }}
+                  {{ if .note }}   
+                    <i><b>&nbsp;&nbsp;{{ .note }}</b></i> 
+                  {{ end }}  
+                </li>
+              {{ end }} 
+            {{ end }}     
           </ul>  
           <hr/>
           <div class="synopsis">{{ .Content }}</div>

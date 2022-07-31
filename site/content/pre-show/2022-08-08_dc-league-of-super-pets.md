@@ -9,9 +9,6 @@ officialURL: https://www.dcleagueofsuperpets.com/
 oneSheet: /img/dc-superpets.png
 performanceList:
   performance:
-  - date: 2022-07-30 19:00:43.650000
-    format: 2D
-    note: ''
   - date: 2022-08-01 00:00:11.636000
     format: 2D
     note: ''

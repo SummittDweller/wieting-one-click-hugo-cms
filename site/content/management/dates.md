@@ -22,6 +22,10 @@ So, when you specify a range of dates/times for a Wieting event **always lead wi
 
 Notice that rules are generally NOT case-sensitive, and any reasonable names or abbreviations for days or months can be used.
 
+### Month Names
+
+When you specify a month or list of months use either a 3-character name, like `sep` or `jun`, OR use the full name like `September` or `June`.  **Do NOT use abbreviations longer than 3 characters, like `Sept`!**  
+
 ### Suggested Strings
 
 These are strings that have already been successfully used in the past.

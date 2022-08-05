@@ -2,11 +2,17 @@
 date: 2022-07-29
 dateRange: July 29
 draft: false
-expiryDate: 2022-07-31
+expiryDate: 2022-08-15
 mpaaRating: Not Rated
 oneSheet: /img/ftp-matterhorn-square.jpg
 performanceList:
-  performance: []
+  performance:
+  - date: 2022-08-12 19:00:00-05:00
+    format: 2D
+    note: ''
+  - date: 2022-08-14 19:00:00-05:00
+    format: 2D
+    note: ''
 runningTime: 70
 shortTitle: Call of the Matterhorn
 showType: Live Performance

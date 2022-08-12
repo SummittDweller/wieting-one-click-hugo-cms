@@ -1,5 +1,5 @@
 ---
-date: 2022-07-29
+date: &id001 2022-08-14 19:00:00-05:00
 dateRange: July 29
 draft: false
 expiryDate: 2022-08-15
@@ -10,7 +10,7 @@ performanceList:
   - date: 2022-08-12 19:00:00-05:00
     format: 2D
     note: ''
-  - date: 2022-08-14 19:00:00-05:00
+  - date: *id001
     format: 2D
     note: ''
 runningTime: 70

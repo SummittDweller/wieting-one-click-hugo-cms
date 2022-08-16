@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12 19:00:00-05:00
+date: 2022-08-14 19:00:00-05:00
 dateRange: Aug 12 and 14
 dates: every Friday Sunday at 7:00 pm starting Aug 12 2022 ending Aug 15 2022
 draft: false
@@ -9,13 +9,7 @@ mpaaRating: PG-13
 officialURL: https://www.sonypictures.com/movies/wherethecrawdadssing
 oneSheet: /img/crawdads.png
 performanceList:
-  performance:
-  - date: 2022-08-12 19:00:00-05:00
-    format: 2D
-    note: ''
-  - date: 2022-08-14 19:00:00-05:00
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 125
 shortTitle: Where the Crawdads Sing
 showType: Cinema

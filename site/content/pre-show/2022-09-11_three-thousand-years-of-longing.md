@@ -2,7 +2,7 @@
 date: &id001 2022-09-11 19:00:00-05:00
 dateRange: Sep 2 4 9 and 11
 dates: every Friday Sunday at 7:00 pm starting Sep 2 2022 ending Sep 11 2022
-draft: true
+draft: false
 expiryDate: 2022-09-12
 imdbURL: https://www.imdb.com/title/tt9198364/?ref_=tt_mv_close
 mpaaRating: R

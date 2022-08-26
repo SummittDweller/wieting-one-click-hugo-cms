@@ -19,4 +19,4 @@ menu:
 
 This page is intended to display the PDF listing of future volunteer assignments.
 
-{{< embed-pdf url="../../pdf/WIETING-SCHEDULE-July-22-to-Sept-25-2022.pdf" >}}
+{{< embed-pdf url="../../pdf/WIETING-SCHEDULE.pdf" >}}

@@ -1,5 +1,5 @@
 ---
-date: 2020-01-03 19:00:00-06:00
+date: 2025-01-03 19:00:00-06:00
 draft: false
 expiryDate: 2025-12-31
 shortTitle: Tama County Investment Services

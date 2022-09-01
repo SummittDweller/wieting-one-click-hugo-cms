@@ -1,25 +1,27 @@
 ---
-title: The Invitation
-date: 2022-09-18
+date: &id001 2022-09-19 00:00:24.836000+00:00
 dateRange: Sep 16 and 18
-shortTitle: The Invitation
-oneSheet: /img/the-invitation-2022-.jpg
-showType: Cinema
-runningTime: 104
-mpaaRating: PG-13
+draft: false
+expiryDate: 2022-09-20
 imdbURL: https://www.imdb.com/title/tt12873562/
+mpaaRating: PG-13
+oneSheet: /img/the-invitation-2022-.jpg
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2022-09-17T00:00:39.727Z
-    - format: 2D
-      note: ""
-      date: 2022-09-19T00:00:24.836Z
+  - date: 2022-09-17 00:00:39.727000+00:00
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 104
+shortTitle: The Invitation
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: The Invitation
 ---
+
 A thriller involving a young woman who is courted and swept off her feet, only to realize a gothic conspiracy is afoot.

@@ -19,6 +19,7 @@ menu:
 Pages listed here are intended strictly for Wieting Theatre management.
 
   - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
+  - [Guild Information](/management/guild)
   - [Volunteer Assignments](/management/assignments)
   - [Movie Startup](/management/startup)
   - [Hearing Imparied / Vision Impaired System](/management/hivi)

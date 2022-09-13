@@ -1,12 +1,20 @@
 ---
-date: 2022-09-25T22:07:19-05:00
+date: &id001 2022-09-25 19:00:00-05:00
 dateRange: Sept 23 and 25
-dates: every Friday Sunday at 7:00 pm starting Sep 23 2022 thru Sep 25 2022
+dates: every Friday Sunday at 7:00 pm starting Sep 23 2022 ending Sep 25 2022
 draft: false
 expiryDate: 2022-09-26
 imdbURL: https://www.imdb.com/title/tt1745960/
 mpaaRating: PG-13
 oneSheet: /img/maverick.png
+performanceList:
+  performance:
+  - date: 2022-09-23 19:00:00-05:00
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
 runningTime: 131
 shortTitle: 'Top Gun: Maverick'
 showType: Cinema

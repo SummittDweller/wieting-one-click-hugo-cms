@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-10-10 00:00:55.984000+00:00
+date: &id001 2022-10-10 00:00:55.984000
 dateRange: Coming Soon
 draft: false
 expiryDate: 2022-10-11

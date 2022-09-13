@@ -1,0 +1,20 @@
+---
+date: 2022-09-25T22:07:19-05:00
+dateRange: Sept 23 and 25
+dates: every Friday Sunday at 7:00 pm starting Sep 23 2022 thru Sep 25 2022
+draft: false
+expiryDate: 2022-09-26
+imdbURL: https://www.imdb.com/title/tt1745960/
+mpaaRating: PG-13
+oneSheet: /img/maverick.png
+runningTime: 131
+shortTitle: 'Top Gun: Maverick'
+showType: Cinema
+studioInfo:
+  studio: Not Specified
+  studioFee: 0
+  studioPercentage: 0
+title: 'Top Gun: Maverick'
+---
+
+A return to the Wieting of the blockbuster sequel to **Top Gun** starring Tom Cruise as Pete Mitchell.  After more than thirty years of service as one of the Navy's top aviators, Pete is where he belongs. He pushes the envelope as a courageous test pilot, dodging the advancement in rank that would ground him.

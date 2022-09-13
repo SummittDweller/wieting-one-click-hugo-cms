@@ -1,13 +1,14 @@
 ---
-date: &id001 2022-09-19 00:00:24.836000+00:00
+date: &id001 2022-09-19 00:00:24.836000
 dateRange: Sep 16 and 18
 draft: false
+expiryDate: 2022-09-20
 imdbURL: https://www.imdb.com/title/tt12873562/
 mpaaRating: PG-13
 oneSheet: /img/the-invitation-2022-.jpg
 performanceList:
   performance:
-  - date: 2022-09-17 00:00:39.727000+00:00
+  - date: 2022-09-17 00:00:39.727000
     format: 2D
     note: ''
   - date: *id001

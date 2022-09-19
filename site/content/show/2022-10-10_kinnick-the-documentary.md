@@ -1,25 +1,28 @@
 ---
-date: &id001 2022-10-10 00:00:55.984000
-dateRange: Coming Soon
+title: "Kinnick: The Documentary"
+date: 2022-10-09
+mpaaRating: Not Rated
 draft: false
 expiryDate: 2022-10-11
-mpaaRating: Not Rated
+dates: every Friday Sunday at 7:00 pm starting Oct 7 2022 ending Oct 9 2022
+dateRange: Oct 7 and 9
+shortTitle: "Kinnick: The Documentary"
 oneSheet: /img/kinnick-the-documentary-poster-2022.07.26.png
+showType: Cinema
+runningTime: 90
 performanceList:
   performance:
-  - date: *id001
-    format: 2D
-    note: ''
-runningTime: 90
-shortTitle: 'Kinnick: The Documentary'
-showType: Cinema
+    - date: 2022-10-08T00:00:55.984Z
+      format: 2D
+      note: ""
+    - format: 2D
+      note: ""
+      date: 2022-10-10T00:00:32.152Z
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: 'Kinnick: The Documentary'
 ---
-
 This new documentary highlights life of Iowa Hawkeye legend Nile Kinnick.
 
-Firm dates and times to still be announced. This date is a "place holder" for our electronic calendar. Check back regularly for updates.
+Check our website and Facebook page for a special announcement.

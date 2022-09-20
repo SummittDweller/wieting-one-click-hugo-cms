@@ -4,7 +4,7 @@ date: 2022-10-30
 dates: every Friday Sunday at 7:00 pm starting Oct 21 2022 ending Oct 30 2022
 dateRange: Oct 21, 23, 28 and 30
 shortTitle: Black Adam
-oneSheet: /img/fadfb421233468cc7e113064c1db4475.jpg
+oneSheet: /img/black-adam.jpg
 showType: Cinema
 runningTime: 120
 mpaaRating: PG-13

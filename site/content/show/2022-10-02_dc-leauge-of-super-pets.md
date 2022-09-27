@@ -1,5 +1,5 @@
 ---
-title: DC Leauge of Super Pets
+title: DC League of Super Pets
 date: 2022-10-02
 dates: every Friday Sunday at 7:00 pm starting Sep 30 2022 ending Oct 02 2022
 dateRange: Sep 30 and Oct 2

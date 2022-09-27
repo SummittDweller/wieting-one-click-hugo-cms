@@ -25,4 +25,4 @@ studioInfo:
 ---
 This new documentary highlights life of Iowa Hawkeye legend Nile Kinnick.
 
-Check our website and Facebook page for a special announcement.
+Check our website and Facebook page for a special showing including a question and answer session with the filmmaker, Scott Siepker!

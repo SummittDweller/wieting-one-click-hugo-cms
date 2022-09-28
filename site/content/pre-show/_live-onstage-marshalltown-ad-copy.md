@@ -4,6 +4,6 @@ draft: false
 expiryDate: 2023-12-31
 shortTitle: LIVE OnStage Marshalltown
 title: LIVE OnStage Marshalltown
-bannerImage: /img/_live-onstage-marshalltown-ad-copy.jpg
+bannerImage: /img/_losm-ad-copy.jpg
 ---
  

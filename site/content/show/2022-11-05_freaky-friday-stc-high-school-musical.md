@@ -9,7 +9,16 @@ mpaaRating: Not Rated
 officialURL: ''
 oneSheet: /img/FreakyFriday.png
 performanceList:
-  performance: []
+  performance:
+    - format: Live
+      note: ""
+      date: 2022-11-04T00:00:38.911Z
+    - format: Live
+      note: ""
+      date: 2022-11-05T00:00:38.911Z
+    - format: Live
+      note: ""
+      date: 2022-11-06T00:00:38.911Z
 runningTime: 150
 shortTitle: Freaky Friday
 showType: Live Performance

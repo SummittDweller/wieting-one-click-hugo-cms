@@ -9,7 +9,16 @@ mpaaRating: Not Rated
 officialURL: ''
 oneSheet: /img/FreakyFriday.png
 performanceList:
-  performance: []
+  performance:
+    - format: Live
+      note: ""
+      date: 2022-11-04T00:00:38.911Z
+    - format: Live
+      note: ""
+      date: 2022-11-05T00:00:38.911Z
+    - format: Live
+      note: ""
+      date: 2022-11-06T00:00:38.911Z
 runningTime: 150
 shortTitle: Freaky Friday
 showType: Live Performance
@@ -20,7 +29,7 @@ studioInfo:
 title: Freaky Friday - STC High School Musical
 ---
 
-STC High School Vocal Music Dept. production of "**Freaky Friday**".  Book by Bridget Carpenter, music by Tom Kitt, lyrics by Brian Yorkey.  
+STC High School Vocal Music Dept. production of "__Freaky Friday__".  Book by Bridget Carpenter, music by Tom Kitt, lyrics by Brian Yorkey.  
 
 Admission is $10 per adult, $5 per student.  Tickets will be available at the door or in advance from the STC High School Office beginning October 20th.
 

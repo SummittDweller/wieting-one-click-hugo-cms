@@ -318,7 +318,13 @@ for filename in files:
     
     # this is a .md file in 'pre-show/', delete it if in the past
     event = parse_frontmatter(filepath);
-    if event_in_the_past(event['expiryDate']):
+    keys = event.keys( );
+    if 'expiryDate' in keys:
+      past = event_in_the_past(event['expiryDate']);
+    elif 'date' in keys:
+      past = event_in_the_past(event['date']);
+
+    if past:
       try:
         os.remove(filepath);
       except:

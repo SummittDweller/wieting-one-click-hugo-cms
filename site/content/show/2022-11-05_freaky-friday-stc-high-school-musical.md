@@ -1,5 +1,5 @@
 ---
-date: 2022-11-03 19:00:00-05:00
+date: &id001 2022-11-05 19:00:00-05:00
 dateRange: Nov 3, 4 and 5
 dates: 7:00 pm every day from Nov 3 2022 thru Nov 5 2022
 draft: false
@@ -10,15 +10,15 @@ officialURL: ''
 oneSheet: /img/FreakyFriday.png
 performanceList:
   performance:
-    - format: Live
-      note: ""
-      date: 2022-11-04T00:00:38.911Z
-    - format: Live
-      note: ""
-      date: 2022-11-05T00:00:38.911Z
-    - format: Live
-      note: ""
-      date: 2022-11-06T00:00:38.911Z
+  - date: 2022-11-03 19:00:00-05:00
+    format: Live
+    note: ''
+  - date: 2022-11-04 19:00:00-05:00
+    format: Live
+    note: ''
+  - date: *id001
+    format: Live
+    note: ''
 runningTime: 150
 shortTitle: Freaky Friday
 showType: Live Performance

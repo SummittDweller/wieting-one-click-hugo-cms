@@ -1,5 +1,5 @@
 ---
-date: 2022-11-18 19:00:00-06:00
+date: &id001 2022-11-20 19:00:00-06:00
 dateRange: Nov 18 and 20
 dates: every Friday Sunday at 7:00 pm starting Nov 18 2022 ending Nov 20 2022
 draft: false
@@ -10,10 +10,10 @@ officialURL: https://www.tickettoparadise.movie/
 oneSheet: /img/ticket.jpg
 performanceList:
   performance:
-  - date: 2022-11-19 01:00:00
+  - date: 2022-11-18 19:00:00-06:00
     format: 2D
     note: ''
-  - date: 2022-11-21 01:00:00
+  - date: *id001
     format: 2D
     note: ''
 runningTime: 104

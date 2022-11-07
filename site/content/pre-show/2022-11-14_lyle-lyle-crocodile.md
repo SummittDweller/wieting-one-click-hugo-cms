@@ -1,5 +1,5 @@
 ---
-date: 2022-11-11 19:00:00-06:00
+date: &id001 2022-11-13 19:00:00-06:00
 dateRange: Nov 11 and 13
 dates: every Friday Sunday at 7:00 pm starting Nov 11 2022 ending Nov 13 2022
 draft: false
@@ -9,10 +9,10 @@ mpaaRating: PG
 oneSheet: /img/lyle.jpg
 performanceList:
   performance:
-  - date: 2022-11-12 01:00:00
+  - date: 2022-11-11 19:00:00-06:00
     format: 2D
     note: ''
-  - date: 2022-11-14 01:00:00
+  - date: *id001
     format: 2D
     note: ''
 runningTime: 106

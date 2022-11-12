@@ -186,12 +186,13 @@ img.oneSheet {
 }
 
 ul.show-times {
-  list-style-position: inside;  
+  /* list-style-position: inside;  */
+  margin-left: -20px;
 }  
 
 div.synopsis {
   font-size: 1.25rem;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .field--item-bold {

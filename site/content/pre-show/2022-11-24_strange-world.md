@@ -2,7 +2,7 @@
 date: &id001 2022-11-24 19:00:00-06:00
 dateRange: Nov 23/24 in 3D
 dates: every Wednesday Thursday at 7:00 pm starting Nov 23 2022 ending Nov 24 2022
-draft: true
+draft: false
 expiryDate: 2022-11-25
 imdbURL: https://www.imdb.com/title/tt10298840/?ref_=tt_mv_close
 mpaaRating: PG

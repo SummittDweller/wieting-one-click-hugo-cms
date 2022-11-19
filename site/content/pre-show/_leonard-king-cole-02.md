@@ -4,7 +4,7 @@ draft: false
 expiryDate: 2023-05-01
 shortTitle: "'King' Cole" 
 title: "Leonard 'King' Cole"
-oneSheet: /img/_king-cole-01.jpeg
+oneSheet: /img/_king-cole-02.jpg
 ---
 An excerpt from the Society for American Baseball Research (SABR) courtesy of John Liepa: 
 

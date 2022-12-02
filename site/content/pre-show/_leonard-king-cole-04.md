@@ -3,7 +3,7 @@ date: 2022-09-19T14:34:17-06:00
 draft: false
 expiryDate: 2023-05-01
 shortTitle: "'King' Cole" 
-title: "Leonard 'King' Cole"
+title: "'King' Cole Day - A Celebration of Baseball: Past, Present and Future"
 oneSheet: /img/_king-cole-02.jpg
 ---
 

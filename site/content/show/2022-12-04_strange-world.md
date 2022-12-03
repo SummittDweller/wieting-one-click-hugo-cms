@@ -10,15 +10,6 @@ officialURL: https://movies.disney.com/strange-world
 oneSheet: /img/strange-world.png
 performanceList:
   performance:
-  - date: 2022-11-25 19:00:00-06:00
-    format: 2D
-    note: ''
-  - date: 2022-11-27 19:00:00-06:00
-    format: 2D
-    note: ''
-  - date: 2022-12-02 19:00:00-06:00
-    format: 2D
-    note: ''
   - date: *id001
     format: 2D
     note: ''

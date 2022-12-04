@@ -1,5 +1,5 @@
 ---
-date: &id001 2022-12-04 19:00:00-06:00
+date: 2022-12-04 19:00:00-06:00
 dateRange: Nov 25, 27 Dec 2, 4
 dates: every Friday Sunday at 7:00 pm starting Nov 25 2022 ending Dec 4 2022
 draft: false
@@ -9,10 +9,7 @@ mpaaRating: PG
 officialURL: https://movies.disney.com/strange-world
 oneSheet: /img/strange-world.png
 performanceList:
-  performance:
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 99
 shortTitle: Strange World
 showType: Animated Cinema

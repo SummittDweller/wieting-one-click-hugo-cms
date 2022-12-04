@@ -1,3 +1,17 @@
+pi@raspberrypi:~ $ cat kiosk
+#!/bin/sh
+xset -dpms     # disable DPMS (Energy Star) features.
+xset s off     # disable screen saver
+xset s noblank # don't blank the video device
+matchbox-window-manager -use_titlebar no &
+unclutter &    # hide X mouse cursor unless mouse activated
+cvlc --random /home/pi/music-tracks &
+chromium-browser --display=:0 --kiosk --incognito --window-position=0,0 
+--force-device-scale-factor=1.5 --autoplay-policy=no-user-gesture-required 
+https://wieting.tamatoledo.com/pre-show
+
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/950c7b47-1f4a-4fa2-8440-81a131583699/deploy-status)](https://app.netlify.com/sites/wieting-one-click-cms/deploys)
 
 # wieting-one-click-hugo-cms: Published on Netlify.com with NetlifyCMS 

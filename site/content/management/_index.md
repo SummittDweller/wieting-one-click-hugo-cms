@@ -20,6 +20,7 @@ Pages listed here are intended strictly for Wieting Theatre management.
 
   - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
   - [Guild Information](/management/guild)
+  - [501c(3)](/management/501c3)
   - [Volunteer Assignments](/management/assignments)
   - [Movie Startup](/management/startup)
   - [Hearing Imparied / Vision Impaired System](/management/hivi)

@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/950c7b47-1f4a-4fa2-8440-81a131583699/deploy-status)](https://app.netlify.com/sites/wieting-one-click-cms/deploys)
+  
 
 # wieting-one-click-hugo-cms: Published on Netlify.com with NetlifyCMS 
 

@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-01-08 01:00:42.090000+00:00
+date: &id001 2023-01-08 01:00:42.090000
 dateRange: Jan 6 and 8
 draft: true
 expiryDate: 2023-01-09
@@ -8,7 +8,7 @@ mpaaRating: PG-13
 oneSheet: _default_no-image-available.png
 performanceList:
   performance:
-  - date: 2023-01-06 01:00:44.487000+00:00
+  - date: 2023-01-06 01:00:44.487000
     format: 2D
     note: ''
   - date: *id001

@@ -1,27 +1,27 @@
 ---
-date: &id001 2023-01-08 01:00:42.090000
-dateRange: Jan 6 and 8
+title: The Fabelmans
+date: 2023-01-29
+dateRange: Jan 27 and 29
+shortTitle: The Fabelmans
+mpaaRating: PG-13
 draft: true
 expiryDate: 2023-01-09
+oneSheet: /img/fabelmansposter.jpeg
+showType: Cinema
+runningTime: 151
 imdbURL: https://www.imdb.com/title/tt14208870/?ref_=fn_al_tt_1
-mpaaRating: PG-13
-oneSheet: _default_no-image-available.png
 performanceList:
   performance:
-  - date: 2023-01-06 01:00:44.487000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
-runningTime: 151
-shortTitle: The Fabelmans
-showType: Cinema
+    - date: 2023-01-28T01:00:44.487Z
+      format: 2D
+      note: ""
+    - date: 2023-01-30T01:00:42.090Z
+      format: 2D
+      note: ""
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: The Fabelmans
 ---
 
 A semi-autobiographical story loosely based on Spielberg's adolescence and first years as a director, told through an original story of the fictional Sammy Fabelman. 

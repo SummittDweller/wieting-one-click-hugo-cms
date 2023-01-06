@@ -1,14 +1,14 @@
 ---
-date: &id001 2023-01-08 01:00:42.090000
-dateRange: Jan 6 and 8
+date: &id001 2023-01-30 01:00:42.090000
+dateRange: Jan 27 and 29
 draft: true
-expiryDate: 2023-01-09
+expiryDate: 2023-01-31
 imdbURL: https://www.imdb.com/title/tt14208870/?ref_=fn_al_tt_1
 mpaaRating: PG-13
-oneSheet: _default_no-image-available.png
+oneSheet: /img/fabelmansposter.jpeg
 performanceList:
   performance:
-  - date: 2023-01-06 01:00:44.487000
+  - date: 2023-01-28 01:00:44.487000
     format: 2D
     note: ''
   - date: *id001

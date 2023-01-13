@@ -9,12 +9,6 @@ officialURL: https://www.dreamworks.com/movies/puss-in-boots-the-last-wish
 oneSheet: /img/puss-in-boots-the-last-wish-poster-thumbnail2.jpg
 performanceList:
   performance:
-  - date: 2023-01-07 01:00:46.971000
-    format: 2D
-    note: ''
-  - date: 2023-01-09 01:00:25.067000
-    format: 2D
-    note: ''
   - date: 2023-01-14 01:00:25.757000
     format: 2D
     note: ''

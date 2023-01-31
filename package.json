@@ -15,7 +15,7 @@
     "prebuild": "rimraf dist",
     "build": "npm run build:webpack && npm run build:hugo",
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
-    "build:hugo": "hugo -d ../dist -s site -v",
+    "build:hugo": "hugo -d ../dist -s site -v && find . -type f -name '../dist/guild/*.html' -exec staticrypt {} ellarocks1912 \\;",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
@@ -57,6 +57,7 @@
     "react-dom": "^16.8.6",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
+    "staticrypt": "^2.3.5",
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.0.0",
     "to-string-loader": "^1.1.5",

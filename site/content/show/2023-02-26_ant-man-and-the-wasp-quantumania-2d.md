@@ -2,10 +2,10 @@
 mpaaRating: PG-13
 draft: false
 expiryDate: 2023-02-28
-title: "Ant-Man and the Wasp: Quantumania 2D"
+title: "Ant-Man and the Wasp: Quantumania (2D)"
 date: 2023-02-26
 dateRange: Feb 24 and 26
-shortTitle: "Ant-Man & Wasp: Quantumania in 2D"
+shortTitle: "Quantumania (2D)"
 oneSheet: /img/antmanandthewaspquantumania_lob_crd_03.jpg
 showType: Cinema
 runningTime: 125

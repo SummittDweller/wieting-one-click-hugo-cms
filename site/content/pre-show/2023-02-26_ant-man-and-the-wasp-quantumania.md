@@ -10,10 +10,10 @@ oneSheet: /img/antmanandthewaspquantumania_lob_crd_03.jpg
 performanceList:
   performance:
   - date: 2023-02-18 01:00:05.638000+00:00
-    format: 2D
+    format: 3D
     note: ''
   - date: 2023-02-20 01:00:59.684000+00:00
-    format: 2D
+    format: 3D
     note: ''
   - date: 2023-02-25 01:00:01.655000+00:00
     format: 2D
@@ -22,7 +22,7 @@ performanceList:
     format: 2D
     note: ''
 runningTime: 125
-shortTitle: 'Ant-Man + Wasp: Quantumania'
+shortTitle: 'Ant-Man & Wasp: Quantumania'
 showType: Cinema
 studioInfo:
   studio: Not Specified

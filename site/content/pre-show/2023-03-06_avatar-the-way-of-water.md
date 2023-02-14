@@ -5,7 +5,7 @@ dateRange: Mar 3 and 5
 shortTitle: "Avatar: The Way of Water"
 mpaaRating: PG-13
 draft: false
-expiryDate: 2023-02-07
+expiryDate: 2023-03-07
 oneSheet: /img/avatar_the_way_of_water_poster.jpg
 showType: Cinema
 runningTime: 192

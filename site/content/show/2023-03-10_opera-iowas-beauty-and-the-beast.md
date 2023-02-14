@@ -16,5 +16,10 @@ studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 ---
+**Toledo PEO Chapter DF is proud to sponsor Opera Iowa’s Beauty and the Beast by Andre Gretry. Opera Iowa uses a more traditional version of the story of Beauty and the Beast. Belle and the Beast will take center stage along with Belle’s father, two selfish and rather nasty sisters and the Spirit of the Rose.  Along the way, the father and his two other daughters learn valuable lessons, among them that kindness is more important than riches.**
+
+T﻿ickets-- Adults: $15 Students: $12
+
+Doors open at 6:30 p.m. Opera starts at 7:00 p.m.

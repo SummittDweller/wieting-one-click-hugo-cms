@@ -12,13 +12,13 @@ performanceList:
     format: 3D
     note: ''
 runningTime: 120
-shortTitle: "Avatar: Way of Water (3D)"
+shortTitle: 'Avatar: Way of Water (3D)'
 showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: "Avatar: The Way of the Water (3D)"
+title: 'Avatar: The Way of the Water (3D)'
 ---
 
 Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home

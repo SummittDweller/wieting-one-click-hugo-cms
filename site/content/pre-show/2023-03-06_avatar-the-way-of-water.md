@@ -15,7 +15,7 @@ performanceList:
     format: 2D
     note: ''
 runningTime: 192
-shortTitle: "Avatar: The Way of Water"
+shortTitle: 'Avatar: The Way of Water'
 showType: Cinema
 studioInfo:
   studio: Not Specified

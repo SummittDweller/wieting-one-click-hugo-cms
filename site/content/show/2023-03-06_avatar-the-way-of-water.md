@@ -15,13 +15,13 @@ performanceList:
     format: 2D
     note: ''
 runningTime: 192
-shortTitle: "Avatar: The Way of Water"
+shortTitle: 'Avatar: The Way of Water'
 showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: "Avatar: The Way of Water"
+title: 'Avatar: The Way of Water'
 ---
 
 Jake Sully lives with his new family formed on an extrasolar moon. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.

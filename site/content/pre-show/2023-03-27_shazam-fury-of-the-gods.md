@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-03-27 00:00:57.623000+00:00
+date: &id001 2023-03-27 00:00:57.623000
 dateRange: Mar 17, 19, 24 and 26
 draft: false
 expiryDate: 2023-03-28
@@ -9,13 +9,13 @@ officialURL: https://www.dc.com/shazam
 oneSheet: /img/shazam.jpg
 performanceList:
   performance:
-  - date: 2023-03-18 00:00:55.096000+00:00
+  - date: 2023-03-18 00:00:55.096000
     format: 2D
     note: ''
-  - date: 2023-03-20 00:00:57.056000+00:00
+  - date: 2023-03-20 00:00:57.056000
     format: 2D
     note: ''
-  - date: 2023-03-25 00:00:57.313000+00:00
+  - date: 2023-03-25 00:00:57.313000
     format: 2D
     note: ''
   - date: *id001

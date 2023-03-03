@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-03-11 01:00:23.705000+00:00
+date: &id001 2023-03-11 01:00:23.705000
 dateRange: Mar 10
 draft: false
 expiryDate: 2023-03-12

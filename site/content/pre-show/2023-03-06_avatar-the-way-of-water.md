@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-03-06 01:00:00.844000+00:00
+date: &id001 2023-03-06 01:00:00.844000
 dateRange: Mar 3 and 5
 draft: false
 expiryDate: 2023-03-07
@@ -8,7 +8,7 @@ mpaaRating: PG-13
 oneSheet: /img/avatar_the_way_of_water_poster.jpg
 performanceList:
   performance:
-  - date: 2023-03-04 01:00:29.479000+00:00
+  - date: 2023-03-04 01:00:29.479000
     format: 2D
     note: ''
   - date: *id001

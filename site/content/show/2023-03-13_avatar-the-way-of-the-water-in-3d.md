@@ -14,7 +14,7 @@ performanceList:
   - date: *id001
     format: 3D
     note: ''
-runningTime: 120
+runningTime: 192
 shortTitle: 'Avatar: Way of Water (3D)'
 showType: Cinema
 studioInfo:

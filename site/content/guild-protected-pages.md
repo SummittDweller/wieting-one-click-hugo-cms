@@ -13,9 +13,9 @@ menu:
 ---
 
 {{% attention %}} 
-In 10 seconds this page will automatically redirect you to the Wieting Guild's password protected pages.  Go <a href="..">BACK</a> now if you do not wish to proceed!  
+In 15 seconds this page will automatically redirect you to the Wieting Guild's password-protected pages.  Click [HERE](https://wieting-guild.tamatoledo.com) to go there now or <a href="..">GO BACK</a> now if you do not wish to proceed!  
 {{% /attention %}}
 
 <script type="text/JavaScript">
-  setTimeout("location.href = 'https://wieting-guild.tamatoledo.com';", 10000);
+  setTimeout("location.href = 'https://wieting-guild.tamatoledo.com';", 15000);
 </script>

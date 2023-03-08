@@ -18,13 +18,19 @@ menu:
 
 Resources for past, present and future projects at the Wieting...
 
-  - [Wieting Theatre Website](https://wieting.tamatoledo.com/)
+  - [Wieting Theatre Website](https://wieting.tamatoledo.com/) 
   
 ## Pre-Show Using Web Pages and a Raspberry Pi
   
-  - [How To Open Website On Startup with a Raspberry Pi](https://smarthomepursuits.com/open-website-on-startup-with-raspberry-pi-os/)
-  - [Raspberry Pi Kit @ Smile.Amazon.com](https://smile.amazon.com/dp/B07TKFFCF1/ref=cm_sw_em_r_mt_dp_RQX9RX6F7QAE70NBQAY5)
+  - [How To Open Website On Startup with a Raspberry Pi](https://smarthomepursuits.com/open-website-on-startup-with-raspberry-pi-os/) {{% awesome "fa-regular" "fa-square-check" %}}
+  - [Raspberry Pi Kit @ Smile.Amazon.com](https://smile.amazon.com/dp/B07TKFFCF1/ref=cm_sw_em_r_mt_dp_RQX9RX6F7QAE70NBQAY5) {{% awesome "fa-regular" "fa-square-check" %}}
 
 ## Password Protecting Pages
 
-  - [Hugo Encryptor](https://github.com/Li4n0/hugo_encryptor)  
+  - [Hugo Encryptor](https://github.com/Li4n0/hugo_encryptor) {{% awesome "fa-solid" "fa-ban" %}}
+  - [StatiCrypt](https://github.com/robinmoisson/staticrypt) {{% awesome "fa-regular" "fa-square-check" %}}
+
+## Management iPad Running Screens 4 for iOS
+
+  - [Screens 4 for iOS](https://edovia.com/en/screens-ios/)  
+

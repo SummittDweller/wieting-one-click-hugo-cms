@@ -14,7 +14,7 @@ menu:
     weight: 200
 -->
 
-<hr/>
+<hr/> 
 
 Resources for past, present and future projects at the Wieting...
 
@@ -22,13 +22,17 @@ Resources for past, present and future projects at the Wieting...
   
 ## Pre-Show Using Web Pages and a Raspberry Pi
   
-  - [How To Open Website On Startup with a Raspberry Pi](https://smarthomepursuits.com/open-website-on-startup-with-raspberry-pi-os/) {{% awesome "fa-regular" "fa-square-check" %}}
-  - [Raspberry Pi Kit @ Smile.Amazon.com](https://smile.amazon.com/dp/B07TKFFCF1/ref=cm_sw_em_r_mt_dp_RQX9RX6F7QAE70NBQAY5) {{% awesome "fa-regular" "fa-square-check" %}}
+  - [How To Open Website On Startup with a Raspberry Pi](https://smarthomepursuits.com/open-website-on-startup-with-raspberry-pi-os/) {{% fontawesome "regular/circle-check" %}}
+  - [Raspberry Pi Kit @ Smile.Amazon.com](https://smile.amazon.com/dp/B07TKFFCF1/ref=cm_sw_em_r_mt_dp_RQX9RX6F7QAE70NBQAY5) {{% fontawesome "regular/circle-check" %}}
 
 ## Password Protecting Pages
 
-  - [Hugo Encryptor](https://github.com/Li4n0/hugo_encryptor) {{% awesome "fa-solid" "fa-ban" %}}
-  - [StatiCrypt](https://github.com/robinmoisson/staticrypt) {{% awesome "fa-regular" "fa-square-check" %}}
+  - [Hugo Encryptor](https://github.com/Li4n0/hugo_encryptor) {{% fontawesome "solid/ban" %}}
+  - [StatiCrypt](https://github.com/robinmoisson/staticrypt) {{% fontawesome "regular/circle-check" %}}
+
+## Add Fontawesome Icons to this Website Theme
+
+  - [Inline FontAwesome SVGs in Hugo](https://me.micahrl.com/blog/inline-fontawesome-svg-hugo/) {{% fontawesome "regular/circle-check" %}}
 
 ## Management iPad Running Screens 4 for iOS
 

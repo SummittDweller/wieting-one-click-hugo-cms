@@ -1,0 +1,7 @@
+<span style="display:inline-block; height:1em; width:1em; top:0em; position:relative;">
+  {{- $fname:=print "themes/vanilla-bootstrap-hugo-theme/fontawesome/" . ".svg" -}}
+  {{- $svg := readFile $fname -}}
+  {{- $commentStrippedSvg := replaceRE "<!--[^>]*-->" "" $svg -}}
+  {{- $filledPathSvg := replace $commentStrippedSvg "<path" "<path fill='currentColor'" -}}
+  {{ $filledPathSvg | safeHTML }}
+</span>

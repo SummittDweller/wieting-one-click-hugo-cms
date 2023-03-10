@@ -7,7 +7,7 @@ socialshare: true
 disableKinds: [ "RSS" ]
 paginate: 40
 
-googleAnalytics: UA-194668720-1
+# googleAnalytics: UA-194668720-1
 
 taxonomies:
   tag: tags

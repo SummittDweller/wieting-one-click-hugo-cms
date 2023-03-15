@@ -96,7 +96,7 @@ collections:
         name: shortTitle
         required: true
         widget: string
-        pattern: ['.{1,20}', "20 characters max."]
+        pattern: ['^.{1,30}$', "30 characters max."]
 
       - label: One Sheet
         name: oneSheet

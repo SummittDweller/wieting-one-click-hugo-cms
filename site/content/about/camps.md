@@ -2,7 +2,7 @@
 title: Summer Camps
 draft: false
 author: Mackenzie McFate
-date: 2022-05-09T12:43:56-05:00
+date: 2023-03-24T09:48:21-05:00
 socialshare: false
 weight: 195
 menu:
@@ -11,6 +11,19 @@ menu:
     parent: about
     weight: 805
 ---
+
+# 2023 - Summer Camps are Back!
+
+## Children's Theatre Camp - The Secret of the Sphinx
+
+![2023 Theatre Camp Poster](/img/Summer-Theatre-Camp-2023.png)
+
+Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 17-21, is available to [download and print here](/pdf/camp-2023-registration-form.pdf).
+
+<hr/>
+
+# 2022 Archive
+
 In 2022 the Wieting had Summer Camp opportunities for 3rd through 6th graders in July and August.  The following pages are preserved in anticipation of more camps in the Summer 2023.
 
 ## All About Art Camp

@@ -1,7 +1,7 @@
 ---
 title: The Super Mario Bros. Movie
-date: 2023-04-16
-dateRange: Apr 7, 9, 14 and 16
+date: 2023-04-09
+dateRange: Apr 7 and 9
 shortTitle: The Super Mario Bros. Movie
 oneSheet: /img/c_626_.jpg
 showType: Cinema
@@ -17,16 +17,10 @@ performanceList:
     - format: 3D
       note: ""
       date: 2023-04-10T00:00:32.349Z
-    - format: 2D
-      note: ""
-      date: 2023-04-15T00:00:32.608Z
-    - format: 2D
-      note: ""
-      date: 2023-04-17T00:00:34.258Z
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
 draft: false
 ---
-The story of The Super Mario Bros. on their journey through the Mushroom Kingdom.
+The story of The Super Mario Bros. on their journey through the Mushroom Kingdom in 3D

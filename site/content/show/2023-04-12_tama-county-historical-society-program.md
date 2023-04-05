@@ -1,20 +1,21 @@
 ---
-title: Tama County Historical Society Program
-date: 2023-04-12
+date: &id001 2023-04-13 00:00:24.484000
 dateRange: Apr 12
-shortTitle: Tama County Historical Society
-oneSheet: /img/2023.04.12-tchs-program-flier.png
-showType: Meeting
-runningTime: 90
+draft: false
+expiryDate: 2023-04-14
 mpaaRating: Not Rated
+oneSheet: /img/2023.04.12-tchs-program-flier.png
 performanceList:
   performance:
-    - format: Not Applicable
-      note: ""
-      date: 2023-04-13T00:00:24.484Z
+  - date: *id001
+    format: Not Applicable
+    note: ''
+runningTime: 90
+shortTitle: Tama County Historical Society
+showType: Meeting
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: Tama County Historical Society Program
 ---

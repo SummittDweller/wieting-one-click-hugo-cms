@@ -18,10 +18,10 @@ studioInfo:
   studioPercentage: 0
 draft: false
 ---
-F﻿ootliters Traveling Playhouse is coming again this summer to the Wieting for students 2nd grade and up!
+Footliters Traveling Playhouse is coming again this summer to the Wieting for students 2nd grade and up!
 
-C﻿amp is July 17-21 from 10am-2pm with the campers performing in one show only on Friday, July 21st at 7pm.
+Camp is July 17-21 from 10am-2pm with the campers performing in one show only on Friday, July 21st at 7pm.
 
-R﻿egistration is limited to the first 50 registrations received with full payment.
+Registration is limited to the first 50 registrations received with full payment.
 
 You can download a camp form at https://wieting.tamatoledo.com/about/camps

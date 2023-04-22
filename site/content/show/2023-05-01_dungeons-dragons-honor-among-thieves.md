@@ -1,26 +1,28 @@
 ---
-title: "Dungeons & Dragons: Honor Among Thieves"
-date: 2023-04-30
+date: &id001 2023-05-01 00:00:27.119000
 dateRange: Apr 28 and 30
-shortTitle: Dungeons & Dragons
-oneSheet: /img/s-l500.png
-showType: Cinema
-runningTime: 133
+draft: false
+expiryDate: 2023-05-02
+imdbURL: https://www.imdb.com/title/tt2906216/
 mpaaRating: PG-13
 officialURL: https://www.dungeonsanddragons.movie/
-imdbURL: https://www.imdb.com/title/tt2906216/
+oneSheet: /img/s-l500.png
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-04-29T00:00:37.047Z
-    - format: 2D
-      note: ""
-      date: 2023-05-01T00:00:27.119Z
+  - date: 2023-04-29 00:00:37.047000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 133
+shortTitle: Dungeons & Dragons
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: 'Dungeons & Dragons: Honor Among Thieves'
 ---
+
 A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.

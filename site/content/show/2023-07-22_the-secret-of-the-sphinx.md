@@ -1,23 +1,25 @@
 ---
-title: The Secret of the Sphinx
-date: 2023-07-21
+date: &id001 2023-07-22 00:00:14.771000
 dateRange: July 21
-shortTitle: Secret of the Sphinx
-oneSheet: /img/secret-of-the-sphinx-website-poster-copy.jpg
-showType: Live Performance
-runningTime: 80
+draft: false
+expiryDate: 2023-07-23
 mpaaRating: Not Rated
+oneSheet: /img/secret-of-the-sphinx-website-poster-copy.jpg
 performanceList:
   performance:
-    - format: Not Applicable
-      note: ""
-      date: 2023-07-22T00:00:14.771Z
+  - date: *id001
+    format: Not Applicable
+    note: ''
+runningTime: 80
+shortTitle: Secret of the Sphinx
+showType: Live Performance
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: The Secret of the Sphinx
 ---
+
 F﻿ootliters Traveling Playhouse is coming again this summer to the Wieting for students 2nd grade and up!
 
 C﻿amp is July 17-21 from 10am-2pm with the campers performing in one show only on Friday, July 21st at 7pm.

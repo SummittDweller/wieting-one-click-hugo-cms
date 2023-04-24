@@ -18,7 +18,7 @@ Presently the Guild members are:
 
 #### Executive Committee
   - Leann Clemann - President
-  - D. A. Boerm - Vice-President
+  - Josh Clemann - Vice-President
   - Michelle Evans - Treasurer
   - Marie Mann - Secretary
 
@@ -36,7 +36,8 @@ Presently the Guild members are:
   - Eric (Ro) Rosario
   - Sandy Kapayou
   - Morgan McFate
+  - D. A. Boerm
 
-Mark McFate maintains this website, the computers and sound/projection systems at the Wieting.  Barb Jordan coordinates volunteers. Amy Doyle served the Guild for many years as bookeeper and continues to support theatre activities as needed.  Mary Fasse-Shaw is the Guild's live events coordinator. Steve Kenkel assists with projection, lights and sound.  
+Mark McFate maintains this website, the computers and sound/projection systems at the Wieting. Barb Jordan coordinates volunteers. Amy Doyle served the Guild for many years as bookeeper and continues to support theatre activities as needed.  Mary Fasse-Shaw is the Guild's live events coordinator. Steve Kenkel assists with projection, lights and sound.  
 
 We tend to take for granted these devoted and hardworking individuals.  We want to reassure them of their importance and our gratitude for their hours spent toward the achievement of a common goal - that of keeping the Wieting Theatre facility available to our children and all adults in our communities.   Again - Many Thanks!

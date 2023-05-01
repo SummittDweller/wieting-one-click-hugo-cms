@@ -22,6 +22,15 @@ Information and a registration form for current 2nd graders and up that are inte
 
 <hr/>
 
+## STEM Camp - The Power of Air
+
+![STEM Camp Poster](/img/Power-of-Air-STEM-camp.png)
+
+Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, July 31 - August 3, is available to [download and print here](/img/Power-of-Air-Camp-Registration.pdf) with a [Spanish version available here.](/img/Spanish-Power-of-Air-Camp-Registration.pdf)
+
+<hr/>
+<hr/>
+
 # 2022 Archive
 
 In 2022 the Wieting had Summer Camp opportunities for 3rd through 6th graders in July and August.  The following pages are preserved in anticipation of more camps in the Summer 2023.

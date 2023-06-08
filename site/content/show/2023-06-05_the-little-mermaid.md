@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-06-05 00:00:56.034000
+date: 2023-06-05 00:00:56.034000
 dateRange: June 2 and 4
 draft: false
 expiryDate: 2023-06-06
@@ -7,13 +7,7 @@ imdbURL: https://www.imdb.com/title/tt5971474/?ref_=ttspec_ov
 mpaaRating: PG
 oneSheet: /img/the_little_mermaid_-2023_film-.png
 performanceList:
-  performance:
-  - date: 2023-06-03 00:00:55.808000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 135
 shortTitle: The Little Mermaid [2D]
 showType: Cinema

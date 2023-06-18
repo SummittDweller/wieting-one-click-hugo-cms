@@ -9,11 +9,8 @@ officialURL: https://movies.disney.com/elemental
 oneSheet: /img/elemental_final_poster.jpg
 performanceList:
   performance:
-  - date: 2023-06-17 00:00:27.361000
-    format: 3D
-    note: ''
   - date: *id001
-    format: 3D
+    format: 2D
     note: ''
 runningTime: 103
 shortTitle: Elemental

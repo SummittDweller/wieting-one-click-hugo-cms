@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-06-19 00:00:37.382000
+date: 2023-06-19 00:00:37.382000
 dateRange: June 16 and 18
 draft: false
 expiryDate: 2023-06-20
@@ -8,10 +8,7 @@ mpaaRating: PG
 officialURL: https://movies.disney.com/elemental
 oneSheet: /img/elemental_final_poster.jpg
 performanceList:
-  performance:
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 103
 shortTitle: Elemental
 showType: Cinema

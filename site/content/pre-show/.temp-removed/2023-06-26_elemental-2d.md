@@ -1,22 +1,22 @@
 ---
-date: 2023-06-19 00:00:37.382000
-dateRange: June 16 and 18
+date: 2023-06-26 00:00:26.297000
+dateRange: June 23 and 25
 draft: false
-expiryDate: 2023-06-20
+expiryDate: 2023-06-27
 imdbURL: https://www.imdb.com/title/tt15789038/
 mpaaRating: PG
 officialURL: https://movies.disney.com/elemental
 oneSheet: /img/elemental_final_poster.jpg
 performanceList:
   performance: []
-runningTime: 103
-shortTitle: Elemental
-showType: Cinema
+runningTime: 109
+shortTitle: Elemental (2D)
+showType: Animated Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: Elemental (3D)
+title: Elemental (2D)
 ---
 
-Follows Ember and Wade, in a city where fire-, water-, land- and air-residents live together.
+Set in Element City, where fire, water, land and air residents live together.

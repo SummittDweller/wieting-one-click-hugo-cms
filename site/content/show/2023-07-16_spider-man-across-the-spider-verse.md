@@ -1,25 +1,27 @@
 ---
-title: "Spider-Man: Across the Spider-Verse"
-date: 2023-07-16
+date: &id001 2023-07-17 00:00:10.958000
 dateRange: July 14 and 16
-shortTitle: "Spider-Man"
-oneSheet: /img/spiderverse.png
-showType: Cinema
-runningTime: 136
-mpaaRating: PG
+draft: false
+expiryDate: 2023-07-18
 imdbURL: https://www.imdb.com/title/tt9362722/
+mpaaRating: PG
+oneSheet: /img/spiderverse.png
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-07-15T00:00:10.115Z
-    - format: 2D
-      note: ""
-      date: 2023-07-17T00:00:10.958Z
+  - date: 2023-07-15 00:00:10.115000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 136
+shortTitle: Spider-Man
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: 'Spider-Man: Across the Spider-Verse'
 ---
+
 Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.

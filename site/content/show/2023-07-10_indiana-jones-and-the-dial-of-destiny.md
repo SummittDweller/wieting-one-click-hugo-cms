@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-07-10 00:00:34.578000
+date: 2023-07-10 00:00:34.578000
 dateRange: Jun 30 July 2, 7 and 9
 draft: false
 expiryDate: 2023-07-11
@@ -7,19 +7,7 @@ imdbURL: https://www.imdb.com/title/tt1462764/
 mpaaRating: PG-13
 oneSheet: /img/indiana-jones.jpg
 performanceList:
-  performance:
-  - date: 2023-07-01 00:00:49.953000
-    format: 2D
-    note: ''
-  - date: 2023-07-03 00:00:33.669000
-    format: 2D
-    note: ''
-  - date: 2023-07-08 00:00:34.114000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 154
 shortTitle: 'Indiana Jones: Dial of Destiny'
 showType: Cinema

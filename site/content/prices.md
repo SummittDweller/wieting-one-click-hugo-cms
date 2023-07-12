@@ -2,7 +2,7 @@
 title: Prices
 draft: false
 author: Mackenzie McFate
-date: 2022-10-19T20:11:38-05:00
+date: 2023-07-12T11:39:13-05:00
 socialshare: false
 weight: 500
 menu:
@@ -49,7 +49,7 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 
 ### Specials
 
-* Snack Pack - $6 (Drink + Popcorn + Regular Candy)
+* Snack Pack - $7 (Drink + Popcorn + Regular Candy)
 * Combo Pack - $10 (2 Drinks + Jumbo Popcorn)
 
 #### We also have Snack Pack and Combo Pack gift cards available too!

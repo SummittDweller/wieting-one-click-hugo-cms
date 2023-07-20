@@ -1,18 +1,13 @@
 ---
-date: &id001 2023-07-17 00:00:10.958000
+date: 2023-07-17 00:00:10.958000
 dateRange: July 14 and 16
 draft: false
+expiryDate: 2023-07-18
 imdbURL: https://www.imdb.com/title/tt9362722/
 mpaaRating: PG
 oneSheet: /img/spiderverse.png
 performanceList:
-  performance:
-  - date: 2023-07-15 00:00:10.115000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 136
 shortTitle: Spider-Man
 showType: Cinema

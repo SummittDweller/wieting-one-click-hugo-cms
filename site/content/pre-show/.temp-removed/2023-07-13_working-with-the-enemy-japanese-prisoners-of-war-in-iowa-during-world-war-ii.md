@@ -1,14 +1,12 @@
 ---
-date: &id001 2023-07-13 00:00:04.483000
+date: 2023-07-13 00:00:04.483000
 dateRange: July 12
 draft: false
+expiryDate: 2023-07-14
 mpaaRating: Not Rated
 oneSheet: /img/tama-co-historical-society-july-2023.png
 performanceList:
-  performance:
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 60
 shortTitle: Working with the Enemy
 studioInfo:

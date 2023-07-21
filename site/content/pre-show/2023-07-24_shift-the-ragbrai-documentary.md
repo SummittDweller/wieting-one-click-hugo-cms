@@ -5,7 +5,7 @@ draft: false
 expiryDate: 2023-07-25
 mpaaRating: Not Rated
 officialURL: https://ragbrai.com/documentary/
-oneSheet: /img/shift.movie.poster_small.jpg
+oneSheet: /img/shift-ragbrai.png
 performanceList:
   performance:
   - date: *id001

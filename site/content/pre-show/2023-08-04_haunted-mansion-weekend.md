@@ -1,15 +1,17 @@
 ---
-date: 2023-07-27 19:00:00-05:00
-dateRange: July 27 @ 7pm
-dates: Jul 27 at 7 PM
+date: &id001 2023-08-07 00:00:00
+dateRange: August 4 and 6
 draft: false
-expiryDate: 2023-07-28
+expiryDate: 2023-08-08
 imdbURL: https://www.imdb.com/title/tt1695843/
 mpaaRating: PG-13
 oneSheet: /img/haunted.jpg
 performanceList:
   performance:
-  - date: 2023-07-28 00:00:00
+  - date: 2023-08-05 00:00:00
+    format: 2D
+    note: ''
+  - date: *id001
     format: 2D
     note: ''
 runningTime: 122

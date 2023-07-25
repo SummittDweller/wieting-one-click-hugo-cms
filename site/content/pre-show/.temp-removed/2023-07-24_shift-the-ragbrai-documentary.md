@@ -1,14 +1,17 @@
 ---
-date: &id001 2023-07-24 00:00:05.421000
+date: 2023-07-24 00:00:05.421000
 dateRange: Jul 23
 draft: false
-expiryDate: 2023-07-25
+expiryDate: 2023-08-01
 mpaaRating: Not Rated
 officialURL: https://ragbrai.com/documentary/
-oneSheet: /img/shift.movie.poster_small.jpg
+oneSheet: /img/shift-ragbrai.png
 performanceList:
   performance:
-  - date: *id001
+  - date: 2023-07-29 00:00:00
+    format: 2D
+    note: ''
+  - date: 2023-07-31 00:00:00
     format: 2D
     note: ''
 runningTime: 57

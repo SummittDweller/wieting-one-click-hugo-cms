@@ -8,9 +8,6 @@ mpaaRating: PG-13
 oneSheet: /img/haunted.jpg
 performanceList:
   performance:
-  - date: 2023-08-05 00:00:00
-    format: 2D
-    note: ''
   - date: *id001
     format: 2D
     note: ''

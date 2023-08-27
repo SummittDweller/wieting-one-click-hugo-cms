@@ -1,6 +1,6 @@
 ---
 date: &id001 2023-09-11 00:00:48.263000
-dateRange: Sep 8 and 10
+dateRange: Sep 8, 9 and 10
 draft: false
 expiryDate: 2023-09-12
 imdbURL: https://www.imdb.com/title/tt21103300/?ref_=nv_sr_srsg_2_tt_8_nm_0_q_big%2520Fat%2520
@@ -11,6 +11,9 @@ performanceList:
   - date: 2023-09-09 00:00:01.323000
     format: 2D
     note: ''
+  - date: 2023-09-10 00:00:01.323000
+    format: 2D
+    note: ''  
   - date: *id001
     format: 2D
     note: ''

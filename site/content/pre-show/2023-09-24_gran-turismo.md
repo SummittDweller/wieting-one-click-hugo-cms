@@ -1,28 +1,30 @@
 ---
-title: Gran Turismo
-date: 2023-09-24
+date: &id001 2023-09-25 00:00:14.472000
 dateRange: Sep 22 - 24
-shortTitle: Gran Turismo
-oneSheet: /img/gran-turismo.jpg
-showType: Cinema
-runningTime: 134
-mpaaRating: PG-13
+draft: false
+expiryDate: 2023-09-26
 imdbURL: https://www.imdb.com/title/tt4495098/
+mpaaRating: PG-13
+oneSheet: /img/gran-turismo.jpg
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-09-23T00:00:36.540Z
-    - format: 2D
-      note: ""
-      date: 2023-09-24T00:00:14.305Z
-    - format: 2D
-      note: ""
-      date: 2023-09-25T00:00:14.472Z
+  - date: 2023-09-23 00:00:36.540000
+    format: 2D
+    note: ''
+  - date: 2023-09-24 00:00:14.305000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 134
+shortTitle: Gran Turismo
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: Gran Turismo
 ---
+
 Based on the unbelievable, inspiring true story of a team of underdogs - a struggling, working-class gamer, a failed former race car driver, and an idealistic motorsport exec - who risk it all to take on the most elite sport in the world.

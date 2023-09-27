@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-09-23 19:00:24.840000
+date: 2023-09-23 19:00:24.840000
 dateRange: Sep 23
 draft: false
 expiryDate: 2023-09-24
@@ -7,10 +7,7 @@ mpaaRating: Not Rated
 officialURL: www.royshow.com
 oneSheet: /img/poster-wieting-sept.-23-jpg-phone.jpeg
 performanceList:
-  performance:
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 120
 shortTitle: Roy, Buddy and Jerry Lee!
 showType: Live Performance

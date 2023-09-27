@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-09-25 00:00:14.472000
+date: 2023-09-25 00:00:14.472000
 dateRange: Sep 22 - 24
 draft: false
 expiryDate: 2023-09-26
@@ -7,16 +7,7 @@ imdbURL: https://www.imdb.com/title/tt4495098/
 mpaaRating: PG-13
 oneSheet: /img/gran-turismo.jpg
 performanceList:
-  performance:
-  - date: 2023-09-23 00:00:36.540000
-    format: 2D
-    note: ''
-  - date: 2023-09-24 00:00:14.305000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 134
 shortTitle: Gran Turismo
 showType: Cinema

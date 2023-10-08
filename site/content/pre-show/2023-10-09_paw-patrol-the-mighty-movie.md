@@ -8,12 +8,6 @@ mpaaRating: PG
 oneSheet: /img/paw-patrol.jpg
 performanceList:
   performance:
-  - date: 2023-10-07 00:00:17.189000
-    format: 2D
-    note: ''
-  - date: 2023-10-08 00:00:09.435000
-    format: 2D
-    note: ''
   - date: *id001
     format: 2D
     note: ''

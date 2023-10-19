@@ -1,15 +1,12 @@
 ---
-date: &id001 2023-10-14 20:30:07.653000
+date: 2023-10-14 20:30:07.653000
 dateRange: Oct 14
 draft: false
 expiryDate: 2023-10-15
 mpaaRating: Not Rated
 oneSheet: /img/basement-band-flier-oct-23-copy.jpg
 performanceList:
-  performance:
-  - date: *id001
-    format: Not Applicable
-    note: ''
+  performance: []
 runningTime: 120
 shortTitle: Basement Band and Meal
 showType: Live Performance

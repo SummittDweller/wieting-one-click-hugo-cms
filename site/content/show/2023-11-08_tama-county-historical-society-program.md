@@ -1,20 +1,21 @@
 ---
-title: Tama County Historical Society Program
-date: 2023-11-08
+date: &id001 2023-11-09 01:00:18.081000
 dateRange: Nov 8
-shortTitle: Tama County Potpourri
-oneSheet: /img/2023-11-tchs-tc-potpourri-helm-copy.jpg
-showType: Meeting
-runningTime: 60
+draft: false
+expiryDate: 2023-11-10
 mpaaRating: Not Rated
+oneSheet: /img/2023-11-tchs-tc-potpourri-helm-copy.jpg
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-11-09T01:00:18.081Z
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 60
+shortTitle: Tama County Potpourri
+showType: Meeting
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: Tama County Historical Society Program
 ---

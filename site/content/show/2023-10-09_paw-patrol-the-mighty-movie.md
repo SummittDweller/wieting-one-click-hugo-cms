@@ -2,7 +2,7 @@
 date: 2023-10-09 00:00:09.652000
 dateRange: Oct 6, 7 and 8
 draft: false
-expiryDate: 2023-10-10
+expiryDate: 2023-10-24
 imdbURL: https://www.imdb.com/title/tt15837338/
 mpaaRating: PG
 oneSheet: /img/paw-patrol.jpg

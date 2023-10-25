@@ -2,7 +2,7 @@
 date: 2023-10-15
 dateRange: Oct 13, 14 and 15
 draft: false
-expiryDate: 2023-10-17
+expiryDate: 2023-10-24
 mpaaRating: PG
 officialURL: https://www.pawpatrol.movie/
 oneSheet: /img/paw-patrol.jpg

@@ -2,7 +2,7 @@
 date: 2023-10-14 20:30:07.653000
 dateRange: Oct 14
 draft: false
-expiryDate: 2023-10-15
+expiryDate: 2023-10-24
 mpaaRating: Not Rated
 oneSheet: /img/basement-band-flier-oct-23-copy.jpg
 performanceList:

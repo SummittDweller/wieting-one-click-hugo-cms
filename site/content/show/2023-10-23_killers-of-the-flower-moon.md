@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-10-23 00:00:06.379000
+date: 2023-10-23 00:00:06.379000
 dateRange: Oct 20, 21 and 22
 draft: false
 expiryDate: 2023-10-24
@@ -8,22 +8,7 @@ mpaaRating: R
 officialURL: https://www.killersoftheflowermoonmovie.com/
 oneSheet: /img/flower-moon.jpg
 performanceList:
-  performance:
-  - date: 2023-10-21 00:00:42.581000
-    format: 2D
-    note: ''
-  - date: 2023-10-21 19:00:05.221000
-    format: 2D
-    note: ''
-  - date: 2023-10-22 00:00:05.425000
-    format: 2D
-    note: ''
-  - date: 2023-10-22 19:00:05.687000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
-    note: ''
+  performance: []
 runningTime: 206
 shortTitle: Killers of the Flower Moon
 showType: Cinema

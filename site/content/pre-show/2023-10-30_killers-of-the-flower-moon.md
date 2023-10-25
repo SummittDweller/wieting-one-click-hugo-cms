@@ -1,14 +1,29 @@
 ---
-date: 2023-10-23 00:00:06.379000
-dateRange: Oct 20, 21 and 22
+date: &id001 2023-10-30 00:00:40.417000
+dateRange: Oct 27, 28 and 29
 draft: false
-expiryDate: 2023-10-24
+expiryDate: 2023-10-31
 imdbURL: https://www.imdb.com/title/tt5537002/
 mpaaRating: R
 officialURL: https://www.killersoftheflowermoonmovie.com/
 oneSheet: /img/flower-moon.jpg
 performanceList:
-  performance: []
+  performance:
+  - date: 2023-10-28 00:00:56.201000
+    format: 2D
+    note: ''
+  - date: 2023-10-28 19:00:39.226000
+    format: 2D
+    note: ''
+  - date: 2023-10-29 00:00:39.439000
+    format: 2D
+    note: ''
+  - date: 2023-10-29 19:00:39.686000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
 runningTime: 206
 shortTitle: Killers of the Flower Moon
 showType: Cinema

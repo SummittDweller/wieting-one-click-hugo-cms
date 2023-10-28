@@ -1,34 +1,36 @@
 ---
-title: TAYLOR SWIFT | THE ERAS TOUR
-date: 2023-11-05
+date: &id001 2023-11-06 01:00:36.402000
 dateRange: Nov 2-5
-shortTitle: No Passes Allowed
-oneSheet: /img/7_social-static-vertical_1080-x-1920-sm.jpg
-showType: Cinema
-runningTime: 168
+draft: false
+expiryDate: 2023-11-07
+imdbURL: https://www.imdb.com/title/tt28814949/
 mpaaRating: PG-13
 officialURL: https://www.tstheerastourfilm.com/
-imdbURL: https://www.imdb.com/title/tt28814949/
+oneSheet: /img/7_social-static-vertical_1080-x-1920-sm.jpg
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-11-03T00:00:21.391Z
-    - format: 2D
-      note: ""
-      date: 2023-11-04T00:00:35.538Z
-    - format: 2D
-      note: ""
-      date: 2023-11-05T00:00:35.910Z
-    - format: 2D
-      note: ""
-      date: 2023-11-06T01:00:36.402Z
+  - date: 2023-11-03 00:00:21.391000
+    format: 2D
+    note: ''
+  - date: 2023-11-04 00:00:35.538000
+    format: 2D
+    note: ''
+  - date: 2023-11-05 00:00:35.910000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 168
+shortTitle: No Passes Allowed
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: TAYLOR SWIFT | THE ERAS TOUR
 ---
+
 The cultural phenomenon continues on the big screen! Immerse yourself in this once-in-a-lifetime concert film experience with a breathtaking, cinematic view of the history-making tour. Taylor Swift Eras attire and friendship bracelets are strongly encouraged!
 
 

@@ -1,29 +1,31 @@
 ---
-title: The Marvels
-date: 2023-11-12
+date: &id001 2023-11-13 01:00:31.102000
 dateRange: Nov 10-12
-shortTitle: The Marvels
-oneSheet: /img/mv5bywq4nja3mtatndlmzc00nddllwe2yzaty2y3nwm4ymrhyzzkxkeyxkfqcgdeqxvymtm1njm2odg1._v1_.jpg
-showType: Cinema
-runningTime: 105
+draft: false
+expiryDate: 2023-11-14
+imdbURL: https://www.imdb.com/title/tt10676048/?ref_=tt_mv_close
 mpaaRating: PG-13
 officialURL: https://www.marvel.com/movies/the-marvels
-imdbURL: https://www.imdb.com/title/tt10676048/?ref_=tt_mv_close
+oneSheet: /img/mv5bywq4nja3mtatndlmzc00nddllwe2yzaty2y3nwm4ymrhyzzkxkeyxkfqcgdeqxvymtm1njm2odg1._v1_.jpg
 performanceList:
   performance:
-    - format: 2D
-      note: ""
-      date: 2023-11-11T01:00:45.089Z
-    - format: 2D
-      note: ""
-      date: 2023-11-12T01:00:30.382Z
-    - format: 2D
-      note: ""
-      date: 2023-11-13T01:00:31.102Z
+  - date: 2023-11-11 01:00:45.089000
+    format: 2D
+    note: ''
+  - date: 2023-11-12 01:00:30.382000
+    format: 2D
+    note: ''
+  - date: *id001
+    format: 2D
+    note: ''
+runningTime: 105
+shortTitle: The Marvels
+showType: Cinema
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-draft: false
+title: The Marvels
 ---
+
 Carol Danvers gets her powers entangled with those of Kamala Khan and Monica Rambeau, forcing them to work together to save the universe.

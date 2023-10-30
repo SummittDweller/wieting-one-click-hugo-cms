@@ -1,21 +1,21 @@
 ---
-date: &id001 2023-11-09 01:00:18.081000
-dateRange: Nov 8
+title: Tama County Historical Society Program
+date: 2023-11-08
+mpaaRating: Not Rated
 draft: false
 expiryDate: 2023-11-10
-mpaaRating: Not Rated
-oneSheet: /img/2023-11-tchs-tc-potpourri-helm-copy.jpg
+dateRange: Nov 8
+shortTitle: Perry Township Cemetaries
+oneSheet: /img/perry-township-cemeteries-flier.png
+showType: Meeting
+runningTime: 60
 performanceList:
   performance:
-  - date: *id001
-    format: 2D
-    note: ''
-runningTime: 60
-shortTitle: Tama County Potpourri
-showType: Meeting
+    - date: 2023-11-08T13:00:18.081Z
+      format: 2D
+      note: ""
 studioInfo:
   studio: Not Specified
   studioFee: 0
   studioPercentage: 0
-title: Tama County Historical Society Program
 ---

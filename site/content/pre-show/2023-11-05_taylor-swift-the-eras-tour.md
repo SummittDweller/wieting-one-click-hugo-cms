@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-11-06 01:00:36.402000
+date: &id001 2023-11-06 01:00:50.171000
 dateRange: Nov 2-5
 draft: false
 expiryDate: 2023-11-07
@@ -16,6 +16,9 @@ performanceList:
     format: 2D
     note: ''
   - date: 2023-11-05 00:00:35.910000
+    format: 2D
+    note: ''
+  - date: 2023-11-05 20:00:36.402000
     format: 2D
     note: ''
   - date: *id001

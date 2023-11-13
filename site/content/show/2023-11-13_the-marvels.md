@@ -1,22 +1,16 @@
 ---
-date: &id001 2023-11-13 01:00:31.102000
+date: 2023-11-13 01:00:31.102000
 dateRange: Nov 10-12
 draft: false
-expiryDate: 2023-11-14
+expiryDate: 2023-11-19
 imdbURL: https://www.imdb.com/title/tt10676048/?ref_=tt_mv_close
 mpaaRating: PG-13
 officialURL: https://www.marvel.com/movies/the-marvels
 oneSheet: /img/mv5bywq4nja3mtatndlmzc00nddllwe2yzaty2y3nwm4ymrhyzzkxkeyxkfqcgdeqxvymtm1njm2odg1._v1_.jpg
 performanceList:
   performance:
-  - date: 2023-11-11 01:00:45.089000
-    format: 2D
-    note: ''
-  - date: 2023-11-12 01:00:30.382000
-    format: 2D
-    note: ''
-  - date: *id001
-    format: 2D
+  - date: 2023-11-18 21:00:13.575000
+    format: Not Applicable
     note: ''
 runningTime: 105
 shortTitle: The Marvels

@@ -1,15 +1,12 @@
 ---
-date: &id001 2023-11-18 21:00:13.575000
+date: 2023-11-18 21:00:13.575000
 dateRange: Nov 18
 draft: false
 expiryDate: 2023-11-19
 mpaaRating: Not Rated
 oneSheet: /img/irish-session-copy.jpg
 performanceList:
-  performance:
-  - date: *id001
-    format: Not Applicable
-    note: ''
+  performance: []
 runningTime: 105
 shortTitle: Irish Session
 showType: Live Performance

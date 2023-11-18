@@ -1,5 +1,5 @@
 ---
-date: &id001 2023-11-20 01:00:39.020000
+date: &id001 2023-11-20 01:00:32.853000
 dateRange: Nov 17-19
 draft: false
 expiryDate: 2023-11-21
@@ -9,10 +9,7 @@ officialURL: https://movies.disney.com/the-marvels
 oneSheet: /img/mv5bywq4nja3mtatndlmzc00nddllwe2yzaty2y3nwm4ymrhyzzkxkeyxkfqcgdeqxvymtm1njm2odg1._v1_.jpg
 performanceList:
   performance:
-  - date: 2023-11-18 01:00:54.685000
-    format: 2D
-    note: ''
-  - date: 2023-11-19 01:00:38.459000
+  - date: 2023-11-19 01:00:39.020000
     format: 2D
     note: ''
   - date: *id001

@@ -2,11 +2,23 @@
 date: 2023-11-18 21:00:13.575000
 dateRange: Nov 18
 draft: false
-expiryDate: 2023-11-19
+expiryDate: 2023-11-28
 mpaaRating: Not Rated
 oneSheet: /img/irish-session-copy.jpg
 performanceList:
-  performance: []
+  performance:
+  - date: 2023-11-24 01:00:12.874000
+    format: 2D
+    note: ''
+  - date: 2023-11-25 01:00:40.085000
+    format: 2D
+    note: ''
+  - date: 2023-11-26 01:00:40.334000
+    format: 2D
+    note: ''
+  - date: 2023-11-27 01:00:40.773000
+    format: 2D
+    note: ''
 runningTime: 105
 shortTitle: Irish Session
 showType: Live Performance
